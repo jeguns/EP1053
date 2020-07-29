@@ -1,4 +1,4 @@
-812+65
+812+653
 32-6
 15+6666985
 50%/%7 # El operador %/% sirve para obtener la parte entera
@@ -15,5 +15,5 @@ log2(16)
 (56+6)*2%%sqrt(28) # colocar **2 en vez de *2
 (56+6)^2%%(28)^1/2 # colocar (1/2) en vez de 1/2
 (56+6)**2%/%sqrt(28) # colocar %% en vez de %/%
-(56+6)**2%%sqrt(28) # correct o
+(56+6)**2%%sqrt(28) # correcto
 300 %/% (450^(1/3))
