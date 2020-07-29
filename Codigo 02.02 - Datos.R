@@ -150,3 +150,7 @@ y2$m
 y2$m[2]
 
 # MATRIZ
+
+# DATA FRAME
+
+# ARRAY
