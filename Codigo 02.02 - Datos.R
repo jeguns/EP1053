@@ -151,6 +151,18 @@ y2$m[2]
 
 # MATRIZ
 
+x3 = matrix(c(7,3,5,8),ncol=2) # almacena una matriz con 2 columnas
+x3 = matrix(c(7,3,5,8),ncol=2,byrow=TRUE)
+typeof(x3)
+str(x3)
+is.double(x3)
+is.vector(x3)
+is.list(x3)
+is.matrix(x3)
+x3[1,2] # matriz[fila,columna]
+x3[2,]  # extrae segunda fila
+x3[,2]  # extrae segunda columna
+
 # DATA FRAME
 
 # ARRAY
