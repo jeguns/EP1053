@@ -124,6 +124,8 @@ str(y1)
 is.double(y1)
 is.vector(y1)
 y1[3]
+y1[1]
+y1[[1]]
 
 # LISTA
 # Toda lista es un vector
@@ -136,8 +138,10 @@ is.vector(x2)
 is.list(x2)
 x2[2] #crea una sublista con la segunda posición
 x2[[2]] #extrae el elemento de la posición 2
+str(x2[2])
+str(x2[[2]])
 
-y2 = list(m = c(3,4,5), n = c(7,24,25))
+y2 = list(m = c(3,4,5), n = c(7,24,25), p = matrix((c(2,2,2,2)),ncol=2))
 typeof(y2)
 str(y2)
 is.vector(y2)
@@ -152,7 +156,8 @@ y2$m[2]
 # MATRIZ
 
 x3 = matrix(c(7,3,5,8),ncol=2) # almacena una matriz con 2 columnas
-x3 = matrix(c(7,3,5,8),ncol=2,byrow=TRUE)
+x3 = matrix(c(7,3,5,8),nrow=2,byrow=TRUE)
+x3 = matrix(c(7,3,5,8),nrow=2,bycol=TRUE) # no existe bycol
 typeof(x3)
 str(x3)
 is.double(x3)
@@ -163,6 +168,57 @@ x3[1,2] # matriz[fila,columna]
 x3[2,]  # extrae segunda fila
 x3[,2]  # extrae segunda columna
 
-# DATA FRAME
+x_3 = matrix(1:99,ncol=9)
+x_3[5:7,4:8]
 
-# ARRAY
+y3 = matrix(c(7,TRUE,5,8,1,2),nrow=3)
+typeof(y3)
+str(y3)
+is.double(y3)
+is.vector(y3)
+is.list(y3)
+is.matrix(y3)
+y3[3,1]
+y3[2,]
+y3[,2]
+
+z3 = matrix(c(1,4,as.character(5),8),ncol=2) # hacemos coerción explícita y R hace implícita
+
+# DATA FRAME 
+
+x4 = data.frame(var1 = c(4,5,3,5,9), var2= c('1','3','66','12','15'), var3 = 4, var4 = "abc")
+x4 = data.frame(FALSE = c(4,5,3,5,9), var2= c('1','3','66','12','15'), var3 = 4, var4 = "abc") 
+# FALSE es una palabra reservada
+x4 = data.frame(False = c(4,5,3,5,9), var2= c('1','3','66','12','15'), var3 = 4, var4 = "abc") 
+
+typeof(x4)
+str(x4)
+is.double(x4)
+is.vector(x4)
+is.list(x4)
+is.matrix(x4)
+is.data.frame(x4)
+x4[1,2]
+x4[2,]
+x4[,2]
+x4$var3
+x4$var2[3]
+attach(x4) # independiza cada columna
+
+# ARRAY o ARREGLO
+
+x5 = array(c(1,3,5,7,9,11,2,4,6,8,10,12), c(2, 3, 2))
+typeof(x5)
+str(x5)
+is.double(x5)
+is.vector(x5)
+is.list(x5)
+is.matrix(x5)
+is.data.frame(x5)
+is.array(x5)
+x5[,,2]
+is.matrix(x5[,,2])
+x5[,,2][1,3]
+x5[1,3,2]
+x5[,,2][1:3]
+is.vector(x5[,,2][1:3])
