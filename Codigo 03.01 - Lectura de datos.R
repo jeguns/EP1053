@@ -8,6 +8,7 @@ datos01 = read.table("Datos 03.01 - A.txt", header=TRUE)
 datos01
 View(datos01)
 head(datos01) 
+datos01 = read.delim("Datos 03.01 - A.txt", header=TRUE)
 
 datos02 = read.table("Datos 03.01 - B.txt", header = TRUE) # ERROR
 
@@ -62,13 +63,17 @@ datos09 = read_excel("Datos 03.01 - I.xlsx")
 datos10 = read_excel("Datos 03.01 - J.xlsx", 
                      sheet = "POSITIVIDAD_10082020",
                      range = "A1:D5")
+head(datos10)
+View(datos10)
 
 datos11 = read_excel("Datos 03.01 - K.xls", 
                      sheet = "CASOS_10082020",
                      n_max = 2)
+head(datos11)
 
 datos12 = read_excel("Datos 03.01 - L.xlsx", 
                      sheet = "CASOS_10082020",
-                     skip  = 3,
+                     skip  = 4,
                      col_names = c("País", "Región", "Moleculares", "Rápidas", "Positivos", "Fallecidos"))
 
+View(datos12)
