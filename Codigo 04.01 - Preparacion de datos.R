@@ -99,12 +99,55 @@ MOROSOS
 # Si la fecha fuese por ejemplo 05-08-2020, tendríamos que colocar en formato "%d-%m-%Y"
 # Si la fecha fuese por ejemplo 2020.08.05, tendríamos que colocar en formato "%Y.%m.%d"
 
+# Manipulando fechas
+
+Sys.Date()
+Sys.time()
+
+library(lubridate)
+today()
+today(tz = "America/Lima")
+today(tz = "US/Hawaii")
+today(tz = "Etc/GMT-5")
+today(tz = "Australia/Eucla")
+OlsonNames()
+
+ymd("2020-09-04")
+ymd("2020-Sep-04")
+dmy("04-Sep-2020")
+
+make_datetime(2020,09,04)
+make_datetime(day=04,month=09,year=2020)
+make_datetime(2020,09,04,11)
+make_datetime(2020,09,04,11,25)
+make_datetime(2020,09,04,11,25,40,tz="America/Lima") -> a
+
+year(a)
+month(a)
+mday(a) # día del mes
+yday(a) # día del año
+366-yday(today())
+wday(a) # día de la semana
+
 # Aplicación 4: Empleados
 
 empleados = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Empleados")
 areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
-empleados %>% inner_join(areas)
-empleados %>% left_join(areas)
-empleados %>% right_join(areas)
-empleados %>% full_join(areas)
+inner_join(empleados,areas)
+empleados %>% inner_join(areas) %>% View()
+
+# empleados %>%
+#   mutate(UBICACION = ifelse(AREA=="Marketing","San Isidro",
+#                             ifelse(AREA=="Finanzas","Lima","Otro"))) %>%
+#   mutate(JEFE = "ABC") %>%
+#   View()
+
+left_join(empleados,areas) %>% View()
+empleados %>% left_join(areas) %>% View()
+
+empleados %>% right_join(areas) %>% View()
+
+empleados %>% full_join(areas) %>% View()
+
+
