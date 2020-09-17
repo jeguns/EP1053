@@ -1,12 +1,16 @@
 library(magrittr)
 library(dplyr)
 library(modeest)
+library(sjstats)
 
 # ----------------------- #
 # MEDIDAS DE VARIABILIDAD #
 # ----------------------- #
 
 # Ejemplo introductorio
+
+x = c(12,11,12,13,12,12,13,12,12,11,12,12)
+z = c(0,0,1,1,2,2,1,2,1,0,3,2)
 
 Rango = function(s){max(s)-min(s)}
 Rango(x);Rango(z)
@@ -39,8 +43,8 @@ BONO %>%
 
 BONO %>% 
   filter(DE_DEPARTAMENTO=="CUSCO") %>% 
-  summarise(CV = sd(PERSONAS_HOGAR)/mean(PERSONAS_HOGAR)*100) 
+  summarise(CV = cv(PERSONAS_HOGAR)*100) 
 
 BONO %>% 
   filter(DE_DEPARTAMENTO=="LAMBAYEQUE") %>% 
-  summarise(DESV = sd(PERSONAS_HOGAR)/mean(PERSONAS_HOGAR)*100)
+  summarise(DESV = cv(PERSONAS_HOGAR)*100)
