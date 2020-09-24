@@ -18,6 +18,7 @@ Rango(x);Rango(z)
 IQR(x);IQR(z)
 var(x);var(z)
 sd(x);sd(z)
+cv(x);cv(z)
 
 # Aplicación BONOS
 
