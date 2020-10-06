@@ -54,3 +54,6 @@ BONO %>%
 BONO %>% 
   filter(DE_DEPARTAMENTO=="LAMBAYEQUE") %>% 
   summarise(CV = cv(PERSONAS_HOGAR)*100)
+
+
+
