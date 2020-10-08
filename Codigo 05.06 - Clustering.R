@@ -37,7 +37,7 @@ distancias = daisy(datos2, metric = c("gower"))
 distancias %>% round(2)
 
 datos2 %>% 
-  slice(2,14) %>% 
+  slice(31,33) %>% 
   View
 
 clustering = diana(as.matrix(distancias), diss = TRUE, keep.diss = TRUE)
@@ -45,7 +45,7 @@ clustering = diana(as.matrix(distancias), diss = TRUE, keep.diss = TRUE)
 plot(clustering, main = "Divisive", which.plots = 2)
 rect.hclust(clustering , k = 3, border = c("red","blue","forestgreen"))
 
-fviz_dend(clustering, cex = 1, lwd = 1.5, k = 4, palette = "jco") 
+fviz_dend(clustering, cex = 1, lwd = 1.5, k = 3, palette = "jco") 
 
 clusters = cutree(clustering, k = 3)
 
@@ -62,4 +62,13 @@ grafico = function(x){
   geom_text(position = position_stack(vjust = 0.5))}
 
 grafico(DISENOS)
+grafico(MARCAS)
+grafico(PRECIO)
+grafico(FOTOS)
+grafico(FB)
+grafico(SEXO)
+grafico(ZONA)
 
+j = 1
+for(i in 1:10){j=j+1}
+j

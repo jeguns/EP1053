@@ -56,19 +56,20 @@ datos1 %>% select(Participacion) %>% table()
 datos1 %>% select(Adicional) %>% table()
 datos1 %>% select(Modalidad) %>% table()     # Reordenar categorías
 datos1 %>% select(Horario) %>% table()
-datos1 %>% select(Dispositivo) %>% table()   # Unir categorías
-datos1 %>% select(Distracciones) %>% table() # Variable no informativa
+datos1 %>% group_by(Dispositivo) %>% count() # Unir categorías
+datos1 %>% select(Distracciones) %>% table() 
 datos1 %>% select(Deportes) %>% table()      # Reordenar categorías
 datos1 %>% select(Preparacion) %>% table()   # Variable no informativa
 datos1 %>% select(Opcion) %>% table()
 datos1 %>% select(Carrera) %>% table()       # Recodificar
 
 datos1 = datos1 %>% 
-  select(-Preparacion,-Distracciones) %>% 
+  select(-Preparacion) %>% 
   mutate(Modalidad   = factor(Modalidad, levels = c("Individual", "En pares", "Grupal (3 a más personas)"))) %>%
   mutate(Dispositivo = fct_collapse(Dispositivo, Otros = c("Tablet","Teléfono"))) %>% 
   mutate(Deportes    = factor(Deportes, levels = c("Nunca","Una o dos veces por semana","Interdiario","Diariamente"))) %>% 
-  mutate(Carrera     = ifelse(Carrera %in% c("no","No","No, me gusta la carrera que elegí ."),"No",
+  mutate(Carrera     = ifelse(Carrera %in% c("no","No","No, me gusta la carrera que elegí .", 
+                                             "Lo estaba considerando pero me esta empezando a gustar mucho la carrera "),"No",
                                ifelse(Carrera %in% c("si","sí","Si","Sí","SI","SÍ"),"Si",""))) 
 
 datos1 %>% View
@@ -77,18 +78,21 @@ datos1 %>% View
 # ANÁLISIS EXPLORATORIO #
 # --------------------- #
 
-chart.Correlation(datos1[,-c(7,8,9,11,13,15,16)])
-ggpairs(datos1)
+datos1 %>% 
+  select(Nota, Desempeno, Dificultad, Inasistencias, Ansiedad, Conexion, Sueno, Cursos) %>% 
+  chart.Correlation()
 
-boxplot(Nota ~ Adicional)
+datos1 %>% ggpairs()
+
+boxplot(datos1$Nota ~ datos1$Adicional)
 attach(datos1)
 boxplot(Nota ~ Adicional)
 boxplot(Nota ~ Modalidad)
-boxplot(Nota ~ Horario) # sin diferencias 
+boxplot(Nota ~ Horario) # sin diferencias # no la usaremos en el modelo
 boxplot(Nota ~ Dispositivo)
 boxplot(Nota ~ Deportes)
-boxplot(Nota ~ Opcion)
-boxplot(Nota ~ Carrera) # sin diferencias?
+boxplot(Nota ~ Opcion) # Sin diferencias
+boxplot(Nota ~ Carrera) # sin diferencias
 
 # ------------ #
 # MODELAMIENTO #
@@ -118,4 +122,6 @@ datos1 %>% select(Nota,Desempeno,Ansiedad) %>% ggpairs()
 nuevo = data.frame(Desempeno = c(5,5,2,2),
                    Ansiedad  = c(5,2,5,2))
 modelo4 %>% predict(nuevo)
+
+# + Visualización
 
