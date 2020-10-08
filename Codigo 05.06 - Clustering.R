@@ -45,16 +45,16 @@ clustering = diana(as.matrix(distancias), diss = TRUE, keep.diss = TRUE)
 plot(clustering, main = "Divisive", which.plots = 2)
 rect.hclust(clustering , k = 3, border = c("red","blue","forestgreen"))
 
-fviz_dend(divisive.clust, cex = 1, lwd = 1.5, k = 4, palette = "jco") 
+fviz_dend(clustering, cex = 1, lwd = 1.5, k = 4, palette = "jco") 
 
-clusters <- cutree(divisive.clust, k = 3)
+clusters = cutree(clustering, k = 3)
 
 datos2 = datos2 %>% 
   mutate(CLUSTER = clusters)
 
 grafico = function(x){
   x = enquo(x)
-datos2 %>% 
+  datos2 %>% 
   group_by(CLUSTER,!! x) %>% 
   count() %>% 
   ggplot(aes(CLUSTER, n, fill = !! x, label = n)) +

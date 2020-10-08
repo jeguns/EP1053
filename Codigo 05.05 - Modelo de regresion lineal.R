@@ -3,6 +3,7 @@ library(dplyr)
 library(PerformanceAnalytics)
 library(ggplot2)
 library(GGally)
+library(forcats)
 
 # Fecha_Hora 
 # Nota -> Cuantitativa continua
@@ -79,6 +80,7 @@ datos1 %>% View
 chart.Correlation(datos1[,-c(7,8,9,11,13,15,16)])
 ggpairs(datos1)
 
+boxplot(Nota ~ Adicional)
 attach(datos1)
 boxplot(Nota ~ Adicional)
 boxplot(Nota ~ Modalidad)
@@ -97,17 +99,23 @@ modelo1 = lm(formula = Nota ~ Desempeno + Ansiedad + Adicional + Modalidad + Dis
 summary(aov(modelo1))
 summary(modelo1)
 
-modelo2 = lm(Nota ~ Desempeno + Ansiedad + Dispositivo + Deportes, data = datos1)
+modelo2 = lm(Nota ~ Desempeno + Ansiedad + Modalidad + Dispositivo + Deportes, data = datos1)
 summary(aov(modelo2))
 summary(modelo2)
-datos1 %>% select(Nota,Desempeno,Ansiedad,Dispositivo,Deportes) %>% ggpairs
+datos1 %>% select(Nota,Desempeno,Ansiedad,Modalidad,Dispositivo,Deportes) %>% ggpairs
 
-modelo3 = lm(Nota ~ Desempeno + Ansiedad, data = datos1)
+modelo3 = lm(Nota ~ Desempeno + Ansiedad + Dispositivo + Deportes, data = datos1)
 summary(aov(modelo3))
 summary(modelo3)
+datos1 %>% select(Nota,Desempeno,Ansiedad,Dispositivo,Deportes) %>% ggpairs()
+
+
+modelo4 = lm(Nota ~ Desempeno + Ansiedad, data = datos1)
+summary(aov(modelo4))
+summary(modelo4)
 datos1 %>% select(Nota,Desempeno,Ansiedad) %>% ggpairs()
 
 nuevo = data.frame(Desempeno = c(5,5,2,2),
                    Ansiedad  = c(5,2,5,2))
-modelo3 %>% predict(nuevo)
+modelo4 %>% predict(nuevo)
 
