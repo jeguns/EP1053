@@ -189,15 +189,34 @@ x4$var2[3]
 
 # ARRAY o ARREGLO
 
-(A1 = c(1,3,4,10,10,20,2,1));str(A1)
-(B1 = array(c(1,3,4,10,10,20,2,1), dim = c(8))); str(B1)
-(C1 = array(c(1,3,4,10,10,20,2,1), dim = c(1,8))); str(B1)
-(D1 = array(c(1,3,4,10,10,20,2,1), dim = c(8,1))); str(C1)
-(E1 = array(c(1,3,4,10,10,20,2,1), dim = c(2,4))); str(D1)
-(F1 = array(c(1,3,4,10,10,20,2,1), dim = c(2,2,2)));str(E1)
-(G1 = array(matrix(c(1,3,4,10,10,20,2,1)),dim=c(2,2,2)));str(F1)
-(H1 = array(matrix(c(1,3,4,10,10,20,2,'1'),ncol=2),dim=c(2,2,2)));str(G1)
-x5[,,2]
-is.matrix(x5[,,2])
-x5[,,2][1,3]
-is.vector(x5[,,2][1,3])
+(A1 = c(1,3,4,10,10,20,2,1))
+str(A1)
+(B1 = array(c(1,3,4,10,10,20,2,1), dim = c(8)))
+str(B1)
+(C1 = array(c(1,3,4,10,10,20,2,1), dim = c(1,8)))
+str(C1)
+is.matrix(C1)
+is.array(C1)
+(D1 = array(c(1,3,4,10,10,20,2,1), dim = c(8,1)))
+str(D1)
+is.matrix(D1)
+is.array(D1)
+(E1 = array(c(1,3,4,10,10,20,2,1), dim = c(2,4)))
+str(E1)
+is.matrix(E1)
+is.array(E1)
+(F1 = array(c(1,3,4,10,10,20,2,1), dim = c(2,2,2)))
+str(F1)
+(G1 = array(matrix(c(1,3,4,10,10,20,2,1)),dim=c(2,2,2)))
+str(G1)
+(H1 = array(matrix(c(1,3,4,10,10,20,2,'1'),ncol=2),dim=c(2,2,2)))
+str(H1)
+G1[1,,]
+G1[,1,]
+G1[,,1]
+is.matrix(G1[,,1])
+G1[1,2,2]
+G1[,,2][1,2]
+is.vector(G1[,,2][1,2])
+G1[,,-2]
+G1[,-1,]
