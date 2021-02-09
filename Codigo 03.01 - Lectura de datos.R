@@ -8,11 +8,10 @@ datos01 = read.table("Datos 03.01 - A.txt", header=TRUE)
 datos01
 View(datos01)
 head(datos01) 
-datos01 = read.delim("Datos 03.01 - A.txt", header=TRUE)
 
 datos02 = read.table("Datos 03.01 - B.txt", header = TRUE) # ERROR
 
-datos02 = read.table("Datos 03.01 - B.txt", header = TRUE, skip = 2)
+datos02 = read.table("Datos 03.01 - B.txt", header = TRUE, skip = 3)
 head(datos02)
 
 datos03 = read.table("Datos 03.01 - C.txt", 
@@ -27,7 +26,7 @@ datos04 = read.table("Datos 03.01 - D.txt",
 datos04[6,] # 6ta fila
 datos04[,2] # 2da columna
 datos04[6,2] # dato de la 6ta fila y 2da columna
-datos04$Muestra # columna Muestra
+datos04$Pruebas # columna Pruebas
 
 datos05 = read.table("Datos 03.01 - E.txt", header = TRUE)
 head(datos05)
@@ -49,6 +48,11 @@ datos08 = read.table("Datos 03.01 - H.csv", header = TRUE, sep = ";")
 datos08 = read.csv("Datos 03.01 - H.csv", sep = ";")
 datos08 = read.csv2("Datos 03.01 - H.csv")
 
+install.packages("readr")
+library(readr)
+datos07_ = read_csv("Datos 03.01 - G.csv", locale = locale(encoding = "Latin1"))
+datos08_ = read_csv2("Datos 03.01 - H.csv", locale = locale(encoding = "Latin1"))
+
 # Lectura de datos - Archivos xlsx
 
 # Necesitamos instalar y cargar el paquete readxl
@@ -67,13 +71,12 @@ head(datos10)
 View(datos10)
 
 datos11 = read_excel("Datos 03.01 - K.xls", 
-                     sheet = "CASOS_10082020",
+                     sheet = "CASOS_08022021",
                      n_max = 2)
 head(datos11)
 
 datos12 = read_excel("Datos 03.01 - L.xlsx", 
-                     sheet = "CASOS_10082020",
+                     sheet = "CASOS_08022021",
                      skip  = 4,
-                     col_names = c("País", "Región", "Moleculares", "Rápidas", "Positivos", "Fallecidos"))
-
+                     col_names = c("País", "Región", "Moleculares", "Rápidas", "Antígenos","Positivos", "Fallecidos"))
 View(datos12)

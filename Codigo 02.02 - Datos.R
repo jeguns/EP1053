@@ -189,7 +189,9 @@ x4$var2[3]
 
 # ARRAY o ARREGLO
 
-(A1 = c(1,3,4,10,10,20,2,1))
+c(1,3,4,10,10,20,2,1) # declarar
+A1 = c(1,3,4,10,10,20,2,1) # declara y asigna
+(A1 = c(1,3,4,10,10,20,2,1)) # declara, asigna e imprime
 str(A1)
 (B1 = array(c(1,3,4,10,10,20,2,1), dim = c(8)))
 str(B1)
@@ -220,3 +222,8 @@ G1[,,2][1,2]
 is.vector(G1[,,2][1,2])
 G1[,,-2]
 G1[,-1,]
+
+
+Nombres = c("A","B","C","D")
+sample(Nombres,1)
+
