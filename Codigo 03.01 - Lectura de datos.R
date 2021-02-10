@@ -4,7 +4,7 @@
 
 # Lectura de datos - Archivos txt
 
-datos01 = read.table("Datos 03.01 - A.txt", header=TRUE)
+(datos01 = read.table("Datos 03.01 - A.txt", header=TRUE))
 datos01
 View(datos01)
 head(datos01) 
@@ -17,7 +17,8 @@ head(datos02)
 datos03 = read.table("Datos 03.01 - C.txt", 
                      header    = FALSE, 
                      col.names = c("Pruebas","Resultado positivo"),
-                     na.strings = "*")
+                     na.strings = c("*","?"),
+                     skip = 1)
 
 datos04 = read.table("Datos 03.01 - D.txt", 
                     header     = TRUE,
@@ -34,8 +35,8 @@ head(datos05)
 datos05 = read.table("Datos 03.01 - E.txt", header = TRUE, row.names = 1)
 head(datos05)
 
-datos06 = read.table("Datos 03.01 - F.txt", header = TRUE, sep = "\t")
-datos06 = read.delim("Datos 03.01 - F.txt", header = TRUE)
+datos06 = read.table("Datos 03.01 - F.txt", header = TRUE, sep = "\t", skip=1)
+datos06 = read.delim("Datos 03.01 - F.txt", header = TRUE, skip = 1)
 
 # Lectura de datos - Archivos csv
 
@@ -48,10 +49,13 @@ datos08 = read.table("Datos 03.01 - H.csv", header = TRUE, sep = ";")
 datos08 = read.csv("Datos 03.01 - H.csv", sep = ";")
 datos08 = read.csv2("Datos 03.01 - H.csv")
 
-install.packages("readr")
-library(readr)
+install.packages("readr") # instalando el paquete readr
+library(readr) # llamando, cargando o activando el paquete readr
 datos07_ = read_csv("Datos 03.01 - G.csv", locale = locale(encoding = "Latin1"))
 datos08_ = read_csv2("Datos 03.01 - H.csv", locale = locale(encoding = "Latin1"))
+mean(datos07[,3])
+
+# También se tiene read_tsv (similar a read.delim)
 
 # Lectura de datos - Archivos xlsx
 
