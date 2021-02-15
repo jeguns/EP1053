@@ -52,8 +52,12 @@ datos08 = read.csv2("Datos 03.01 - H.csv")
 install.packages("readr") # instalando el paquete readr
 library(readr) # llamando, cargando o activando el paquete readr
 datos07_ = read_csv("Datos 03.01 - G.csv", locale = locale(encoding = "Latin1"))
+datos07_ = read_csv("Datos 03.01 - G.csv")
 datos08_ = read_csv2("Datos 03.01 - H.csv", locale = locale(encoding = "Latin1"))
 mean(datos07[,3])
+
+datos_07 = read.csv("Datos 03.01 - G.csv")
+datos_07 = read.csv("Datos 03.01 - G.csv", encoding = "latin1")
 
 # También se tiene read_tsv (similar a read.delim)
 
@@ -65,8 +69,11 @@ install.packages("readxl")
 library(readxl) 
 
 datos09 = read_xlsx("Datos 03.01 - I.xlsx")
-datos09 = read_xls("Datos 03.01 - I.xlsx")
+datos09_ = read_xls("Datos 03.01 - I.xls")
 datos09 = read_excel("Datos 03.01 - I.xlsx")
+
+# install.packages("openxlsx")
+# library(openxlsx) # función read.xlsx
 
 datos10 = read_excel("Datos 03.01 - J.xlsx", 
                      sheet = "POSITIVIDAD_10082020",
