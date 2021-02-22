@@ -11,8 +11,9 @@ x %>% sum()
 y = "Jueves 3"
 is.logical(y)
 y %>% is.logical()
-y %>% is.logical() %>% as.numeric()
+y %>% is.logical() %>% as.numeric() 
 as.numeric(is.logical(y))
+
 
 # ----------------- #
 # Limpieza de datos #
@@ -65,7 +66,7 @@ datos41B %>% select(-X) # Columnas a eliminar
 (datos41C = datos41B %>% select(-X))
 (datos41B %>% select(-X) -> datos41C)
 
-datos41C %>% filter(Nota>=0 & Nota<=20)
+datos41C %>% filter(Nota>=0 & Nota<=20) # O: | (Alt 124)
 
 datos41C %>% filter(!Nota<0 & !Nota>20)
 
@@ -78,7 +79,7 @@ datos41C %>%
   filter(Edad>=18 & Edad<=59) %>% 
   filter(NumCred>0)
 
-filter(filter(filter(datos41B,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
+filter(filter(filter(datos41C,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
 
 datos41B = read.csv2("Datos 04.01 - B.csv")
 
@@ -100,15 +101,25 @@ Sys.time()
 
 library(lubridate)
 today()
+now()
 OlsonNames()
 today(tz = "America/Lima")
+now(tz = "America/Lima")
 today(tz = "US/Hawaii")
+now(tz = "US/Hawaii")
 today(tz = "Etc/GMT-5")
+now(tz = "Etc/GMT-5")
+today(tz = "Etc/GMT+5") # LIMA
+now(tz = "Etc/GMT+5")
 today(tz = "Australia/Eucla")
+now(tz = "Australia/Eucla")
 
 ymd("2020-09-04")
 ymd("2020-Sep-04")
 dmy("04-Sep-2020")
+dmy("04-09-2020")
+as.Date("04-09-2020",format=c("%d-%m-%Y"))
+as.Date("04-Sep-2020",format=c("%d-%m-%Y")) # no reconoce Sep
 
 make_datetime(2020,09,04)
 make_datetime(day=04,month=09,year=2020)
@@ -120,8 +131,22 @@ year(a)
 month(a)
 mday(a) # día del mes
 yday(a) # día del año
-366-yday(today())
-wday(a) # día de la semana
+yday(today())
+today() %>% yday()
+365-yday(today())
+wday(a) # día de la semana asumiendo que comienza en domingo
+wday(a, week_start = 1) # día de la semana asumiendo que comienza en lunes
+
+wday(today())
+today() %>% wday()
+
+wday(today(),  week_start = 1)
+today() %>% wday(week_start = 1)
+
+quarter(today())
+today() %>% quarter()
+
+now() %>% pm()
 
 # --------------------------------- #
 # Aplicación 3: Tarjetas de crédito #
