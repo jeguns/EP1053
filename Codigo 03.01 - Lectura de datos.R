@@ -17,9 +17,10 @@ head(datos02)
 datos03 = read.table("Datos 03.01 - C.txt", 
                      header    = FALSE, 
                      col.names = c("Pruebas","Resultado positivo"),
-                     na.strings = c("*","?"),
+                     na.strings = "*",
                      skip = 1)
 
+read_csv(......... , na = c("*","."))
 datos04 = read.table("Datos 03.01 - D.txt", 
                     header     = TRUE,
                     nrows      = 10, 
@@ -59,6 +60,7 @@ mean(datos07[,3])
 datos_07 = read.csv("Datos 03.01 - G.csv")
 datos_07 = read.csv("Datos 03.01 - G.csv", encoding = "latin1")
 
+?read_csv
 # También se tiene read_tsv (similar a read.delim)
 
 # Lectura de datos - Archivos xlsx
@@ -81,10 +83,10 @@ datos10 = read_excel("Datos 03.01 - J.xlsx",
 head(datos10)
 View(datos10)
 
-datos11 = read_excel("Datos 03.01 - K.xls", 
-                     sheet = "CASOS_08022021",
+datos11_ = read_excel("Datos 03.01 - K.xls", 
+                     sheet = 1,
                      n_max = 2)
-head(datos11)
+head(datos11_)
 
 datos12 = read_excel("Datos 03.01 - L.xlsx", 
                      sheet = "CASOS_08022021",
