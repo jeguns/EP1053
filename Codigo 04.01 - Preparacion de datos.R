@@ -178,7 +178,6 @@ MOROSOS
 # Aplicación 4: Empleados #
 # ----------------------- #
 
-
 empleados = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Empleados")
 areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
