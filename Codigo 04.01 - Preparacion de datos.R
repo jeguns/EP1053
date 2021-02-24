@@ -160,16 +160,26 @@ datos41D = read.delim("Datos 04.01 - C.txt", encoding = "UTF-8")
 
 library(lubridate) # lubridate sirve para el manejo de fechas
 
+# las líneas 167 y 168 son equivalentes a la línea 165
+
+rename(datos41D, TIPO_TARJETA = 5)
+
 datos41D %>% 
+  rename(TIPO_TARJETA = 5) %>% 
   mutate(NOMBRE_COMPLETO = paste(NOMBRES,APELLIDOS)) %>% 
-  mutate(MONTO_USD = MONTO_SOLES/3.54) %>% 
-  mutate(TIEMPO = as.Date(FECHA_PAGO1,format=c("%d/%m/%Y"))-as.Date(FECHA_COMPRA,format=c("%d/%m/%Y"))) %>% 
-  mutate(MES = month(as.Date(FECHA_COMPRA,format=c("%d/%m/%Y")))) %>% 
+  mutate(MONTO_USD = MONTO_SOLES/3.64) %>% 
+  mutate(FECHA_PAGO1  = as.Date(FECHA_PAGO1,format=c("%d/%m/%Y"))) %>% 
+  mutate(FECHA_COMPRA = as.Date(FECHA_COMPRA,format=c("%d/%m/%Y"))) %>% 
+  mutate(TIEMPO = FECHA_PAGO1 - FECHA_COMPRA) %>% 
+  mutate(MES    = month(FECHA_COMPRA)) %>% 
   filter(MES == 1) %>% 
   filter(TIEMPO > 30) %>% 
   select(NOMBRE_COMPLETO, MONTO_USD, TIEMPO) -> MOROSOS
 
 MOROSOS
+
+rownames(datos41D)[4] = "Fila4"
+rownames(datos41D)
 
 # Si la fecha fuese por ejemplo 05-08-2020, tendríamos que colocar en formato "%d-%m-%Y"
 # Si la fecha fuese por ejemplo 2020.08.05, tendríamos que colocar en formato "%Y.%m.%d"
@@ -181,24 +191,25 @@ MOROSOS
 empleados = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Empleados")
 areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
+empleados$FECHA_NACIMIENTO %>% str()
 empleados %>% 
   mutate(FNAC = as.Date(FECHA_NACIMIENTO)) -> empleados
-empleados$FECHA_NACIMIENTO %>% str()
 empleados$FNAC %>% str()
 
 empleados %>% 
+  mutate(EDAD = as.numeric(floor((today()-FNAC)/365)) )
+
+empleados %>% 
   mutate(FNAC = as.Date(FECHA_NACIMIENTO),
-         MNAC = month(FECHA_NACIMIENTO),
-         EDAD = ((today()-FNAC)/365) %>% 
-           round(0) %>% 
-           as.numeric()) %>% 
+         MNAC = month(FNAC),
+         EDAD = ((today()-FNAC)/365) %>% floor() %>% as.numeric()) %>% 
   select(-FECHA_NACIMIENTO) -> empleados
 
 inner_join(empleados,areas) 
 empleados %>% inner_join(areas)
 empleados %>% inner_join(areas) -> datos_total
 
-left_join(empleados,areas) %>% View()
+View(left_join(empleados,areas))
 empleados %>% left_join(areas) %>% View()
 
 empleados %>% right_join(areas) %>% View()
