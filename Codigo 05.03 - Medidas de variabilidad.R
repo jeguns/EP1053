@@ -20,40 +20,51 @@ var(x);var(z)
 sd(x);sd(z)
 cv(x);cv(z)
 
-# Aplicación BONOS
+# Aplicación VACUNAS
 
-BONO = read.csv2("bono_Independiente_trabajaperu.csv")
-BONO %>% View()
+Vacunas = read_csv("vacunas_covid_2021-03-16.csv")
 
-BONO = BONO %>% 
-  select(DE_DEPARTAMENTO,PERSONAS_HOGAR,MONTO,BONO_COBRADO,ENTIDAD_COBRO,MEDIO_COBRO)
+Vacunas %>% 
+  mutate(GRUPO_RIESGO     = GRUPO_RIESGO %>% as.factor,
+         SEXO             = SEXO %>% as.factor,
+         FABRICANTE       = FABRICANTE %>% as.factor,
+         DIRESA           = DIRESA %>% as.factor,
+         DEPARTAMENTO     = DEPARTAMENTO %>% as.factor,
+         PROVINCIA        = PROVINCIA %>% as.factor,
+         DISTRITO         = DISTRITO %>% as.factor,
+         FECHA_CORTE      = FECHA_CORTE %>% ymd,
+         FECHA_VACUNACION = FECHA_VACUNACION %>% ymd,
+         DIASDESDE        = (today()-FECHA_VACUNACION) %>% as.numeric,
+         DOSIS            = DOSIS %>%  as.factor %>% fct_recode(Primera="1",Segunda="2")) -> VacunasOK
 
-BONO %>% 
-  summarise(R = Rango(PERSONAS_HOGAR)) -> RANGO 
+VacunasOK %>% 
+  filter(!is.na(EDAD)) %>% 
+  summarise(R = Rango(EDAD)) 
 
-BONO %>% 
-  summarise(RIC = IQR(PERSONAS_HOGAR)) -> RANGO.INTERCUARTIL
+VacunasOK %>% 
+  filter(!is.na(EDAD)) %>% 
+  summarise(RIC = IQR(EDAD)) 
 
-BONO %>% 
-  filter(DE_DEPARTAMENTO=="CUSCO") %>% 
-  summarise(DESV = sd(PERSONAS_HOGAR)) -> DESVE.CUSCO
+VacunasOK %>% 
+  filter(DEPARTAMENTO=="CUSCO") %>% 
+  summarise(DESV = sd(EDAD,na.rm=TRUE)) -> DESVE.CUSCO
 
-BONO %>% 
-  filter(DE_DEPARTAMENTO=="LAMBAYEQUE") %>% 
-  summarise(DESV = sd(PERSONAS_HOGAR)) -> DESVE.LAMB
+VacunasOK %>% 
+  filter(DEPARTAMENTO=="LAMBAYEQUE") %>% 
+  summarise(DESV = sd(EDAD,na.rm=TRUE)) -> DESVE.LAMB
 
-BONO %>% 
-  filter(DE_DEPARTAMENTO %in% c("CUSCO","LAMBAYEQUE")) %>% 
-  group_by(DE_DEPARTAMENTO) %>% 
-  summarise(DESV = sd(PERSONAS_HOGAR)) -> DESVE
+VacunasOK %>% 
+  filter(DEPARTAMENTO %in% c("CUSCO","LAMBAYEQUE")) %>% 
+  group_by(DEPARTAMENTO) %>% 
+  summarise(DESV = sd(EDAD,na.rm=T)) -> DESVE
 
-BONO %>% 
-  filter(DE_DEPARTAMENTO=="CUSCO") %>% 
-  summarise(CV = cv(PERSONAS_HOGAR)*100) 
+VacunasOK %>% 
+  filter(DEPARTAMENTO=="CUSCO") %>% 
+  summarise(CV = cv(EDAD)*100) 
 
-BONO %>% 
-  filter(DE_DEPARTAMENTO=="LAMBAYEQUE") %>% 
-  summarise(CV = cv(PERSONAS_HOGAR)*100)
+VacunasOK %>% 
+  filter(DEPARTAMENTO=="LAMBAYEQUE") %>% 
+  summarise(CV = cv(EDAD)*100)
 
 
 
