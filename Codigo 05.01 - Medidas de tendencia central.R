@@ -68,7 +68,8 @@ mean(VacunasOK$EDAD)
 
 mean(VacunasOK$EDAD, na.rm = TRUE)
 
-VacunasOK$EDAD %>% mean(na.rm = TRUE)
+VacunasOK$EDAD %>% 
+  mean(na.rm = TRUE) # esta línea es equivalente a la que la precede
 
 VacunasOK %>% 
   summarise(mean(EDAD,na.rm = TRUE))
@@ -90,10 +91,17 @@ VacunasOK %>%
 
 VacunasOK %>% 
   filter(DEPARTAMENTO == "AREQUIPA") %>% 
+  summarise(MODA_AREQUIPA2 = mfv(GRUPO_RIESGO,na_rm = TRUE))
+
+VacunasOK %>% 
+  filter(DEPARTAMENTO == "AREQUIPA") %>% 
   summarise(MEDIA_AREQUIPA = mean(EDAD,na.rm = TRUE),
             MEDIANA_AREQUIPA = median(EDAD,na.rm = TRUE),
             MODA_AREQUIPA = mfv(EDAD,na_rm = TRUE))
 
-
-
+VacunasOK %>% 
+  group_by(DEPARTAMENTO) %>% 
+  summarise(MEDIA   = mean(EDAD,na.rm = TRUE),
+            MEDIANA = median(EDAD,na.rm = TRUE),
+            MODA    = mfv(EDAD,na_rm = TRUE)) -> Resultados
   
