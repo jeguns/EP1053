@@ -76,3 +76,5 @@ VacunasOK %>%
   group_by(DEPARTAMENTO) %>% 
   summarise(CV = cv(EDAD)*100)
 
+library(skimr)
+skim(VacunasOK)
