@@ -194,7 +194,7 @@ x3[1,2]
 x3[2,]
 x3[,2]
 
-y3 = matrix(c(7,TRUE,5,8,1,2),nrow=3,ncol=2)
+(y3 = matrix(c(7,TRUE,5,8,1,2),ncol=2))
 typeof(y3)
 str(y3)
 is.double(y3)
@@ -205,4 +205,29 @@ y3[3,1]
 y3[2,]
 y3[,2]
 y3[c(1,3),2]
+y3[1:3,2]
 
+var1 = c(4,5,3,5,3)
+(x4 = data.frame(var1, var2= c('1','3','66','12','15')))
+typeof(x4)
+str(x4)
+is.double(x4)
+is.vector(x4)
+is.list(x4)
+is.matrix(x4)
+is.data.frame(x4)
+x4[1,2]
+x4[2,]
+x4[,2]
+x4$var1
+x4$var2[3]
+x4$var1[c(1,5)]
+x4$var2[-4]
+x4$var2
+str(x4$var2)
+# un data frame puede considerarse como una lista de 
+# vectores atómicos de la misma dimensión
+
+var1 = c(4,5,3,5,'3')
+(x4 = data.frame(var1, var2= c('1','3','66','12','15')))
+str(x4)
