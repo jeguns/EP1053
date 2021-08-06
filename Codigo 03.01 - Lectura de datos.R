@@ -8,6 +8,12 @@
 datos01
 View(datos01)
 head(datos01) 
+str(datos01)
+sum(datos01[,2]) # esto sería incorrecto, más adelante haremos limpieza
+as.character(datos01[,2])
+datos01[,2] = as.character(datos01[,2])
+datos01[,2]
+str(datos01)
 
 datos02 = read.table("Datos 03.01 - 02.txt", header = TRUE) # ERROR
 
