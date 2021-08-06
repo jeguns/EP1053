@@ -15,6 +15,8 @@ datos01[,2] = as.character(datos01[,2])
 datos01[,2]
 str(datos01)
 
+(datos001 = read.table("abc/Datos 03.01 - 01.txt", header=TRUE))
+
 datos02 = read.table("Datos 03.01 - 02.txt", header = TRUE) # ERROR
 
 datos02 = read.table("Datos 03.01 - 02.txt", header = TRUE, skip = 2)
