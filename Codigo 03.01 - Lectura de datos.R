@@ -96,19 +96,27 @@ install.packages("readxl")
 library(readxl) 
 
 datos10 = read_xlsx("Datos 03.01 - 10.xlsx")
+head(datos10)
+datos10 = NULL
 datos10 = read_xls("Datos 03.01 - 10.xls")
 datos10 = read_excel("Datos 03.01 - 10.xlsx")
-
 
 datos11 = read_excel("Datos 03.01 - 11.xlsx", 
                      sheet = "TACNA",
                      range = "E1:G14")
 
-datos12 = read_excel("Datos 03.01 - 11.xlsx", 
+datos11C = read_excel("Datos 03.01 - 11.xlsx", 
+                     range = "TACNA!E1:G14")
+
+datos12 = read_xlsx("Datos 03.01 - 11.xlsx", 
                      sheet = 2,
                      n_max = 20)
 
 datos13 = read_excel("Datos 03.01 - 11.xlsx", 
                      sheet = "Puno",
-                     col_names = c("Fecha de corte", "UUID", "Grupo de riesgo", "Edad", "Sexo", "Fecha de vacunacion",
-                                   "Dosis", "Fabricante","DIRESA","Departamento","Provincia","Distrito"))
+                     col_names = c("Fecha de corte", "UUID",
+                                   "Grupo de riesgo", "Edad", "Sexo", 
+                                   "Fecha de vacunacion",
+                                   "Dosis", "Fabricante","DIRESA",
+                                   "Departamento","Provincia","Distrito"),
+                     skip = 1)
