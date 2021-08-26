@@ -1,0 +1,16 @@
+APELLIDOS	NOMBRES	FECHA_COMPRA	FECHA_PAGO1	TARJETA	MONTO_SOLES
+Ramirez Neyra	Pamela	3/01/2020	22/01/2020	Clasica	135.9
+Belaunde Loa	Andres Max	9/01/2020	21/02/2020	Clasica	804
+Velarde Villalba	Monica Natalia	29/01/2020	22/02/2020	Platino	752.3
+Burgos Rey	Enrique Jaime	15/02/2020	22/03/2020	Oro	818
+Contreras Reyes	Paola	30/03/2020	18/04/2020	Oro	38.4
+Albán Barreto	Claudia	15/04/2020	26/05/2020	Platino	637.1
+Málaga Marcelo	Mario Mauricio	19/02/2020	24/03/2020	Clasica	163.8
+Herrera Rosas	Adrián	15/01/2020	7/02/2020	Clasica	375.1
+Velarde Villalba	Monica Natalia	29/02/2020	3/04/2020	Platino	47.4
+Ramos Neyra	Carlos Manuel	19/03/2020	14/04/2020	Oro	811.9
+Lazo Quispe	Bryan Alvaro	17/01/2020	1/02/2020	Clasica	274.3
+García Castañeda	Juan Manuel	26/04/2020	29/05/2020	Clasica	90.5
+Soto Martinez	Juan Gilberto	3/05/2020	17/05/2020	Clasica	227.1
+Rojas Sanchez	Cristian Martín	8/06/2020	14/07/2020	Platino	208.1
+Vizcarra Revilla	Maria José	9/01/2020	7/02/2020	Oro	343.1
