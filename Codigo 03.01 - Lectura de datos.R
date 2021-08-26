@@ -120,3 +120,6 @@ datos13 = read_excel("Datos 03.01 - 11.xlsx",
                                    "Dosis", "Fabricante","DIRESA",
                                    "Departamento","Provincia","Distrito"),
                      skip = 1)
+
+datos14 = read_excel("Datos 03.01 - 12.xlsx",
+                     sheet = 'Puno') 
