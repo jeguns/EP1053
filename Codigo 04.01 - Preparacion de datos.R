@@ -1,5 +1,10 @@
 
+
 # CAPÍTULO 4: PREPARACIÓN DE DATOS
+
+
+# Introduccion ------------------------------------------------------------
+
 
 library(dplyr)
 library(magrittr)
@@ -15,9 +20,7 @@ y %>% is.logical() %>% as.numeric()
 as.numeric(is.logical(y))
 
 
-# ----------------- #
-# Limpieza de datos #
-# ----------------- #
+# Limpieza ----------------------------------------------------------------
 
 x = c(5,2.1,9,NA,4)
 
@@ -27,13 +30,18 @@ z <- sum(is.na(x))
 
 x %>% is.na()
 x %>% is.na() %>% sum()
-x %>% is.na() %>% sum() -> z
+x %>% is.na %>% sum -> z
+x %>% is.na %>% which
 
-# ATENCIÓN: El símbolo = es equivalente a <-, no es equivalente a ->
+y = data.frame(y1=c(1,2,3),y2=c(NA,NA,2))
+y %>% is.na %>% sum
+y %>% is.na %>% which
 
-# ------------------------ #
-# Aplicación 1: Biblioteca #
-# ------------------------ #
+# ATENCIÓN: El símbolo = es equivalente a <- o -> dependiendo
+# la posición del objeto 
+
+
+# Aplicación 1: Biblioteca ------------------------------------------------
 
 library(readxl)
 datos41A = read_excel("Datos 04.01 - A.xlsx")
@@ -51,9 +59,8 @@ datos41A$Editorial %>% is.na() %>% sum()
 m = datos41A[,3]; m %>% is.na() %>% sum()
 m = datos41A[,3]; sum(is.na(m))
 
-# --------------------------------- #
-# Aplicación 2: Alumnos de posgrado #
-# --------------------------------- #
+
+# Aplicación 2: Alumnos de posgrado ---------------------------------------
 
 # Con esta aplicación veremos un poco más acerca de datos perdidos,
 # así como el uso de filtros por filas (observaciones) y 
