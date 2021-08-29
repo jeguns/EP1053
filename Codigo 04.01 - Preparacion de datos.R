@@ -47,7 +47,7 @@ library(readxl)
 datos41A = read_excel("Datos 04.01 - A.xlsx")
 
 is.na(datos41A)
-datos41A %>% is.na()
+datos41A |>  is.na()
 
 sum(is.na(datos41A))
 datos41A %>% is.na() %>% sum()
@@ -56,8 +56,6 @@ datos41A %>% View()
 
 datos41A[,3] %>% is.na() %>% sum()
 datos41A$Editorial %>% is.na() %>% sum()
-m = datos41A[,3]; m %>% is.na() %>% sum()
-m = datos41A[,3]; sum(is.na(m))
 
 
 # Aplicación 2: Alumnos de posgrado ---------------------------------------
@@ -90,7 +88,7 @@ filter(filter(filter(datos41C,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
 
 datos41B = read.csv2("Datos 04.01 - B.csv")
 
-datos41B %>%
+datos41B |> 
   select(-X) %>% 
   filter(Nota>0 & Nota<20) %>% 
   filter(Edad>18 & Edad<90) %>% 
@@ -184,9 +182,6 @@ datos41D %>%
   select(NOMBRE_COMPLETO, MONTO_USD, TIEMPO) -> MOROSOS
 
 MOROSOS
-
-rownames(datos41D)[4] = "Fila4"
-rownames(datos41D)
 
 # Si la fecha fuese por ejemplo 05-08-2020, tendríamos que colocar en formato "%d-%m-%Y"
 # Si la fecha fuese por ejemplo 2020.08.05, tendríamos que colocar en formato "%Y.%m.%d"
