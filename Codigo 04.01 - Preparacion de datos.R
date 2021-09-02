@@ -47,16 +47,24 @@ library(readxl)
 datos41A = read_excel("Datos 04.01 - A.xlsx")
 
 is.na(datos41A)
-datos41A |>  is.na()
+datos41A |> is.na()
+datos41A %>% is.na()
 
 sum(is.na(datos41A))
 datos41A %>% is.na() %>% sum()
 
-datos41A %>% View()
-
 datos41A[,3] %>% is.na() %>% sum()
 datos41A$Editorial %>% is.na() %>% sum()
 
+library(janitor)
+tabyl(datos41A$Editorial)
+
+library(skimr)
+skim(datos41A)
+
+which(datos41A$Año == 2002)
+which(is.na(datos41A$Año))
+which(datos41A$Año == 2020)
 
 # Aplicación 2: Alumnos de posgrado ---------------------------------------
 
@@ -69,7 +77,7 @@ datos41B %>% View()
 datos41B %>% select(Nombre,Nota,Edad,NumCred) # Columnas a mantener
 datos41B %>% select(-X) # Columnas a eliminar
 (datos41C = datos41B %>% select(-X))
-(datos41B %>% select(-X) -> datos41C)
+(datos41B |> select(-X) -> datos41C)
 
 datos41C %>% filter(Nota>=0 & Nota<=20) # O: | (Alt 124)
 
@@ -81,7 +89,7 @@ datos41C %>% filter(NumCred>0)
 
 datos41C %>% 
   filter(Nota>=0 & Nota<=20) %>% 
-  filter(Edad>=18 & Edad<=59) %>% 
+  filter(Edad>=18 & Edad<=59) |>  
   filter(NumCred>0)
 
 filter(filter(filter(datos41C,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
@@ -89,10 +97,14 @@ filter(filter(filter(datos41C,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
 datos41B = read.csv2("Datos 04.01 - B.csv")
 
 datos41B |> 
+  filter(Edad>18 & Edad<90) %>% 
   select(-X) %>% 
   filter(Nota>0 & Nota<20) %>% 
-  filter(Edad>18 & Edad<90) %>% 
   filter(NumCred>0) -> datosOK
+
+datos41B |> 
+  filter(Edad>18 & Edad<90 & Nota>0 & Nota<20 & NumCred>0) %>% 
+  select(-X) 
 
 datos41B
 datosOK
