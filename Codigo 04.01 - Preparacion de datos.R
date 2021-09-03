@@ -220,29 +220,29 @@ MOROSOS
 # Si la fecha fuese por ejemplo 05-08-2020, tendríamos que colocar en formato "%d-%m-%Y"
 # Si la fecha fuese por ejemplo 2020.08.05, tendríamos que colocar en formato "%Y.%m.%d"
 
-# ----------------------- #
-# Aplicación 4: Empleados #
-# ----------------------- #
+
+# Aplicación 4 - Empleados ------------------------------------------------
 
 empleados = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Empleados")
 areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
-empleados$FECHA_NACIMIENTO %>% str()
-empleados %>% 
-  mutate(FNAC = as.Date(FECHA_NACIMIENTO)) -> empleados
-empleados$FNAC %>% str()
+# empleados$FECHA_NACIMIENTO %>% str()
+# empleados %>% 
+#   mutate(FNAC = as.Date(FECHA_NACIMIENTO)) -> empleados
+# empleados$FNAC %>% str()
+# 
+# empleados %>% 
+#   mutate(EDAD = as.numeric(floor((today()-FNAC)/365)))
 
 empleados %>% 
-  mutate(EDAD = as.numeric(floor((today()-FNAC)/365)) )
-
-empleados %>% 
-  mutate(FNAC = as.Date(FECHA_NACIMIENTO),
-         MNAC = month(FNAC),
-         EDAD = ((today()-FNAC)/365) %>% floor() %>% as.numeric()) %>% 
+  mutate(FNAC = as.Date(FECHA_NACIMIENTO)) |> 
+  mutate(MNAC = month(FNAC)) |> 
+  mutate(EDAD = ((today()-FNAC)/365) %>% floor() %>% as.numeric()) %>% 
   select(-FECHA_NACIMIENTO) -> empleados
 
 inner_join(empleados,areas) 
 empleados %>% inner_join(areas)
+empleados |>  inner_join(areas)
 empleados %>% inner_join(areas) -> datos_total
 
 View(left_join(empleados,areas))
