@@ -5,6 +5,7 @@ library(lubridate) # tiempo - fechas
 library(forcats) # factores
 library(modeest) # moda
 library(skimr) # descriptivo
+library(pacman) # paquetes
 
 # ---------------------------- #
 # MEDIDAS DE TENDENCIA CENTRAL #
@@ -18,18 +19,23 @@ library(skimr) # descriptivo
 # Z = Número de hermanos
 
 x = c(12,11,12,13,12,12,13,12,12,11,12,12)
-x = c(11,11,12,12,12,12,12,12,12,12,13,13)
+x = c(11,11,12,12,12,12,12,12,12,12,13,13) # x ordenado
 y = c("O+","O+","A","O+","AB","O+","A","O+","O+","B","A","O-")
 z = c(0,0,1,1,2,2,1,2,1,0,3,2)
 Z = c(0,0,0,1,1,1,1,2,2,2,2,3)
 w = c("O+","O+","O-","O+","O-","O+","O-","O+","O+","O-","O-","O-")
 v = c(1,2,3,5)
-mean(x);mean(y);mean(z)
+mean(x);mean(y);mean(z) # promedio
 median(x);median(y);median(z)
-mfv(x);mfv(y);mfv(z);mfv(w);mfv(v)
-# La mediana es 1 ← NO ES UNA INTERPRETACIÓN
+# Def: El 50% está por debajo de la mediana y el 50% está por encima
+# (no siempre se cumple ↑)
+# La mediana es 12 ← NO ES UNA INTERPRETACIÓN
 # Al menos la mitad de los alumnos tiene 12 o menos años.
 # Al menos la mitad de los alumnos tiene 1 o ningún hermano.
+mfv(x);mfv(y);mfv(z);mfv(w);mfv(v)
+# La edad más frecuente en los alumnos es 12 años
+# El tipo de sangre más frecuente en los alumnos es O+
+# Entre los alumnos, las cantidades más frecuentes de número de hermanos son 1 y 2 
 
 # Aplicación VACUNAS
 
