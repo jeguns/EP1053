@@ -46,9 +46,11 @@ Vacunas %>% nrow()
 Vacunas %>% ncol()
 Vacunas %>% colnames()
 Vacunas %>% View()
+Vacunas |> str()
 
 Vacunas |>  
-  mutate(GRUPO_RIESGO     = GRUPO_RIESGO %>% as.factor,
+  mutate(UUID             = UUID |> as.character(),
+         GRUPO_RIESGO     = GRUPO_RIESGO %>% as.factor,
          SEXO             = SEXO %>% as.factor,
          FABRICANTE       = FABRICANTE %>% as.factor,
          DIRESA           = DIRESA %>% as.factor,
@@ -58,22 +60,36 @@ Vacunas |>
          FECHA_CORTE      = FECHA_CORTE %>% ymd,
          FECHA_VACUNACION = FECHA_VACUNACION %>% ymd,
          DIASDESDE        = (today()-FECHA_VACUNACION) %>% as.numeric,
-         DOSIS            = DOSIS %>%  as.factor %>% fct_recode(Primera="1",Segunda="2")) -> VacunasOK
+         DOSIS            = DOSIS %>% as.factor %>% fct_recode(Primera="1",Segunda="2")) |> 
+  select(-X) -> VacunasOK
 
-skimr::skim(VacunasOK)
+VacunasOK |> str()
+
+VacunasOK$FABRICANTE |> str()
+
+VacunasOK |> skim()
+
+library(dplyr)
+VacunasOK |> filter(FECHA_VACUNACION<=as.Date("2021-09-04")) |> count()
+VacunasOK |> count()
+VacunasOK |> nrow()
 
 mean(VacunasOK$EDAD)
 
 mean(VacunasOK$EDAD, na.rm = TRUE)
 
-VacunasOK$EDAD %>% 
-  mean(na.rm = TRUE) # esta línea es equivalente a la que la precede
+VacunasOK$EDAD |> mean(na.rm = TRUE) # esta línea es equivalente a la que la precede
 
 VacunasOK %>% 
   summarise(mean(EDAD,na.rm = TRUE))
 
 VacunasOK %>% 
   summarise(MEDIA = mean(EDAD,na.rm = TRUE))
+
+VacunasOK %>% 
+  filter(DEPARTAMENTO == "AREQUIPA") -> VacunasArequipa
+mean(VacunasArequipa$EDAD)
+VacunasArequipa <- NULL
 
 VacunasOK %>% 
   filter(DEPARTAMENTO == "AREQUIPA") %>% 
@@ -86,6 +102,10 @@ VacunasOK %>%
 VacunasOK %>% 
   filter(DEPARTAMENTO == "AREQUIPA") %>% 
   summarise(MODA_AREQUIPA = mfv(EDAD,na_rm = TRUE))
+
+VacunasOK %>% 
+  filter(DEPARTAMENTO == "AREQUIPA") |> 
+  count(GRUPO_RIESGO)
 
 VacunasOK %>% 
   filter(DEPARTAMENTO == "AREQUIPA") %>% 
