@@ -123,3 +123,9 @@ VacunasOK %>%
             MEDIANA = median(EDAD,na.rm = TRUE),
             MODA    = mfv(EDAD,na_rm = TRUE)) -> Resultados
   
+VacunasOK %>% 
+  filter(DEPARTAMENTO == "AREQUIPA" & GRUPO_RIESGO=="GESTANTE") %>% 
+  summarise(MEDIA_AREQUIPA = mean(EDAD,na.rm = TRUE),
+            MEDIANA_AREQUIPA = median(EDAD,na.rm = TRUE),
+            MODA_AREQUIPA = mfv(EDAD,na_rm = TRUE))
+
