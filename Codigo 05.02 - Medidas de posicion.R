@@ -29,7 +29,9 @@ Vacunas %>%
          FECHA_CORTE      = FECHA_CORTE %>% ymd,
          FECHA_VACUNACION = FECHA_VACUNACION %>% ymd,
          DIASDESDE        = (today()-FECHA_VACUNACION) %>% as.numeric,
-         DOSIS            = DOSIS %>%  as.factor %>% fct_recode(Primera="1",Segunda="2")) -> VacunasOK
+         DOSIS            = DOSIS %>%  as.factor %>% fct_recode(Primera="1",Segunda="2"))  -> VacunasOK
+
+quantile(VacunasOK$EDAD)
 
 VacunasOK %>% 
   summarise(P90 = quantile(EDAD,0.90,na.rm = T))
@@ -43,7 +45,10 @@ VacunasOK %>%
   summarise(P35 = quantile(EDAD,0.35))
 
 VacunasOK %>% 
-  filter(!is.na(EDAD) & GRUPO_RIESGO == "ADULTO MAYOR" & DISTRITO == "MIRAFLORES" & PROVINCIA=="LIMA") %>% 
+  filter(!is.na(EDAD) & 
+           GRUPO_RIESGO == "ADULTO MAYOR" & 
+           DISTRITO == "MIRAFLORES" & 
+           PROVINCIA=="LIMA") %>% 
   summarise(Q1 = quantile(EDAD,0.25),
             Q3 = quantile(EDAD,0.75))
 
