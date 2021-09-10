@@ -12,16 +12,17 @@ library(forcats)
 
 # Ejemplo introductorio
 
-x = c(12,11,12,13,12,12,13,12,12,11,12,12)
-z = c(0,0,1,1,2,2,1,2,1,0,3,2)
+x = c(12,11,12,13,12,12,13,12,12,11,12,12) # edad
+z = c(0,0,1,1,2,2,1,2,1,0,3,2) # número de hermanos
 
-Rango = function(q){max(q)-min(q)}
+Rango = function(l){max(l)-min(l)} 
 Rango(x);Rango(z)
 
 IQR(x);IQR(z)
 var(x);var(z)
 sd(x);sd(z)
 cv(x);cv(z) # desviación estándar/media
+sd(x)/mean(x)
 
 # Aplicación VACUNAS
 
@@ -45,7 +46,18 @@ VacunasOK %>%
   summarise(R = Rango(EDAD)) 
 
 VacunasOK %>% 
+  filter(!is.na(EDAD) & EDAD>=0 & EDAD<=123) %>% 
+  summarise(R = Rango(EDAD)) 
+
+VacunasOK %>% 
+  filter(!is.na(EDAD) & EDAD>123) |> View()
+
+VacunasOK %>% 
   filter(!is.na(EDAD)) %>% 
+  summarise(RIC = IQR(EDAD)) 
+
+VacunasOK %>% 
+  filter(!is.na(EDAD) & EDAD>=0 & EDAD<=123) %>% 
   summarise(RIC = IQR(EDAD)) 
 
 VacunasOK %>% 
@@ -58,7 +70,7 @@ VacunasOK %>%
   summarise(DESV = sd(EDAD,na.rm=TRUE)) -> DESVE.LAMB
 
 VacunasOK %>% 
-  filter(DEPARTAMENTO %in% c("CUSCO","LAMBAYEQUE","LIMA","AREQUIPA","TUMBES")) %>% 
+  filter(DEPARTAMENTO %in% c("CUSCO","LAMBAYEQUE")) %>% 
   group_by(DEPARTAMENTO) %>% 
   summarise(DESV = sd(EDAD,na.rm=T)) -> DESVE
 
