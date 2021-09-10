@@ -16,7 +16,7 @@ sort(x)
 
 # Aplicación VACUNAS
 
-Vacunas = read_csv("vacunas_covid_2021-03-21.csv")
+Vacunas = read_csv("vacunas_septiembre.csv")
 
 Vacunas %>% 
   mutate(GRUPO_RIESGO     = GRUPO_RIESGO %>% as.factor,
