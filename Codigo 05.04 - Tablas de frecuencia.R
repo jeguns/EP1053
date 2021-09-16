@@ -90,3 +90,4 @@ VacunasOK %>%
   fdt(start=12,end=82,h=10,right=FALSE) %>% 
   print()
 
+

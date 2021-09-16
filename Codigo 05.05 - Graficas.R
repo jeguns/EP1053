@@ -41,12 +41,12 @@ VacunasOK %>%
 VacunasOK %>% 
   select(SEXO) %>% 
   table() %>% 
-  barplot(col=c("forestgreen","gold"))
+  barplot(col=c("peachpuff"))
 
 VacunasOK %>% 
   select(SEXO) %>% 
   table() %>% 
-  barplot(col  = c("forestgreen","gold"),
+  barplot(col  = c("forestgreen","gold","red"),
           main = "Distribución de dosis por sexo",
           cex.axis = 0.75)
 
