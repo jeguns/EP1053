@@ -30,16 +30,12 @@ Vacunas %>%
 
   # Variables cualitativas, o cuantitativas discretas -----------------------
 
-VacunasOK %>% 
-  select(DOSIS) %>% 
-  table()
+library(magrittr)
+VacunasOK %>% select(DOSIS) %>% table()
 
 table(VacunasOK$DOSIS)
 
-VacunasOK %>% 
-  select(DOSIS) %>% 
-  table() %>% 
-  prop.table()
+VacunasOK %>% select(DOSIS) %>% table() %>% prop.table()
 
 VacunasOK %>% 
   count(DOSIS) %>% 
@@ -55,6 +51,18 @@ VacunasOK %>%
   count(EDAD) %>% 
   rename(f = 2) %>% 
   mutate(porc = f/sum(f)*100)
+
+VacunasOK %>% 
+  count(EDAD) %>% 
+  rename(f = 2) %>% 
+  mutate(porc = f/sum(f)*100) |> 
+  View()
+
+VacunasOK %>% 
+  count(EDAD) %>% 
+  rename(f = 2) %>% 
+  mutate(porc = f/sum(f)*100) |> 
+  print(n=98)
 
 # Variables cuantitativas continuas, o discretas con muchos valores -------
 
