@@ -185,4 +185,24 @@ VacunasOK %>%
        pch  = 18,
        xlab = "Edad",
        ylab = "Cantidad de dosis",
-       main = "Distribución acumulada de dosis por edad ")
+       main = "Distribución acumulada de dosis por edad")
+
+
+# Fechas ------------------------------------------------------------------
+
+VacunasOK$FECHA_VACUNACION |> max()
+
+VacunasOK$FECHA_VACUNACION |> min()
+
+VacunasOK$FECHA_VACUNACION |> str()
+
+x = c("17-09-2020","08-12-2021")
+x |> str()
+min(x)
+x = c("2020-09-17","2021-12-08")
+min(x)
+x |> as.Date() |> min()
+x |> as.Date() |> max()
+x = c("2020/09/17","2021/12/08","2023/01/01")
+x |> as.Date(try.format=c("%Y/%m/%d")) |> min()
+x |> as.Date(try.format=c("%Y/%m/%d")) |> max()
