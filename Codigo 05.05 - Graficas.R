@@ -81,23 +81,22 @@ VacunasOK %>%
   waffle()
 
 VacunasOK %>% 
-  filter(DISTRITO=="VILLA EL SALVADOR" & EDAD>45) %>% 
-  select(FABRICANTE) %>% 
+  filter(DISTRITO=="VILLA EL SALVADOR" & PROVINCIA == "LIMA" & EDAD>45) %>% 
+  select(SEXO) %>% 
   table() %>% 
-  waffle(rows = 20, colors = c("darkblue", "gold","dodgerblue3"),
+  waffle(rows = 21, colors = c("darkblue", "gold"),
        title = 'Dosis aplicadas en Villa El Salvador en mayores de 45 años', 
        legend_pos="bottom")
 
 VacunasOK %>% 
   filter(DISTRITO == "VILLA EL SALVADOR" & PROVINCIA == "LIMA" & EDAD<=45) %>% 
-  select(FABRICANTE) %>% 
+  select(SEXO) %>% 
   table() %>% 
-  waffle(rows = 100, colors = c("darkblue", "gold","dodgerblue3"),
+  waffle(rows = 100, colors = c("darkblue", "gold"),
          title = 'Dosis aplicadas en Villa El Salvador en personas de 45 o menos años', 
          legend_pos="bottom", size=0) 
 
 # Colors in R: http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
-
 
 
 # Gráficas para variables cuantitativas --------------------------------------------
@@ -113,10 +112,10 @@ VacunasOK %>%
   as.matrix() %>% 
   as.vector() %>% 
   hist(col  = "deeppink1",
-       freq = FALSE,
+       #freq = FALSE,
        main = "Distribución de dosis por edad de la persona vacunada",
        xlab = "Edad",
-       ylab = "Densidad")
+       ylab = "Frecuencia")
 
 VacunasOK %>% 
   filter(SEXO=="FEMENINO" & DISTRITO == "VILLA EL SALVADOR" & EDAD > 50) %>% 
@@ -180,7 +179,7 @@ VacunasOK %>%
   select(EDAD) %>% 
   as.matrix() %>% 
   as.vector() %>% 
-  fdt(start=18,end=78,h=10,right=FALSE) %>% 
+  fdt(start=11,end=81,h=10,right=FALSE) %>% 
   plot(type = "cfp",
        col  = "darkblue",
        pch  = 18,
