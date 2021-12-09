@@ -20,3 +20,11 @@ abs(-42.5)
 ((56+6)**2)/sqrt(28)
 ((56+6)**2)%/%sqrt(28)
 ((56+6)**2)%%sqrt(28)
+
+x = 3
+x <- 3
+3 -> x # asignación de variable
+y = 36 - 9 *2 + 5^2 # comentario
+z = 'hola'
+w = "Universidad Agraria"
+
