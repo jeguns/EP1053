@@ -26,5 +26,13 @@ x <- 3
 3 -> x # asignación de variable
 y = 36 - 9 *2 + 5^2 # comentario
 z = 'hola'
-w = "Universidad Agraria"
+w = "Universidad Agraria"  
 
+30%%5
+30.4%%5
+33%%5.5
+33.1%%5.5
+(5*sqrt(28)+1)%%sqrt(28)
+36.548/6.3
+36.548%/%6.3
+36.548%%6.3
