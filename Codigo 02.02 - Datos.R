@@ -28,6 +28,16 @@ is.integer(Z)
 is.double(Z)
 
 
+# Datos numéricos ---------------------------------------------------------
+
+
+a = 4L
+b = 4
+is.numeric(a)
+is.numeric(b)
+c = 4+4i
+is.numeric(c)
+
 # Datos complejos ---------------------------------------------------------
 
 z = 1 + 2i
@@ -70,8 +80,30 @@ is.logical(a)
 4.6 <= 8.1
 12 > 3.5
 5 != 8
-(w = 5 != 8)
+(w = 5 != 8) # el símbolo igual significa asignación
 (w <- 5 != 8)
 (5 != 8 -> w)
 5 != 8 -> w
-typeof(w)
+typeof(w) 
+
+
+# Datos caracter o cadena -------------------------------------------------
+
+(p = 'Universidad Agraria')
+typeof(p)
+is.integer(p)
+is.double(p)
+is.complex(p)
+is.logical(p)
+is.character(p)
+q = '70096321'
+is.character(q)
+r = 70096321
+is.character(r)
+is.double(r)
+
+R = as.integer(4L+40)
+typeof(R)
+
+
+
