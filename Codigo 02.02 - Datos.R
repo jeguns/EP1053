@@ -149,5 +149,51 @@ a3 = c(1:3,5,rep(6,5),7,10)
 a3
 a3[c(1,5,8)]
 
+y1 = c(FALSE, 5L, 6.3, 'abc123')
+typeof(y1)
+str(y1)
+is.double(y1)
+is.atomic(y1)
+y1[3]
+is.double(y1[3])
 
-  
+a4 = c(FALSE, 5L, 6.3)
+typeof(a4)
+a4[3]
+is.double(a4[3])
+
+
+# Listas ------------------------------------------------------------------
+
+x2 = list(1L, 'a')
+typeof(x2)
+str(x2)
+is.atomic(x2)
+is.list(x2)
+x2[2]
+x2[[2]]
+x2[[[2]]] # ERROR
+typeof(x2[2])
+typeof(x2[[2]])
+is.double(x2)
+is.integer(x2)
+is.character(x2)
+
+a5 = list(2,3,4)
+is.double(a5)
+typeof(a5)
+
+x3 = list(1L, 2L)
+is.integer(x3)
+
+y2 = list(m = c(3,4,5), n = c(7,24,25))
+typeof(y2)
+str(y2)
+is.atomic(y2)
+is.list(y2)
+y2[2]
+y2[[2]]
+typeof(y2[2])
+typeof(y2[[2]])
+y2[[2]][3]
+y2$n[3]
