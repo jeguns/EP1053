@@ -246,3 +246,38 @@ a6[2,1]
 a6[3,2]
 c(a6[2,1],a6[3,2])
 a6[c(2,3),c(1,2)]
+
+y3 = matrix(c(7,TRUE,5,8,1,2),nrow=3)
+typeof(y3)
+y3 = matrix(c(7,TRUE,5,8,1,2),nrow=3,byrow=TRUE)
+str(y3)
+is.double(y3)
+is.vector(y3)
+is.list(y3)
+is.matrix(y3)
+y3[3,1]
+y3[2,]
+y3[,2]
+
+
+# Data frames -------------------------------------------------------------
+
+var1 = c(4,5,3,5,3)
+var2 = c('1','3','66','12','15')
+var3 = rep(5,5)
+var4 = c(1i,2+4i,6i,1i,5+9i)
+x4 = data.frame(var1, var2, var3, var4)
+x4
+typeof(x4)
+str(x4)
+is.double(x4)
+is.vector(x4)
+is.list(x4)
+is.matrix(x4)
+is.data.frame(x4)
+x4[1,2]
+x4[2,] # fila 2
+x4[,2] # columna 2
+x4$var1 # extraigo la variable var1
+x4$var2[3]
+
