@@ -197,3 +197,52 @@ typeof(y2[2])
 typeof(y2[[2]])
 y2[[2]][3]
 y2$n[3]
+
+x1
+is.atomic(x1)
+is.list(x1)
+is.vector(x1)
+
+y1
+is.atomic(y1)
+is.list(y1)
+is.vector(y1)
+
+x2
+is.atomic(x2)
+is.list(x2)
+is.vector(x2)
+
+x3
+is.atomic(x3)
+is.list(x3)
+is.vector(x3)
+
+y2
+is.atomic(y2)
+is.list(y2)
+is.vector(y2)
+
+# Matrices ----------------------------------------------------------------
+
+x3 = matrix(c(7,3,5,8),ncol=2)
+x3
+print(x3)
+matrix(c(rep(1,16)),ncol=4)
+matrix(rep(1,16),ncol=4)
+typeof(x3)
+str(x3)
+is.double(x3)
+is.vector(x3)
+is.list(x3)
+is.matrix(x3)
+x3[2] # no tiene mucha utilidad
+x3[1,2] # fila 1 y columna 2
+x3[2,] # fila 2
+x3[,2] # columna 2
+
+a6 = matrix(c(1,4,1,0,3,7,6,10,2),ncol=3)
+a6[2,1]
+a6[3,2]
+c(a6[2,1],a6[3,2])
+a6[c(2,3),c(1,2)]
