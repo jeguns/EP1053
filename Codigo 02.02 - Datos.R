@@ -326,4 +326,4 @@ typeof(G1)
 (H1 = array(matrix(c(1,3,4,10,10,20,2,'1'),ncol=2),dim=c(2,2,2)));str(H1)
 typeof(H1)
 
-
+(I1 = array(1:12,dim=c(3,2,2)))
