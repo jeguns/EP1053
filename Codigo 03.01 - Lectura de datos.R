@@ -29,12 +29,20 @@ head(datos02)
 filtro = datos02$edad > 80
 datos02[filtro,]
 datos02[datos02$edad > 80,] -> datos02_80
+View(datos02_80)
 
-datos03 = read.table("Datos 03.01 - 03.txt", 
-                     FALSE, 
+datos03 = read.table(file="Datos 03.01 - 03.txt", 
+                     header=FALSE, 
                      skip = 2,
                      col.names = c("ID","EDAD", "SEXO","DOSIS"),
                      na.strings = "*")
+datos03
+#fue menor a 80 años y su sexo fue Femenino (y &) (o |)
+filtro = datos03$EDAD < 80 & datos03$SEXO == "F"
+datos03[filtro,] -> datos03_f80
+dim(datos03_f80)[1]
+nrow(datos03_f80)
+ncol(datos03_f80)
 
 datos04 = read.table("Datos 03.01 - 04.txt", 
                     header     = TRUE,
