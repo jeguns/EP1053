@@ -5,16 +5,30 @@
 
 # Lectura de datos - Archivos txt -----------------------------------------
 
-datos01 = read.table("Datos 03.01 - 01.txt", header=TRUE)
+datos01 = read.table(file = "Datos 03.01 - 01.txt", header=TRUE)
 datos01
 (datos01 = read.table("Datos 03.01 - 01.txt", header=TRUE))
 View(datos01)
-head(datos01) 
-str(datos01)
+head(datos01) # por default muestra las 6 primeras filas 
+str(datos01) 
 dim(datos01)
+datos01$edad
+str(datos01$edad)
+col01 = datos01[,2]
+datos01[,2] -> col01
+col01
+datos01[3:4,] -> subset01
+datos01[c(2,5),] -> subset02
+str(col01)
+str(subset01)
 
 datos02 = read.table("Datos 03.01 - 02.txt", header = TRUE) # ERROR
 datos02 = read.table("Datos 03.01 - 02.txt", header = TRUE, skip = 2)
+head(datos02)
+# edad de la persona fallecida fue mayor a 80 años
+filtro = datos02$edad > 80
+datos02[filtro,]
+datos02[datos02$edad > 80,] -> datos02_80
 
 datos03 = read.table("Datos 03.01 - 03.txt", 
                      FALSE, 
