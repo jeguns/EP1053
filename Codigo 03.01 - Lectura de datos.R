@@ -53,11 +53,32 @@ datos04$flag_vacuna
 datos04[c(2,4),c(2,3)]
 
 datos05A = read.table("Datos 03.01 - 05.txt", TRUE)
-datos05B = read.table("Datos 03.01 - 05.txt", header = TRUE, row.names = 1)
+dim(datos05A)
+datos05B = read.table("Datos 03.01 - 05.txt", TRUE, row.names = 1)
+dim(datos05B)
+identical(datos05A,datos05B)
+# tuvieron que ser hospitalizados (flag_hospitalizado=1) y que no recibieron ninguna dosis
+filtro1 = datos05A$flag_hospitalizado==1 & datos05A$flag_vacuna==0
+datos05A[filtro1,]
+filtro2 = datos05A$flag_hospitalizado==1 & datos05A$flag_vacuna>=1
+datos05A[filtro2,]
 
 datos06 = read.table("Datos 03.01 - 06.txt", header = TRUE, skip = 1)
 datos06 = read.table("Datos 03.01 - 06.txt", header = TRUE, skip = 1, sep = "\t")
 datos06 = read.delim("Datos 03.01 - 06.txt", skip = 1)
+
+# Filtre en un data frame a las personas cuyo distrito de domicilio es San Juan 
+# de Lurigancho pero no fallecieron allí (dist_cdc no es SJL), solo considerando 
+# las columnas fecha_fallecimiento, edad, sexo y flag_vacuna.
+
+filtro = datos06$dist_domicilio=="SAN JUAN DE LURIGANCHO" & datos06$dist_cdc!="SAN JUAN DE LURIGANCHO"
+datos06[filtro,c(2,3,4,11)]
+
+filtro = datos06$dist_domicilio=="SAN JUAN DE LURIGANCHO" & !datos06$dist_cdc=="SAN JUAN DE LURIGANCHO"
+datos06[filtro,c(2,3,4,11)]
+
+filtro = datos06$edad>50 & !datos06$edad>80
+datos06[filtro,c(2,3,4,11)]
 
 # Lectura de datos - Archivos csv -----------------------------------------
 
