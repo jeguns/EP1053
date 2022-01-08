@@ -111,13 +111,30 @@ str(datos08D)
 str(datos08E)
 
 datos09 = read_csv2("Datos 03.01 - 09.csv")
+dim(datos09)
 
 # Lectura de datos - Archivos xls y xlsx ----------------------------------
 
 install.packages("readxl")
 library(readxl) 
 datos10A = read_xls("Datos 03.01 - 10.xls")
+datos10A = read_excel("Datos 03.01 - 10.xls")
 datos10B = read_xlsx("Datos 03.01 - 10.xlsx")
+identical(datos10A,datos10B)
+# Filtre los registros correspondientes a sexo masculino y
+# que no tengan datos perdidos en esa columna
+filtro1 = datos10A$sexo=="M" & !is.na(datos10A$sexo)
+datos10A[filtro1,]
+filtro2 = datos10A$sexo=="M" & is.na(datos10A$sexo)
+datos10A[filtro2,]
+# Filtre los registros que no correspondan a Lima 
+# (dpt_cdc distinto de Lima) y que no tengan datos perdidos 
+# en la columna edad.
+filtro3 = datos10A$dpt_cdc!="LIMA" & !is.na(datos10A$edad)
+datos10A[filtro3,]
+View(datos10A)
+filtro4 = datos10A$dpt_cdc!="LIMA" & is.na(datos10A$fecha_dosis1)
+datos10A[filtro4,] -> ejemplo
 
 datos11 = read_excel("Datos 03.01 - 11.xlsx") 
 
