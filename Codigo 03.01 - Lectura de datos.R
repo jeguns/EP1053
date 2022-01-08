@@ -125,6 +125,7 @@ identical(datos10A,datos10B)
 # que no tengan datos perdidos en esa columna
 filtro1 = datos10A$sexo=="M" & !is.na(datos10A$sexo)
 datos10A[filtro1,]
+# Otro ejemplo:
 filtro2 = datos10A$sexo=="M" & is.na(datos10A$sexo)
 datos10A[filtro2,]
 # Filtre los registros que no correspondan a Lima 
@@ -133,10 +134,12 @@ datos10A[filtro2,]
 filtro3 = datos10A$dpt_cdc!="LIMA" & !is.na(datos10A$edad)
 datos10A[filtro3,]
 View(datos10A)
+# Otro ejemplo:
 filtro4 = datos10A$dpt_cdc!="LIMA" & is.na(datos10A$fecha_dosis1)
 datos10A[filtro4,] -> ejemplo
 
 datos11 = read_excel("Datos 03.01 - 11.xlsx") 
+View(datos11)
 
 datos12 = read_excel("Datos 03.01 - 11.xlsx",
                      sheet = 'Ica')
@@ -144,15 +147,31 @@ datos12 = read_excel("Datos 03.01 - 11.xlsx",
 datos13 = read_excel("Datos 03.01 - 11.xlsx",
                      sheet = 2)
 
-datos14 = read_excel("Datos 03.01 - 11.xlsx", 
+identical(datos12,datos13)
+
+datosxx = read_excel("Datos 03.01 - 11.xlsx",
+                     sheet = c("TACNA",'Ica')) ## ERROR ##
+
+datos14A = read_excel("Datos 03.01 - 11.xlsx", 
                      sheet = "TACNA",
                      range = "E1:G14")
-datos14 = read_excel("Datos 03.01 - 11.xlsx", 
+datos14B = read_excel("Datos 03.01 - 11.xlsx", 
                      range = "TACNA!E1:G14")
+datos14C = read_excel("Datos 03.01 - 11.xlsx", 
+                     sheet = "Ica",
+                     range = "TACNA!E1:G14")
+identical(datos14A,datos14B)
+identical(datos14A,datos14C)
+identical(datos14B,datos14C)
 
 datos15 = read_xlsx("Datos 03.01 - 11.xlsx", 
                      sheet = 2,
                      n_max = 20)
+View(datos15)
+datos15 = read_xlsx("Datos 03.01 - 11.xlsx", 
+                    range = "Ica!A1:AH21")
+View(datos15)
+
 
 datos16 = read_excel("Datos 03.01 - 11.xlsx", 
                      sheet = "Ica",
