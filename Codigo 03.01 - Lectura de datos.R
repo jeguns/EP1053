@@ -47,7 +47,10 @@ ncol(datos03_f80)
 datos04 = read.table("Datos 03.01 - 04.txt", 
                     header     = TRUE,
                     nrows      = 10, 
-                    na.strings = "-")
+                    na.strings = c("-","*","/"))
+datos04$flag_vacuna
+#Seleccione los datos de las filas 2 y 4, y las columnas 2 y 3.
+datos04[c(2,4),c(2,3)]
 
 datos05A = read.table("Datos 03.01 - 05.txt", TRUE)
 datos05B = read.table("Datos 03.01 - 05.txt", header = TRUE, row.names = 1)
