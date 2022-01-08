@@ -172,12 +172,9 @@ datos15 = read_xlsx("Datos 03.01 - 11.xlsx",
                     range = "Ica!A1:AH21")
 View(datos15)
 
-
 datos16 = read_excel("Datos 03.01 - 11.xlsx", 
                      sheet = "Ica",
-                     range = "A1:E1036",
+                     range = "A2:E1036",
                      col_names = c("ID_PERSONA","FECHA_FALLECE",
-                                   "EDAD","SEXO","CRITERIO_FALLECE"),
-                     skip = 1)
-
+                                   "EDAD","SEXO","CRITERIO_FALLECE"))
 
