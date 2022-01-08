@@ -82,18 +82,33 @@ datos06[filtro,c(2,3,4,11)]
 
 # Lectura de datos - Archivos csv -----------------------------------------
 
-datos_07 = read.table("Datos 03.01 - 07.csv", header = TRUE, sep = ",")
-datos07 = read.csv("Datos 03.01 - 07.csv")
+datos07A = read.table("Datos 03.01 - 07.csv", header = TRUE, sep = ",")
+datos07B = read.csv("Datos 03.01 - 07.csv")
+identical(datos07A,datos07B)
 install.packages("readr") # instalando el paquete readr
 library(readr) # llamando, cargando o activando el paquete readr
 require(readr) # llamando, cargando o activando el paquete readr
-datos07_ = read_csv("Datos 03.01 - 07.csv")
+datos07C = read_csv("Datos 03.01 - 07.csv")
+identical(datos07A,datos07B)
+identical(datos07A,datos07C)
+identical(datos07B,datos07C)
+str(datos07A)
+str(datos07B)
+str(datos07C) # TIBBLE (ES UN TIPO DE DATA FRAME)
+datos07A
+datos07C
 
 datos08A = read.table("Datos 03.01 - 08.csv", header = TRUE, sep = ";")
 datos08B = read.csv("Datos 03.01 - 08.csv", sep = ";")
 datos08C = read.csv2("Datos 03.01 - 08.csv")
 datos08D = read_csv2("Datos 03.01 - 08.csv")
 datos08E = read_delim("Datos 03.01 - 08.csv", delim = ";")
+identical(datos08A,datos08B)
+identical(datos08A,datos08C)
+identical(datos08D,datos08B)
+identical(datos08D,datos08E) #### 
+str(datos08D)
+str(datos08E)
 
 datos09 = read_csv2("Datos 03.01 - 09.csv")
 
