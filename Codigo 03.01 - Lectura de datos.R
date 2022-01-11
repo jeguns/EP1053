@@ -173,8 +173,11 @@ datos15 = read_xlsx("Datos 03.01 - 11.xlsx",
 View(datos15)
 
 datos16 = read_excel("Datos 03.01 - 11.xlsx", 
-                     sheet = "Ica",
-                     range = "A2:E1036",
+                     sheet = "Ica", ## este es el nombre de la hoja
+                     range = "A2:E1036", 
                      col_names = c("ID_PERSONA","FECHA_FALLECE",
                                    "EDAD","SEXO","CRITERIO_FALLECE"))
 
+
+datos1111 = read_csv("datos.csv",
+                     locale = readr::locale(encoding = "latin1"))

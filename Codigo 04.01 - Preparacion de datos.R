@@ -37,10 +37,6 @@ y = data.frame(y1=c(1,2,3),y2=c(NA,NA,2))
 y %>% is.na %>% sum
 y %>% is.na %>% which
 
-# ATENCIÓN: El símbolo = es equivalente a <- o -> dependiendo
-# la posición del objeto 
-
-
 # Aplicación 1: Biblioteca ------------------------------------------------
 
 library(readxl)
@@ -108,7 +104,6 @@ datos41B |>
 
 datos41B
 datosOK
-
 
 # Manipulación de fechas --------------------------------------------------
 
@@ -202,7 +197,6 @@ datos41D = read.delim("Datos 04.01 - C.txt", encoding = "UTF-8")
 library(lubridate) # lubridate sirve para el manejo de fechas
 
 rename(datos41D, TIPO_TARJETA = 5)
-
 
 datos41D %>% 
   rename(TIPO_TARJETA = 5) %>% 
