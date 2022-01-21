@@ -5,20 +5,23 @@
 
 # Introduccion ------------------------------------------------------------
 
+install.packages("dplyr")
 
-library(dplyr)
-library(magrittr)
+library(dplyr) # (pipe y otras funciones)
+library(magrittr) # opcional (solo pipe)
 
 x = c(2,5,4,3)
 sum(x)
 x %>% sum()
+x |> sum()
 
 y = "Jueves 3"
 is.logical(y)
 y %>% is.logical()
 y %>% is.logical() %>% as.numeric() 
+y %>% is.logical %>% as.numeric
+y |> is.logical() |> as.numeric() 
 as.numeric(is.logical(y))
-
 
 # Limpieza ----------------------------------------------------------------
 
@@ -52,7 +55,7 @@ datos41A |> n_miss()
 datos41A |> prop_miss()
 datos41A |> pct_miss()
 datos41A |> n_complete() 
-datos41A |> gg_miss_upset() 
+datos41A |> gg_miss_upset() # gráfica...
 datos41A |> miss_case_summary()
 
 sum(is.na(datos41A))
@@ -60,6 +63,7 @@ datos41A %>% is.na() %>% sum()
 
 datos41A[,3] %>% is.na() %>% sum()
 datos41A$Editorial %>% is.na() %>% sum()
+datos41A |> miss_var_summary()
 
 library(janitor)
 tabyl(datos41A$Editorial)
@@ -92,7 +96,7 @@ datos41C %>% filter(NumCred>0)
 
 datos41C %>% 
   filter(Nota>=0 & Nota<=20) %>% 
-  filter(Edad>=18 & Edad<=59) |>  
+  filter(Edad>=18 & Edad<=59) |>
   filter(NumCred>0)
 
 filter(filter(filter(datos41C,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
