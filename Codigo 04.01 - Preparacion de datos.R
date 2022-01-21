@@ -53,6 +53,7 @@ datos41A |> prop_miss()
 datos41A |> pct_miss()
 datos41A |> n_complete() 
 datos41A |> gg_miss_upset() 
+datos41A |> miss_case_summary()
 
 sum(is.na(datos41A))
 datos41A %>% is.na() %>% sum()
