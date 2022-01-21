@@ -46,6 +46,14 @@ is.na(datos41A)
 datos41A |> is.na()
 datos41A %>% is.na()
 
+library(naniar)
+datos41A |> any_na()
+datos41A |> n_miss()
+datos41A |> prop_miss()
+datos41A |> pct_miss()
+datos41A |> n_complete() 
+datos41A |> gg_miss_upset() 
+
 sum(is.na(datos41A))
 datos41A %>% is.na() %>% sum()
 
@@ -58,9 +66,7 @@ tabyl(datos41A$Editorial)
 library(skimr)
 skim(datos41A)
 
-which(datos41A$Año == 2002)
-which(is.na(datos41A$Año))
-which(datos41A$Año == 2020)
+
 
 # Aplicación 2: Alumnos de posgrado ---------------------------------------
 
