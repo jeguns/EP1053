@@ -130,7 +130,9 @@ Sys.time() |> typeof()
 Sys.Date() |> as.numeric()
 Sys.time() |> as.numeric()
 
+as.Date("2022-01-28") |> as.numeric()
 as.Date("1970-01-01") |> as.numeric()
+as.Date("1965-12-31") |> as.numeric()
 
 as.Date("2021-09-02") - as.Date("2021-07-11")
 as.Date("2021-09-02") |> as.numeric()
