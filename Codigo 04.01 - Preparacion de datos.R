@@ -1,5 +1,3 @@
-
-
 # CAPÍTULO 4: PREPARACIÓN DE DATOS
 
 
@@ -143,6 +141,9 @@ b = Sys.time()
 b-a
 
 as.Date("1980-01-01") + 366
+as.Date(19019, origin = as.Date("1970-01-01"))
+as.Date(26, origin = as.Date("2022-01-01"))
+as.Date(10, origin = as.Date("1950-01-01"))
 
 library(lubridate)
 today()
@@ -154,37 +155,42 @@ today(tz = "US/Hawaii")
 now(tz = "US/Hawaii")
 today(tz = "Etc/GMT-5")
 now(tz = "Etc/GMT-5")
-today(tz = "Etc/GMT+5") # LIMA
+today(tz = "Etc/GMT+5") # PERÚ
 now(tz = "Etc/GMT+5")
 today(tz = "Australia/Eucla")
 now(tz = "Australia/Eucla")
 
 "2020-09-04"
 ymd("2020-09-04")
+"2020-09-04" |> str()
+ymd("2020-09-04") |> str()
 "2020-09-04" |> typeof()
 ymd("2020-09-04") |> typeof()
 ymd("2020-Sep-04")
 dmy("04-Sep-2020")
 dmy("04-09-2020")
 as.Date("04-09-2020",format=c("%d-%m-%Y"))
+as.Date("04-09-20",format=c("%d-%m-%y"))
 as.Date("04-Sep-2020",format=c("%d-%m-%Y")) # no reconoce Sep
 
 make_datetime(2020,09,04)
 make_datetime(day=04,month=09,year=2020)
 make_datetime(2020,09,04,11)
 make_datetime(2020,09,04,11,25)
-make_datetime(2021,09,02,11,25,40,tz="America/Lima") -> a
+make_datetime(2022,01,27,08,49,15,tz="America/Lima") -> a
 a
 year(a)
 month(a)
+day(a)
 mday(a) # día del mes
 yday(a) # día del año
+wday(a) # día de la semana comenzando en domingo
+wday(a,week_start = 1) # día de la semana comenzando en lunes
 yday(today())
 today() |> yday()
+library(dplyr)
 today() %>% yday()
 365-yday(today())
-wday(a) # día de la semana asumiendo que comienza en domingo
-wday(a, week_start = 1) # día de la semana asumiendo que comienza en lunes
 
 wday(today())
 today() %>% wday()
@@ -194,6 +200,9 @@ today() %>% wday(week_start = 1)
 
 quarter(today())
 today() %>% quarter()
+
+semester(today())
+today() %>% semester()
 
 now() %>% am()
 now() %>% pm()
