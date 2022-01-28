@@ -217,16 +217,19 @@ now() %>% pm()
 datos41D = read.delim("Datos 04.01 - C.txt", encoding = "UTF-8")
 
 library(lubridate) # lubridate sirve para el manejo de fechas
-
+library(dplyr)
 rename(datos41D, TIPO_TARJETA = 5)
+
+datos41D %>% 
+  rename(TIPO_TARJETA = 5)
 
 datos41D %>% 
   rename(TIPO_TARJETA = 5) %>% 
   mutate(NOMBRE_COMPLETO = paste(NOMBRES,APELLIDOS)) %>% 
-  mutate(MONTO_USD = MONTO_SOLES/4.05) %>% 
+  mutate(MONTO_USD = round(MONTO_SOLES/3.84,2)) %>% 
   mutate(FECHA_PAGO1  = as.Date(FECHA_PAGO1,format=c("%d/%m/%Y"))) %>% 
   mutate(FECHA_COMPRA = as.Date(FECHA_COMPRA,format=c("%d/%m/%Y"))) %>% 
-  mutate(TIEMPO = FECHA_PAGO1 - FECHA_COMPRA) %>% 
+  mutate(TIEMPO = as.numeric((FECHA_PAGO1 - FECHA_COMPRA))) %>% 
   mutate(MES    = month(FECHA_COMPRA)) %>% 
   filter(MES == 1 & TIEMPO > 30) %>% 
   select(NOMBRE_COMPLETO, MONTO_USD, TIEMPO) -> MOROSOS
@@ -239,16 +242,11 @@ MOROSOS
 
 # Aplicación 4 - Empleados ------------------------------------------------
 
+library(readxl)
 empleados = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Empleados")
 areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
-# empleados$FECHA_NACIMIENTO %>% str()
-# empleados %>% 
-#   mutate(FNAC = as.Date(FECHA_NACIMIENTO)) -> empleados
-# empleados$FNAC %>% str()
-# 
-# empleados %>% 
-#   mutate(EDAD = as.numeric(floor((today()-FNAC)/365)))
+empleados |> str()
 
 empleados %>% 
   mutate(FNAC = as.Date(FECHA_NACIMIENTO)) |> 
@@ -258,8 +256,10 @@ empleados %>%
 
 inner_join(empleados,areas) 
 empleados %>% inner_join(areas)
+areas |> inner_join(empleados)
 empleados |>  inner_join(areas)
 empleados %>% inner_join(areas) -> datos_total
+datos_total |> View()
 
 View(left_join(empleados,areas))
 empleados %>% left_join(areas) %>% View()
