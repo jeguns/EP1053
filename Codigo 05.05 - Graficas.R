@@ -12,197 +12,158 @@ library(forcats)
 
 # Lectura y preprocesamiento ----------------------------------------------
 
-Vacunas = read_csv("vacunas_septiembre.csv", locale = locale(encoding="latin1"))
+Multas = read_xlsx("Datos 05.xlsx", range = "A3:I7906")
 
-Vacunas %>% 
-  mutate(GRUPO_RIESGO     = GRUPO_RIESGO %>% as.factor,
-         SEXO             = SEXO %>% as.factor,
-         FABRICANTE       = FABRICANTE %>% as.factor,
-         DIRESA           = DIRESA %>% as.factor,
-         DEPARTAMENTO     = DEPARTAMENTO %>% as.factor,
-         PROVINCIA        = PROVINCIA %>% as.factor,
-         DISTRITO         = DISTRITO %>% as.factor,
-         FECHA_CORTE      = FECHA_CORTE %>% ymd,
-         FECHA_VACUNACION = FECHA_VACUNACION %>% ymd,
-         DIASDESDE        = (today()-FECHA_VACUNACION) %>% as.numeric,
-         DOSIS            = DOSIS %>%  as.factor %>% fct_recode(Primera="1",Segunda="2")) |> 
-  filter(EDAD<123) |> 
-  select(-'...1') -> VacunasOK
+Multas |> 
+  rename(CODIGO = 1,
+         DESCRIPCION = 2,
+         FORMATO = 3,
+         GRAVEDAD = 4,
+         AÑO = 5,
+         MES = 6,
+         CANTIDAD = 7,
+         IMPORTE = 8,
+         REINCIDENCIA = 9) |> 
+  select(-AÑO) -> Multas
 
 # Gráficas para variables cualitativas ------------------------------------
 
 options(scipen = 999)
 
-VacunasOK %>% 
-  select(SEXO) %>% 
+Multas %>% 
+  select(GRAVEDAD) %>% 
   table() %>% 
   barplot()
 
-VacunasOK %>% 
-  select(SEXO) %>% 
+Multas %>% 
+  select(GRAVEDAD) %>% 
   table() %>% 
   barplot(col=c("peachpuff"))
 
-VacunasOK %>% 
-  select(SEXO) %>% 
+Multas %>% 
+  select(GRAVEDAD) %>% 
   table() %>% 
   barplot(col  = c("forestgreen","gold","red"),
-          main = "Distribución de dosis por sexo",
+          main = "Distribución de infracciones por gravedad",
           cex.axis = 0.75)
 
-VacunasOK %>% 
-  select(SEXO) %>% 
+Multas %>% 
+  select(GRAVEDAD) %>% 
   table() -> Tabla
 Tabla %>% 
-  barplot(col  = c("forestgreen","gold"),
-          main = "Distribución de dosis por sexo",
+  barplot(col  = c("forestgreen","gold","red"),
+          main = "Distribución de infracciones por gravedad",
           cex.axis = 0.75) -> Grafico
-Grafico %>% text(y=Tabla-150000,labels = as.character(Tabla))
+Grafico %>% text(y=Tabla-250,labels = as.character(Tabla))
 
-VacunasOK %>% 
-  select(SEXO) %>% 
+Multas %>% 
+  select(GRAVEDAD) %>% 
   table() %>% 
   pie()
 
-pie(table(VacunasOK$SEXO))
+pie(table(Multas$GRAVEDAD))
 
-VacunasOK %>% 
-  select(SEXO) %>% 
+Multas %>% 
+  select(GRAVEDAD) %>% 
   table() %>% 
-  pie(col  = c("forestgreen","gold"),
-      main = "Distribución de dosis por sexo")
+  pie(col  = c("forestgreen","gold","red"),
+      main = "Distribución de infracciones por gravedad")
 
 library(waffle)
 
-VacunasOK %>% 
-  filter(DISTRITO=="CHACLACAYO" & EDAD>50) %>% 
-  select(FABRICANTE) %>% 
-  table() %>% 
-  waffle()
-
-VacunasOK %>% 
-  filter(DISTRITO=="VILLA EL SALVADOR" & PROVINCIA == "LIMA" & EDAD>45) %>% 
-  select(SEXO) %>% 
-  table() %>% 
-  waffle(rows = 21, colors = c("darkblue", "gold"),
-       title = 'Dosis aplicadas en Villa El Salvador en mayores de 45 años', 
-       legend_pos="bottom")
-
-VacunasOK %>% 
-  filter(DISTRITO == "VILLA EL SALVADOR" & PROVINCIA == "LIMA" & EDAD<=45) %>% 
-  select(SEXO) %>% 
-  table() %>% 
-  waffle(rows = 100, colors = c("darkblue", "gold"),
-         title = 'Dosis aplicadas en Villa El Salvador en personas de 45 o menos años', 
-         legend_pos="bottom", size=0) 
+Multas %>% 
+  group_by(FORMATO) %>% 
+  count() %>% 
+  mutate(n=round(n/100),0) |> 
+  pull(n) |> 
+  waffle(rows = 5)
 
 # Colors in R: http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
 
 
 # Gráficas para variables cuantitativas --------------------------------------------
 
-VacunasOK %>% 
-  select(EDAD) %>% 
+Multas %>% 
+  select(IMPORTE) %>% 
   as.matrix() %>% 
   as.vector() %>% 
   hist()
 
-VacunasOK %>% 
-  select(EDAD) %>% 
+Multas %>% 
+  select(IMPORTE) %>% 
   as.matrix() %>% 
   as.vector() %>% 
-  hist(col  = "deeppink1",
+  hist(col  = "dodgerblue3",
        #freq = FALSE,
-       main = "Distribución de dosis por edad de la persona vacunada",
-       xlab = "Edad",
+       main = "Distribución de importes por infracciones",
+       xlab = "Importe",
        ylab = "Frecuencia")
 
-VacunasOK %>% 
-  filter(SEXO=="FEMENINO" & DISTRITO == "VILLA EL SALVADOR" & EDAD > 50) %>% 
-  select(DIASDESDE) %>% 
+Multas %>% 
+  select(IMPORTE) %>% 
   as.matrix() %>% 
   as.vector() %>% 
-  hist(col  = "lightseagreen",
+  hist(col  = "dodgerblue3",
        freq = FALSE,
-       main = "Distribución de dosis desde el último día de vacunación",
-       xlab = "Edad",
-       ylab = "Densidad")
+       main = "Distribución de importes por infracciones",
+       xlab = "Importe",
+       ylab = "Frecuencia")
 
-VacunasOK %>% 
-  select(EDAD) %>% 
+Multas %>% 
+  filter(CODIGO == "G56") |> 
+  select(IMPORTE) %>% 
+  as.matrix() %>% 
+  as.vector() %>% 
+  hist(col  = "dodgerblue3",
+       #freq = FALSE,
+       main = "Distribución de importes por infracciones (código G56)",
+       xlab = "Importe",
+       ylab = "Frecuencia")
+
+
+Multas %>% 
+  filter(CODIGO == "G01") |> 
+  select(IMPORTE) %>% 
   boxplot()
 
-boxplot(VacunasOK$EDAD)
+boxplot(Multas$IMPORTE)
 
-VacunasOK %>% 
-  select(EDAD) %>% 
+Multas %>% 
+  select(IMPORTE) %>% 
   boxplot(col  = "turquoise",
-          main = "Distribución de dosis según edad de la persona vacunada",
+          main = "Distribución del importe de las infracciones",
           ylab = "Edad")
 
-VacunasOK %>% 
-  filter(GRUPO_RIESGO=="ADULTO MAYOR" & DEPARTAMENTO != "LIMA") %>% 
-  select(EDAD) %>% 
+Multas %>% 
+  filter(CODIGO == "G01") |> 
+  select(IMPORTE) %>% 
   boxplot(col  = "turquoise",
-          main = "Distribución de dosis según edad del adulto mayor vacunado",
+          main = "Distribución del importe de las infracciones por código G01",
           ylab = "Edad")
 
-VacunasOK %>% 
-  filter(GRUPO_RIESGO=="ADULTO MAYOR" & DEPARTAMENTO != "LIMA") %>% 
-  select(EDAD) %>%
-  filter(!is.na(EDAD)) %>% 
-  dplyr::summarise(quantile(EDAD,probs=c(0.25,0.50,0.75)))
+Multas %>% 
+  filter(CODIGO == "G01") |> 
+  pull(IMPORTE) %>% 
+  quantile()
 
-VacunasOK %>% 
-  select(EDAD) %>% 
-  filter(!is.na(EDAD)) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
+Multas %>% 
+  select(REINCIDENCIA) %>% 
+  boxplot(col  = "turquoise",
+          main = "Distribución del importe de las infracciones",
+          ylab = "Edad")
+
+Multas %>% 
+  pull(REINCIDENCIA) %>% 
+  quantile()
+
+Multas %>% 
+  filter(CODIGO == "G01") |> 
+  select(IMPORTE) %>% 
+  filter(!is.na(IMPORTE)) %>% 
+  pull() |> 
   density() %>% 
-  plot(main = "Distribución de dosis según edad de la persona vacunada",
+  plot(main = "Distribución del importe de las infracciones",
        xlab = "Edad",
        ylab = "Densidad")
 
-VacunasOK %>% 
-  filter(GRUPO_RIESGO=="PERSONAL DE SALUD" & DEPARTAMENTO != "LIMA") %>% 
-  filter(!is.na(EDAD)) %>% 
-  select(EDAD) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
-  density() %>% 
-  plot(main = "Distribución de dosis según edad de la persona vacunada",
-       xlab = "Edad",
-       ylab = "Densidad")
 
-VacunasOK %>% 
-  filter(GRUPO_RIESGO=="PERSONAL DE SALUD" & DEPARTAMENTO != "LIMA") %>% 
-  select(EDAD) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
-  fdt(start=11,end=81,h=10,right=FALSE) %>% 
-  plot(type = "cfp",
-       col  = "darkblue",
-       pch  = 18,
-       xlab = "Edad",
-       ylab = "Cantidad de dosis",
-       main = "Distribución acumulada de dosis por edad")
-
-
-# Fechas ------------------------------------------------------------------
-
-VacunasOK$FECHA_VACUNACION |> max()
-
-VacunasOK$FECHA_VACUNACION |> min()
-
-VacunasOK$FECHA_VACUNACION |> str()
-
-x = c("17-09-2020","08-12-2021")
-x |> str()
-min(x)
-x = c("2020-09-17","2021-12-08")
-min(x)
-x |> as.Date() |> min()
-x |> as.Date() |> max()
-x = c("2020/09/17","2021/12/08","2023/01/01")
-x |> as.Date(try.format=c("%Y/%m/%d")) |> min()
-x |> as.Date(try.format=c("%Y/%m/%d")) |> max()

@@ -14,35 +14,36 @@ sort(x)
 
 # Al menos el 25% de los alumnos tiene una edad menor o igual a 12 años
 
-# Aplicación VACUNAS
+# Aplicación Multas
 
-Vacunas = read_csv("vacunas_septiembre.csv")
+Multas = read_xlsx("Datos 05.xlsx", range = "A3:I7906")
 
-Vacunas %>% 
-  mutate(GRUPO_RIESGO     = GRUPO_RIESGO %>% as.factor,
-         SEXO             = SEXO %>% as.factor,
-         FABRICANTE       = FABRICANTE %>% as.factor,
-         DIRESA           = DIRESA %>% as.factor,
-         DEPARTAMENTO     = DEPARTAMENTO %>% as.factor,
-         PROVINCIA        = PROVINCIA %>% as.factor,
-         DISTRITO         = DISTRITO %>% as.factor,
-         FECHA_CORTE      = FECHA_CORTE %>% ymd,
-         FECHA_VACUNACION = FECHA_VACUNACION %>% ymd,
-         DIASDESDE        = (today()-FECHA_VACUNACION) %>% as.numeric,
-         DOSIS            = DOSIS %>%  as.factor %>% fct_recode(Primera="1",Segunda="2"))  -> VacunasOK
+Multas |> 
+  rename(CODIGO = 1,
+         DESCRIPCION = 2,
+         FORMATO = 3,
+         GRAVEDAD = 4,
+         AÑO = 5,
+         MES = 6,
+         CANTIDAD = 7,
+         IMPORTE = 8,
+         REINCIDENCIA = 9) |> 
+  select(-AÑO) -> Multas
 
-quantile(VacunasOK$EDAD)
+quantile(Multas$IMPORTE)
 
-VacunasOK %>% 
-  summarise(P90 = quantile(EDAD,0.90,na.rm = T))
+quantile(Multas$IMPORTE, 0.90, na.rm = T)
 
-VacunasOK %>% 
-  filter(!is.na(EDAD)) %>% 
-  summarise(P90 = quantile(EDAD,0.90))
+Multas %>% 
+  summarise(P90 = quantile(IMPORTE,0.90,na.rm = T))
 
-VacunasOK %>% 
-  filter(!is.na(EDAD) & DIRESA=="CALLAO") %>% 
-  summarise(P35 = quantile(EDAD,0.35))
+Multas %>% 
+  filter(!is.na(IMPORTE)) %>% 
+  summarise(P90 = quantile(IMPORTE,0.90))
+
+Multas %>% 
+  filter(!is.na(IMPORTE) & CODIGO == "L01") %>% 
+  summarise(P35 = quantile(IMPORTE,0.35))
 
 VacunasOK %>% 
   filter(!is.na(EDAD) & 

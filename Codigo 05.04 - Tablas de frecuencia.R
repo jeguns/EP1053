@@ -1,6 +1,6 @@
 library(magrittr)
 library(dplyr)
-library(fdth) # ← para tablas de frecuencias
+library(fdth) # para tablas de frecuencias
 library(modeest)
 library(sjstats)
 library(readr)
@@ -11,83 +11,52 @@ library(forcats)
 # TABLAS DE FRECUENCIA #
 # -------------------- #
 
-Vacunas = read_csv("vacunas_septiembre.csv", locale = locale(encoding="latin1"))
+Multas = read_xlsx("Datos 05.xlsx", range = "A3:I7906")
 
-Vacunas %>% 
-  mutate(GRUPO_RIESGO     = GRUPO_RIESGO %>% as.factor,
-         SEXO             = SEXO %>% as.factor,
-         FABRICANTE       = FABRICANTE %>% as.factor,
-         DIRESA           = DIRESA %>% as.factor,
-         DEPARTAMENTO     = DEPARTAMENTO %>% as.factor,
-         PROVINCIA        = PROVINCIA %>% as.factor,
-         DISTRITO         = DISTRITO %>% as.factor,
-         FECHA_CORTE      = FECHA_CORTE %>% ymd,
-         FECHA_VACUNACION = FECHA_VACUNACION %>% ymd,
-         DIASDESDE        = (today()-FECHA_VACUNACION) %>% as.numeric,
-         DOSIS            = DOSIS %>%  as.factor %>% fct_recode(Primera="1",Segunda="2")) |>
-  filter(EDAD<123) |> 
-  select(-'...1') -> VacunasOK
+Multas |> 
+  rename(CODIGO = 1,
+         DESCRIPCION = 2,
+         FORMATO = 3,
+         GRAVEDAD = 4,
+         AÑO = 5,
+         MES = 6,
+         CANTIDAD = 7,
+         IMPORTE = 8,
+         REINCIDENCIA = 9) |> 
+  select(-AÑO) -> Multas
+
 
   # Variables cualitativas, o cuantitativas discretas -----------------------
 
-library(magrittr)
-VacunasOK %>% select(DOSIS) %>% table()
+Multas %>% select(GRAVEDAD) %>% table()
 
-table(VacunasOK$DOSIS)
+table(Multas$GRAVEDAD)
 
-VacunasOK %>% select(DOSIS) %>% table() %>% prop.table()
+Multas %>% select(GRAVEDAD) %>% table() |> prop.table()
 
-VacunasOK %>% 
-  count(DOSIS) %>% 
+Multas %>% 
+  count(GRAVEDAD) %>% 
   rename(f = 2) %>% 
   mutate(porc = f/sum(f)*100)
 
-VacunasOK %>% 
-  count(SEXO) %>% 
-  rename(f = 2) %>% 
-  mutate(porc = f/sum(f)*100)
-
-VacunasOK %>% 
-  count(EDAD) %>% 
-  rename(f = 2) %>% 
-  mutate(porc = f/sum(f)*100)
-
-VacunasOK %>% 
-  count(EDAD) %>% 
-  rename(f = 2) %>% 
-  mutate(porc = f/sum(f)*100) |> 
-  View()
-
-VacunasOK %>% 
-  count(EDAD) %>% 
-  rename(f = 2) %>% 
-  mutate(porc = f/sum(f)*100) |> 
-  print(n=98)
 
 # Variables cuantitativas continuas, o discretas con muchos valores -------
 
-VacunasOK %>% 
-  filter(DISTRITO=="BARRANCO" & DOSIS=="Primera") %>% 
-  select(EDAD) %>% 
+Multas %>% 
+  filter(CODIGO=="G14") %>% 
+  select(IMPORTE) %>% 
   as.matrix() %>% 
-  as.vector() %>% 
+  #as.vector() %>% 
   fdt(breaks="Sturges") %>% 
   print()
 
-VacunasOK %>% 
-  filter(DISTRITO=="BARRANCO"& DOSIS=="Primera") %>% 
-  select(EDAD) %>% 
+Multas %>% 
+  filter(CODIGO=="G14") %>% 
+  select(IMPORTE) %>% 
   as.matrix() %>% 
   as.vector() %>% 
-  fdt(start=12,end=82,h=10,right=FALSE) %>% 
+  fdt(start=340,end=22755,h=3000,right=FALSE) %>% 
   print()
 
-VacunasOK %>% 
-  filter(DISTRITO=="BARRANCO" & DOSIS=="Segunda") %>% 
-  select(EDAD) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
-  fdt(start=12,end=82,h=10,right=FALSE) %>% 
-  print()
 
 
