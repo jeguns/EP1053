@@ -9,7 +9,9 @@ library(modeest)
 # Ejercicio introductorio
 
 x = c(12,11,12,13,12,12,13,12,12,11,12,12)
+quantile(x)
 quantile(x, 0.25)
+quantile(x, c(0.25,0.46))
 sort(x)
 
 # Al menos el 25% de los alumnos tiene una edad menor o igual a 12 años
@@ -45,12 +47,12 @@ Multas %>%
   filter(!is.na(IMPORTE) & CODIGO == "L01") %>% 
   summarise(P35 = quantile(IMPORTE,0.35))
 
-VacunasOK %>% 
-  filter(!is.na(EDAD) & 
-           GRUPO_RIESGO == "ADULTO MAYOR" & 
-           DISTRITO == "MIRAFLORES" & 
-           PROVINCIA=="LIMA") %>% 
-  summarise(Q1 = quantile(EDAD,0.25),
-            Q3 = quantile(EDAD,0.75))
+Multas |> 
+  filter(!is.na(IMPORTE) & CODIGO == "L07" & MES == 1) |> 
+  summarise(Percentiles = quantile(IMPORTE,c(0.25,0.75)))
 
-
+Multas |> 
+  filter(!is.na(IMPORTE)) |> 
+  filter(CODIGO=="L07") |> 
+  filter(MES==1)|> 
+  summarise(Percentiles = quantile(IMPORTE,c(0.25,0.75)))
