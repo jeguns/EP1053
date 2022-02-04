@@ -18,16 +18,18 @@ library(skimr)
 # Z = Número de hermanos
 
 x = c(12,11,12,13,12,12,13,12,12,11,12,12) 
-x = c(11,11,12,12,12,12,12,12,12,12,13,13) # x ordenado 
+x = c(11,11,12,12,12,12,12,12,12,12,13,13) # x ordenado (no es necesario hacerlo)
 y = c("O+","O+","A","O+","AB","O+","A","O+","O+","B","A","O-")
 z = c(0,0,1,1,2,2,1,2,1,0,3,2)
-Z = c(0,0,0,1,1,1,1,2,2,2,2,3)
+Z = c(0,0,0,1,1,1,1,2,2,2,2,3) # z ordenado (no es necesario hacerlo)
+mean(x);mean(y);mean(z) # la edad promedio es de 12 años, en promedio tienen 1.25 hermanos (aprox. 1)
+median(x);median(y);median(z)
+mfv(x);mfv(y);mfv(z)
 w = c("O+","O+","O-","O+","O-","O+","O-","O+","O+","O-","O-","O-")
 v = c(1,2,3,5)
-mean(x);mean(y);mean(z) # 
-median(x);median(y);median(z)
-# Def: 
-mfv(x);mfv(y);mfv(z);mfv(w);mfv(v)
+mfv(w);mfv(v)
+r = c(1,1,1,1,1,1,1,1,1,1)
+mfv(r)
 # 
 
 # Aplicación MULTAS
@@ -38,6 +40,8 @@ Multas %>% head()
 Multas %>% tail()
 Multas %>% nrow()
 Multas |> count()
+Multas %>% nrow() |> str()
+Multas |> count() |> str()
 Multas %>% ncol()
 Multas %>% colnames()
 Multas |> str()
@@ -47,7 +51,7 @@ mean(Multas$`Cant. multas impuestas`)
 
 mean(Multas$`Cant. multas impuestas`, na.rm = TRUE)
 
-Multas$`Cant. multas impuestas`|> mean(na.rm = TRUE) #
+Multas$`Cant. multas impuestas`|> mean(na.rm = TRUE) 
 
 Multas %>% 
   summarise(mean(`Cant. multas impuestas`,na.rm = TRUE))
@@ -90,12 +94,27 @@ Multas %>%
   summarise(MEDIA_ESTACIONAR = mean(`Cant. multas impuestas`,na.rm = TRUE),
             MEDIANA_ESTACIONAR = median(`Cant. multas impuestas`,na.rm = TRUE),
             MODA_ESTACIONAR = mfv(`Cant. multas impuestas`,na_rm = TRUE)) |> 
-  head(10)
+  head(4)
 
 Multas %>% 
   group_by(`Código falta`) %>% 
   summarise(MEDIA_ESTACIONAR = mean(`Cant. multas impuestas`,na.rm = TRUE),
             MEDIANA_ESTACIONAR = median(`Cant. multas impuestas`,na.rm = TRUE),
             MODA_ESTACIONAR = mfv(`Cant. multas impuestas`,na_rm = TRUE)) |> 
-  as.data.frame() |>  # ¿funciona convirtiendo a tibble?
-  slice_sample(n=10)
+  slice_sample(n=4) # no funciona
+
+Multas %>% 
+  group_by(`Código falta`) %>% 
+  summarise(MEDIA_ESTACIONAR = mean(`Cant. multas impuestas`,na.rm = TRUE),
+            MEDIANA_ESTACIONAR = median(`Cant. multas impuestas`,na.rm = TRUE),
+            MODA_ESTACIONAR = mfv(`Cant. multas impuestas`,na_rm = TRUE)) |> 
+  as.data.frame() |>  
+  slice_sample(n=4)
+
+Multas %>% 
+  group_by(`Código falta`) %>% 
+  summarise(MEDIA_ESTACIONAR = mean(`Cant. multas impuestas`,na.rm = TRUE),
+            MEDIANA_ESTACIONAR = median(`Cant. multas impuestas`,na.rm = TRUE),
+            MODA_ESTACIONAR = mfv(`Cant. multas impuestas`,na_rm = TRUE)) |> 
+  as_tibble() |>  
+  slice_sample(n=4)
