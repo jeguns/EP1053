@@ -5,6 +5,7 @@ library(sjstats)
 library(readr)
 library(lubridate)
 library(forcats)
+library(readxl)
 
 # ----------------------- #
 # MEDIDAS DE VARIABILIDAD #
@@ -15,7 +16,7 @@ library(forcats)
 x = c(12,11,12,13,12,12,13,12,12,11,12,12) # edad
 z = c(0,0,1,1,2,2,1,2,1,0,3,2) # número de hermanos
 
-Rango = function(l){max(l)-min(l)} 
+Rango = function(y){max(y,na.rm=TRUE)-min(y,na.rm=TRUE)} 
 Rango(x);Rango(z)
 
 IQR(x);IQR(z)
@@ -24,7 +25,7 @@ sd(x);sd(z)
 cv(x);cv(z) # desviación estándar/media
 sd(x)/mean(x)
 
-# Aplicación VACUNAS
+# Aplicación MULTAS
 
 Multas = read_xlsx("Datos 05.xlsx", range = "A3:I7906")
 
@@ -63,6 +64,12 @@ Multas %>%
   group_by(CODIGO) |> 
   filter(!is.na(IMPORTE)) %>% 
   summarise(DESV = sd(IMPORTE)) -> DESVE
+
+Multas %>% 
+  filter(CODIGO %in% c("M03","M17","M18","M09","M01")) %>% 
+  group_by(CODIGO) |> 
+  filter(!is.na(IMPORTE)) %>% 
+  summarise(MEDIAS = mean(IMPORTE)) -> M
 
 Multas %>% 
   filter(!is.na(IMPORTE)) %>% 
