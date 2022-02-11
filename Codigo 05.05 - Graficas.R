@@ -55,7 +55,7 @@ Tabla %>%
   barplot(col  = c("red","forestgreen","gold"),
           main = "Distribución de infracciones por gravedad",
           cex.axis = 0.75) -> Grafico
-Grafico %>% text(y=Tabla-250,labels = as.character(Tabla))
+Grafico %>% text(y=Tabla-250, labels = as.character(Tabla))
 
 pie(table(Multas$GRAVEDAD))
 
@@ -98,10 +98,10 @@ Multas %>%
 Multas %>% 
   pull(IMPORTE) %>% 
   hist(col  = "dodgerblue3",
-       freq = FALSE,
+       freq = FALSE, # densidad → probabilidades 
        main = "Distribución de importes por infracciones",
        xlab = "Importe",
-       ylab = "Frecuencia")
+       ylab = "Densidad")
 
 Multas %>% 
   filter(CODIGO == "G56") |> 
@@ -124,7 +124,7 @@ Multas %>%
   select(IMPORTE) %>% 
   boxplot(col  = "turquoise",
           main = "Distribución del importe de las infracciones por código G01",
-          ylab = "Edad")
+          ylab = "Importe")
 
 Multas %>% 
   filter(CODIGO == "G01") |> 
@@ -146,7 +146,7 @@ Multas %>%
   filter(!is.na(IMPORTE))  |> 
   pull(IMPORTE) %>% 
   density() %>% 
-  plot(main = "Distribución del importe de las infracciones",
+  plot(main = "Distribución del importe de las infracciones de código G01",
        xlab = "Edad",
        ylab = "Densidad")
 
