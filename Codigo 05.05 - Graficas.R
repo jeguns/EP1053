@@ -9,6 +9,7 @@ library(sjstats)
 library(readr)
 library(lubridate)
 library(forcats)
+library(readxl)
 
 # Lectura y preprocesamiento ----------------------------------------------
 
@@ -43,7 +44,7 @@ Multas %>%
 Multas %>% 
   select(GRAVEDAD) %>% 
   table() %>% 
-  barplot(col  = c("forestgreen","gold","red"),
+  barplot(col  = c("red","forestgreen","gold"),
           main = "Distribución de infracciones por gravedad",
           cex.axis = 0.75)
 
@@ -51,17 +52,17 @@ Multas %>%
   select(GRAVEDAD) %>% 
   table() -> Tabla
 Tabla %>% 
-  barplot(col  = c("forestgreen","gold","red"),
+  barplot(col  = c("red","forestgreen","gold"),
           main = "Distribución de infracciones por gravedad",
           cex.axis = 0.75) -> Grafico
 Grafico %>% text(y=Tabla-250,labels = as.character(Tabla))
+
+pie(table(Multas$GRAVEDAD))
 
 Multas %>% 
   select(GRAVEDAD) %>% 
   table() %>% 
   pie()
-
-pie(table(Multas$GRAVEDAD))
 
 Multas %>% 
   select(GRAVEDAD) %>% 
@@ -72,9 +73,8 @@ Multas %>%
 library(waffle)
 
 Multas %>% 
-  group_by(FORMATO) %>% 
-  count() %>% 
-  mutate(n=round(n/100),0) |> 
+  count(FORMATO) %>% 
+  mutate(n=round(n/100,0)) |> 
   pull(n) |> 
   waffle(rows = 5)
 
@@ -84,15 +84,11 @@ Multas %>%
 # Gráficas para variables cuantitativas --------------------------------------------
 
 Multas %>% 
-  select(IMPORTE) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
+  pull(IMPORTE) %>% 
   hist()
 
 Multas %>% 
-  select(IMPORTE) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
+  pull(IMPORTE) %>% 
   hist(col  = "dodgerblue3",
        #freq = FALSE,
        main = "Distribución de importes por infracciones",
@@ -100,9 +96,7 @@ Multas %>%
        ylab = "Frecuencia")
 
 Multas %>% 
-  select(IMPORTE) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
+  pull(IMPORTE) %>% 
   hist(col  = "dodgerblue3",
        freq = FALSE,
        main = "Distribución de importes por infracciones",
@@ -111,28 +105,19 @@ Multas %>%
 
 Multas %>% 
   filter(CODIGO == "G56") |> 
-  select(IMPORTE) %>% 
-  as.matrix() %>% 
-  as.vector() %>% 
+  pull(IMPORTE) %>% 
   hist(col  = "dodgerblue3",
        #freq = FALSE,
        main = "Distribución de importes por infracciones (código G56)",
        xlab = "Importe",
        ylab = "Frecuencia")
 
+boxplot(Multas$IMPORTE)
 
 Multas %>% 
   filter(CODIGO == "G01") |> 
   select(IMPORTE) %>% 
   boxplot()
-
-boxplot(Multas$IMPORTE)
-
-Multas %>% 
-  select(IMPORTE) %>% 
-  boxplot(col  = "turquoise",
-          main = "Distribución del importe de las infracciones",
-          ylab = "Edad")
 
 Multas %>% 
   filter(CODIGO == "G01") |> 
@@ -158,12 +143,19 @@ Multas %>%
 
 Multas %>% 
   filter(CODIGO == "G01") |> 
-  select(IMPORTE) %>% 
-  filter(!is.na(IMPORTE)) %>% 
-  pull() |> 
+  filter(!is.na(IMPORTE))  |> 
+  pull(IMPORTE) %>% 
   density() %>% 
   plot(main = "Distribución del importe de las infracciones",
        xlab = "Edad",
        ylab = "Densidad")
 
-
+library(agricolae)
+Multas %>% 
+  filter(CODIGO == "G01") |> 
+  filter(!is.na(IMPORTE))  |> 
+  pull(IMPORTE) |> 
+  graph.freq(plot=FALSE)  |> 
+  ogive.freq(col="dodgerblue3",frame=FALSE,
+             xlab="Importe", ylab="Frecuencia acumulada relativa", 
+             main="Distribución del importe de las infracciones de código G01")
