@@ -95,18 +95,16 @@ identical(datos07B,datos07C)
 str(datos07A)
 str(datos07B)
 str(datos07C) # TIBBLE (ES UN TIPO DE DATA FRAME)
-datos07A
-datos07C
 
-datos08A = read.table("Datos 03.01 - 08.csv", header = TRUE, sep = ";")
-datos08B = read.csv("Datos 03.01 - 08.csv", sep = ";")
-datos08C = read.csv2("Datos 03.01 - 08.csv")
-datos08D = read_csv2("Datos 03.01 - 08.csv")
-datos08E = read_delim("Datos 03.01 - 08.csv", delim = ";")
+datos08A = read.table("Datos 03.01 - 08.csv", header = TRUE, sep = ";") # data frame
+datos08B = read.csv("Datos 03.01 - 08.csv", sep = ";") # data frame
+datos08C = read.csv2("Datos 03.01 - 08.csv") # data frame
+datos08D = read_csv2("Datos 03.01 - 08.csv") # tibble
+datos08E = read_delim("Datos 03.01 - 08.csv", delim = ";") # tibble
 identical(datos08A,datos08B)
 identical(datos08A,datos08C)
 identical(datos08D,datos08B)
-identical(datos08D,datos08E) #### 
+identical(datos08D,datos08E)
 str(datos08D)
 str(datos08E)
 
@@ -120,6 +118,7 @@ library(readxl)
 datos10A = read_xls("Datos 03.01 - 10.xls")
 datos10A = read_excel("Datos 03.01 - 10.xls")
 datos10B = read_xlsx("Datos 03.01 - 10.xlsx")
+datos10C = read_excel("Datos 03.01 - 10.xlsx")
 identical(datos10A,datos10B)
 # Filtre los registros correspondientes a sexo masculino y
 # que no tengan datos perdidos en esa columna
@@ -133,10 +132,11 @@ datos10A[filtro2,]
 # en la columna edad.
 filtro3 = datos10A$dpt_cdc!="LIMA" & !is.na(datos10A$edad)
 datos10A[filtro3,]
-View(datos10A)
+View(datos10A[filtro3,])
 # Otro ejemplo:
 filtro4 = datos10A$dpt_cdc!="LIMA" & is.na(datos10A$fecha_dosis1)
 datos10A[filtro4,] -> ejemplo
+View(ejemplo)
 
 datos11 = read_excel("Datos 03.01 - 11.xlsx") 
 View(datos11)
