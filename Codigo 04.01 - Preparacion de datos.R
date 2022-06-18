@@ -77,15 +77,15 @@ skim(datos41A)
 # así como el uso de filtros por filas (observaciones) y 
 # columnas (selección de variables)
 
+library(dplyr)
 datos41B = read.csv2("Datos 04.01 - B.csv")
-datos41B %>% View()
+datos41B %>% View() # Equivale a View(datos41B)
 datos41B %>% select(Nombre,Nota,Edad,NumCred) # Columnas a mantener
 datos41B %>% select(-X) # Columnas a eliminar
 (datos41C = datos41B %>% select(-X))
 (datos41B |> select(-X) -> datos41C)
 
 datos41C %>% filter(Nota>=0 & Nota<=20) # O: | (Alt 124)
-
 datos41C %>% filter(!Nota<0 & !Nota>20)
 
 datos41C %>% filter(Edad>=18 & Edad<=59)
@@ -95,20 +95,20 @@ datos41C %>% filter(NumCred>0)
 datos41C %>% 
   filter(Nota>=0 & Nota<=20) %>% 
   filter(Edad>=18 & Edad<=59) |>
-  filter(NumCred>0)
+  filter(NumCred>0) 
 
 filter(filter(filter(datos41C,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
 
 datos41B = read.csv2("Datos 04.01 - B.csv")
 
 datos41B |> 
-  filter(Edad>18 & Edad<90) %>% 
+  filter(Edad>=18 & Edad<=59) %>% 
   select(-X) %>% 
   filter(Nota>0 & Nota<20) %>% 
   filter(NumCred>0) -> datosOK
 
 datos41B |> 
-  filter(Edad>18 & Edad<90 & Nota>0 & Nota<20 & NumCred>0) %>% 
+  filter(Edad>=18 & Edad<=59 & Nota>0 & Nota<20 & NumCred>0) %>% 
   select(-X) 
 
 datos41B
@@ -135,6 +135,7 @@ as.Date("1965-12-31") |> as.numeric()
 as.Date("2021-09-02") - as.Date("2021-07-11")
 as.Date("2021-09-02") |> as.numeric()
 as.Date("2021-07-11") |> as.numeric()
+as.Date("2021-09-02") - as.Date("2018-09-02")
 
 a = Sys.time()
 b = Sys.time()
@@ -149,7 +150,7 @@ library(lubridate)
 today()
 now()
 OlsonNames()
-today(tz = "America/Lima")
+today(tz = "America/Lima") # tz = time zone
 now(tz = "America/Lima")
 today(tz = "US/Hawaii")
 now(tz = "US/Hawaii")
@@ -161,7 +162,7 @@ today(tz = "Australia/Eucla")
 now(tz = "Australia/Eucla")
 
 "2020-09-04"
-ymd("2020-09-04")
+ymd("2020-09-04") # y = year (año), m = month (mes), d = day (día)
 "2020-09-04" |> str()
 ymd("2020-09-04") |> str()
 "2020-09-04" |> typeof()
@@ -173,7 +174,7 @@ as.Date("04-09-2020",format=c("%d-%m-%Y"))
 as.Date("04-09-20",format=c("%d-%m-%y"))
 as.Date("04-Sep-2020",format=c("%d-%m-%Y")) # no reconoce Sep
 
-make_datetime(2020,09,04)
+make_datetime(2020,09,04) #UTC = Universal Time Coordinated
 make_datetime(day=04,month=09,year=2020)
 make_datetime(2020,09,04,11)
 make_datetime(2020,09,04,11,25)
@@ -183,7 +184,7 @@ year(a)
 month(a)
 day(a)
 mday(a) # día del mes
-yday(a) # día del año
+yday(a) # día del año (cuenta desde el 01/01)
 wday(a) # día de la semana comenzando en domingo
 wday(a,week_start = 1) # día de la semana comenzando en lunes
 yday(today())
@@ -204,6 +205,16 @@ today() %>% quarter()
 semester(today())
 today() %>% semester()
 
+# ¿En qué semestre se encuentra el 05 de octubre del 2018?
+"05-10-2018" %>% semester #1
+semester(as.Date("2018-10-05")) #2
+"05-10-2018" %>% semester() #3
+("2018-10-5")%>%  semester() #4
+dmy("05-10-2018") -> x1 #5
+semester(x1)
+as.Date("2022-10-05") %>% #6  
+  semester()
+
 now() %>% am()
 now() %>% pm()
 
@@ -220,13 +231,14 @@ library(lubridate) # lubridate sirve para el manejo de fechas
 library(dplyr)
 rename(datos41D, TIPO_TARJETA = 5)
 
-datos41D %>% 
-  rename(TIPO_TARJETA = 5)
+datos41D |> rename(TIPO_TARJETA = 5)
+
+datos41D %>% rename(TIPO_TARJETA = 5)
 
 datos41D %>% 
   rename(TIPO_TARJETA = 5) %>% 
   mutate(NOMBRE_COMPLETO = paste(NOMBRES,APELLIDOS)) %>% 
-  mutate(MONTO_USD = round(MONTO_SOLES/3.84,2)) %>% 
+  mutate(MONTO_USD = round(MONTO_SOLES/3.8,2)) %>% 
   mutate(FECHA_PAGO1  = as.Date(FECHA_PAGO1,format=c("%d/%m/%Y"))) %>% 
   mutate(FECHA_COMPRA = as.Date(FECHA_COMPRA,format=c("%d/%m/%Y"))) %>% 
   mutate(TIEMPO = as.numeric((FECHA_PAGO1 - FECHA_COMPRA))) %>% 
@@ -248,16 +260,9 @@ areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
 empleados |> str()
 
-empleados %>% 
-  mutate(FNAC = as.Date(FECHA_NACIMIENTO)) |> 
-  mutate(MNAC = month(FNAC)) |> 
-  mutate(EDAD = ((today()-FNAC)/365) %>% floor() %>% as.numeric()) %>% 
-  select(-FECHA_NACIMIENTO) -> empleados
-
 inner_join(empleados,areas) 
 empleados %>% inner_join(areas)
 areas |> inner_join(empleados)
-empleados |>  inner_join(areas)
 empleados %>% inner_join(areas) -> datos_total
 datos_total |> View()
 
