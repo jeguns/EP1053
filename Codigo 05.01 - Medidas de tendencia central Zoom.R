@@ -60,17 +60,20 @@ datos |> skim()
 
 datos$DURACION |> mean()
 
-datos |> pull(DURACION) |> mean()
+datos |> 
+  pull(DURACION) |> 
+  mean()
+
+datos |> select(DURACION) |> mean() # NO
 
 datos |> 
-  filter(INVITADO == "No") |> 
+  filter(INVITADO == "No") |> # añadimos este filtro
   pull(DURACION) |> 
   mean()
 
 datos |> 
   filter(INVITADO == "No") |> 
   summarise(mean(DURACION))
-
 
 datos |> 
   filter(INVITADO == "No") |> 
@@ -87,6 +90,8 @@ datos |>
 datos |> 
   filter(ESPERA == "No") |> 
   summarise(Moda_NoEspera = mfv(DURACION))
+
+datos$ESPERA |> mfv()
 
 datos |> 
   group_by(INVITADO) |> 
