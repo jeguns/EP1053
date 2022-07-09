@@ -24,7 +24,6 @@ datos$INVITADO |> table()
 datos |> pull(INVITADO) |> table() 
 datos |> select(INVITADO) |> table() 
 
-
 datos$INVITADO |> table() |> prop.table()
 datos |> pull(INVITADO) |> table() |> prop.table()
 datos |> select(INVITADO) |> table() |> prop.table()
@@ -42,7 +41,7 @@ datos |>
 
 datos |> 
   pull(DURACION) |> 
-  fdt(breaks="Sturges") |> 
+  fdt(breaks="Sturges") |>  # fdt = frequency distribution table
   print()
 
 datos |> 
