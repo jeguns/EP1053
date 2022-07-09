@@ -52,6 +52,6 @@ datos |>
 
 datos |> 
   filter(ESPERA == "Sí") |> 
-  summarise(Percentiles = quantile(DURACION, probs = c(0.02,0.82)))
+  summarise(Percentiles = quantile(DURACION, probs = c(0.20,0.82)))
 
 
