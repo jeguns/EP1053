@@ -58,17 +58,16 @@ datos |>
   pie(col  = c("red","gold"),
       main = "Distribución de usuarios invitados")
 
-
 datos |>  
   pull(INVITADO) |> 
   table() |> 
-  waffle()
+  waffle(colors = c("red","green"))
 
 datos |>
   pull(INVITADO) |>
   table() |>
   waffle(rows       = 8,
-         colors     = c("red", "gold"),
+         colors     = c("darkseagreen4", "brown1"),
          title      = "Distribución de usuarios invitados",
          legend_pos = "bottom")
 
@@ -80,7 +79,7 @@ datos |>
 datos |>  pull(DURACION) |> hist()
 
 datos |>  pull(DURACION) |> 
-  hist(col  = "deeppink1",
+  hist(col  = "cornflowerblue",
        #freq = FALSE,
        main = "Distribución de la duración del tiempo de conexión",
        xlab = "Edad",
@@ -115,7 +114,7 @@ datos |>
 
 datos |> 
   pull(DURACION) |> 
-  fdt(start=0,end=120,h=10,right=FALSE) %>% 
+  fdt(start=0,end=120,h=10,right=FALSE) |> 
   plot(type = "cfp",
        col  = "darkblue",
        pch  = 18,
