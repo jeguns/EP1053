@@ -122,3 +122,23 @@ datos |>
        ylab = "Frecuencia acumulada",
        main = "Distribución acumulada de tiempos de duración")
 
+
+# Adcional ----------------------------------------------------------------
+
+datos |> 
+  filter(DURACION == 15) # conectados 15 minutos 
+
+datos |> 
+  filter(DURACION > 20) # conectados más de 20 minutos
+
+datos |> 
+  filter(DURACION <= 18) # conectados hasta 18 minutos
+
+datos |> 
+  filter(DURACION >=30 & DURACION <= 60) # conectados desde 30 hasta 60 minutos
+
+datos |> 
+  filter(DURACION == 20 | DURACION == 30 | DURACION == 40)
+
+datos |> 
+  filter(DURACION %in% c(20,30,40))
