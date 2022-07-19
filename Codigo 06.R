@@ -1,12 +1,52 @@
 
-# Usando códigos de Python en RStudio
+# MANEJO DE PAQUETES EN RSTUDIO -------------------------------------------
+
+### Actualización de R ------------------------------------------------------
+
+install.packages("installr")
+library(installr)
+updateR()
+
+### Uso tradicional de paquetes ---------------------------------------------
+
+install.packages("TSA")
+install.packages(c("tseries","leaflet"))
+remove.packages("leaflet")
+library(dplyr) # activar
+detach("package:dplyr", unload = TRUE) #desactivar
+update.packages("caret")
+
+### Uso de paquetes con pacman ----------------------------------------------
+
+library(pacman)
+p_load(modeest,e1071)
+p_install(ggmap)
+p_unload(modeest)
+p_load(caret)
+p_update(update=FALSE)# lista de paquetes instalados que faltan actualizar
+p_update(update=TRUE) # ACTUALIZA todos los paquetes que sean necesarios
+
+### Cran Tasks Views --------------------------------------------------------
+
+library(ctv)
+available.views()
+
+### Dependencia de paquetes -------------------------------------------------
+
+library(tools)
+dependsOnPkgs("dplyr")
+dependsOnPkgs("readxl")
+dependsOnPkgs("naniar")
+dependsOnPkgs("lubridate")
+
+# USANDO PYTHON Y R EN RSTUDIO --------------------------------------------
 
 # Es necesario que haya instalado Anaconda Python
 # Descárguelo aquí: https://www.anaconda.com/products/distribution
 
 library(reticulate)
 
-# Operación básica --------------------------------------------------------
+### Operación básica --------------------------------------------------------
 
 repl_python() # activar consola de Python
 x = 4.3
@@ -21,7 +61,7 @@ py$x; py$x |> typeof()
 py$y; py$y |> typeof()
 py$z; py$z |> typeof()
 
-# Paquete math y uso de pi ------------------------------------------------
+### Paquete math y uso de pi ------------------------------------------------
 
 repl_python() 
 import math
@@ -34,7 +74,7 @@ exit
 
 py$ope1; typeof(py$ope1)
 
-# Paquete math y uso del número de Euler ----------------------------------
+### Paquete math y uso del número de Euler ----------------------------------
 
 repl_python()
 math.log(math.e**2,math.e)
@@ -45,7 +85,7 @@ exit
 
 py$ope2 ;typeof(py$ope2)
 
-# Paquete math y uso de factorial -----------------------------------------
+### Paquete math y uso de factorial -----------------------------------------
 
 repl_python()
 x = 5
@@ -56,7 +96,7 @@ exit
 
 py$ope3; typeof(py$ope3)
 
-# Números complejos -------------------------------------------------------
+### Números complejos -------------------------------------------------------
 
 repl_python()
 z1 = 7 + 12j  # complex(7, 12)
@@ -70,7 +110,7 @@ exit
 
 py$ope4 ;typeof(py$ope4)
 
-# Datos lógicos -----------------------------------------------------------
+### Datos lógicos -----------------------------------------------------------
 
 repl_python()
 x = 1e308
@@ -80,7 +120,7 @@ exit
 
 py$ope5 ;typeof(py$ope5)
 
-# De lista en Python a vector atómico en R --------------------------------
+### De lista en Python a vector atómico en R --------------------------------
 
 repl_python()
 lista_python = [20,15,28,12,11,19]
@@ -94,7 +134,7 @@ py$lista_python |> is.atomic()
 py$lista_python |> is.list()
 py$lista_python |> is.vector()
 
-# De tupla en Python a lista en R -----------------------------------------
+### De tupla en Python a lista en R -----------------------------------------
 
 repl_python()
 tupla_python = (3,5,4,5,4,4,3,4,3,3)
@@ -108,7 +148,7 @@ py$tupla_python |> is.atomic()
 py$tupla_python |> is.list()
 py$tupla_python |> is.vector()
 
-# De diccionario en Python a lista en R -----------------------------------
+### De diccionario en Python a lista en R -----------------------------------
 
 repl_python()
 dic_python = {"Nombre":["Sofia","Martin","Ricardo"], 
@@ -125,7 +165,7 @@ py$dic_python |> is.list()
 py$dic_python |> is.vector()
 py$dic_python |> as.data.frame()
 
-# Lectura de data frames --------------------------------------------------
+### Lectura de data frames --------------------------------------------------
 
 repl_python()
 import pandas as pd
@@ -143,7 +183,7 @@ py$datos |> is.data.frame()
 py$datos |> is.matrix()
 py$datos$sepal_length |> boxplot(col = "gray84")
 
-# Usar variables generadas en R -------------------------------------------
+### Usar variables generadas en R -------------------------------------------
 
 r1 = ((27-35)**2)/4 + (42/(log(12))**(1/2) - factorial(12)/(factorial(6)*factorial(6)))
 r1; str(r1)
