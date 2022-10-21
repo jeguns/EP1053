@@ -12,8 +12,6 @@ View(datos01)
 head(datos01) # por default muestra las 6 primeras filas 
 str(datos01) 
 dim(datos01)
-datos01$edad
-str(datos01$edad)
 col01 = datos01[,2]
 datos01[,2] -> col01
 col01
