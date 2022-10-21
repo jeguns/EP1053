@@ -29,8 +29,8 @@ datos02[filtro,]
 datos02[datos02$edad > 80,] -> datos02_80
 View(datos02_80)
 
-datos03 = read.table(file="Datos 03.01 - 03.txt", 
-                     header=FALSE, 
+datos03 = read.table(file ="Datos 03.01 - 03.txt", 
+                     header = FALSE, 
                      skip = 2,
                      col.names = c("ID","EDAD", "SEXO","DOSIS"),
                      na.strings = "*")
@@ -40,7 +40,6 @@ filtro = datos03$EDAD < 80 & datos03$SEXO == "F"
 datos03[filtro,] -> datos03_f80
 dim(datos03_f80)[1]
 nrow(datos03_f80)
-ncol(datos03_f80)
 
 datos04 = read.table("Datos 03.01 - 04.txt", 
                     header     = TRUE,
@@ -73,9 +72,6 @@ filtro = datos06$dist_domicilio=="SAN JUAN DE LURIGANCHO" & datos06$dist_cdc!="S
 datos06[filtro,c(2,3,4,11)]
 
 filtro = datos06$dist_domicilio=="SAN JUAN DE LURIGANCHO" & !datos06$dist_cdc=="SAN JUAN DE LURIGANCHO"
-datos06[filtro,c(2,3,4,11)]
-
-filtro = datos06$edad>50 & !datos06$edad>80
 datos06[filtro,c(2,3,4,11)]
 
 # Lectura de datos - Archivos csv -----------------------------------------
