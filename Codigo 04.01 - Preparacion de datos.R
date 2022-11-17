@@ -279,6 +279,8 @@ library(readxl)
 empleados = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Empleados")
 areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
+# Un breve paréntesis antes de analizar los distintos join
+
 empleados |> str()
 
 empleados |> select(APELLIDOS)
@@ -287,6 +289,7 @@ empleados |> pull(APELLIDOS)
 empleados |> select(APELLIDOS, NOMBRES, AREA)
 empleados |> pull(APELLIDOS, NOMBRES, AREA)
 
+# Ahora sí...
 
 inner_join(empleados,areas) 
 empleados %>% inner_join(areas)
