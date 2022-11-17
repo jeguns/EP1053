@@ -3,7 +3,7 @@
 
 # Introduccion ------------------------------------------------------------
 
-install.packages("dplyr")
+# install.packages("dplyr")
 
 library(dplyr) # (pipe y otras funciones)
 library(magrittr) # opcional (solo pipe)
@@ -97,13 +97,16 @@ datos41C %>%
   filter(Edad>=18 & Edad<=59) |>
   filter(NumCred>0) 
 
+datos41C |> 
+  filter(Nota>=0 & Nota<=20 & Edad>=18 & Edad<=59 & NumCred>0)
+
 filter(filter(filter(datos41C,Nota>0 & Nota<20),Edad>18 & Edad<90),NumCred>0)
 
 datos41B = read.csv2("Datos 04.01 - B.csv")
 
 datos41B |> 
-  filter(Edad>=18 & Edad<=59) %>% 
   select(-X) %>% 
+  filter(Edad>=18 & Edad<=59) %>% 
   filter(Nota>0 & Nota<20) %>% 
   filter(NumCred>0) -> datosOK
 
@@ -128,7 +131,7 @@ Sys.time() |> typeof()
 Sys.Date() |> as.numeric()
 Sys.time() |> as.numeric()
 
-as.Date("2022-01-28") |> as.numeric()
+as.Date("2022-11-10") |> as.numeric()
 as.Date("1970-01-01") |> as.numeric()
 as.Date("1965-12-31") |> as.numeric()
 
@@ -154,6 +157,8 @@ today(tz = "America/Lima") # tz = time zone
 now(tz = "America/Lima")
 today(tz = "US/Hawaii")
 now(tz = "US/Hawaii")
+today(tz = "Asia/Tokyo")
+now(tz = "Asia/Tokyo")
 today(tz = "Etc/GMT-5")
 now(tz = "Etc/GMT-5")
 today(tz = "Etc/GMT+5") # PERÚ
@@ -238,7 +243,7 @@ datos41D %>% rename(TIPO_TARJETA = 5)
 datos41D %>% 
   rename(TIPO_TARJETA = 5) %>% 
   mutate(NOMBRE_COMPLETO = paste(NOMBRES,APELLIDOS)) %>% 
-  mutate(MONTO_USD = round(MONTO_SOLES/3.8,2)) %>% 
+  mutate(MONTO_USD = round(MONTO_SOLES/3.85,2)) %>% 
   mutate(FECHA_PAGO1  = as.Date(FECHA_PAGO1,format=c("%d/%m/%Y"))) %>% 
   mutate(FECHA_COMPRA = as.Date(FECHA_COMPRA,format=c("%d/%m/%Y"))) %>% 
   mutate(TIEMPO = as.numeric((FECHA_PAGO1 - FECHA_COMPRA))) %>% 
@@ -246,7 +251,23 @@ datos41D %>%
   filter(MES == 1 & TIEMPO > 30) %>% 
   select(NOMBRE_COMPLETO, MONTO_USD, TIEMPO) -> MOROSOS
 
+datos41D %>% 
+  rename(TIPO_TARJETA = 5) %>% 
+  mutate(NOMBRE_COMPLETO = paste(NOMBRES,APELLIDOS),
+         MONTO_USD = round(MONTO_SOLES/3.85,2),
+         FECHA_PAGO1  = as.Date(FECHA_PAGO1,format=c("%d/%m/%Y")),
+         FECHA_COMPRA = as.Date(FECHA_COMPRA,format=c("%d/%m/%Y")),
+         TIEMPO = as.numeric((FECHA_PAGO1 - FECHA_COMPRA)),
+         MES    = month(FECHA_COMPRA)) %>% 
+  filter(MES == 1 & TIEMPO > 30) %>% 
+  select(NOMBRE_COMPLETO, MONTO_USD, TIEMPO) -> MOROSOS
+
 MOROSOS
+
+library(writexl)
+write_xlsx(MOROSOS, "000111_ARCHIVO.xlsx")
+write.csv(MOROSOS, "resultado.csv")
+write.csv2(MOROSOS, "resultado2.csv")
 
 # Si la fecha fuese por ejemplo 05-08-2020, tendríamos que colocar en formato "%d-%m-%Y"
 # Si la fecha fuese por ejemplo 2020.08.05, tendríamos que colocar en formato "%Y.%m.%d"
@@ -259,6 +280,13 @@ empleados = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Empleados")
 areas     = read_xlsx("Datos 04.01 - D.xlsx", sheet = "Areas")
 
 empleados |> str()
+
+empleados |> select(APELLIDOS)
+empleados |> pull(APELLIDOS)
+
+empleados |> select(APELLIDOS, NOMBRES, AREA)
+empleados |> pull(APELLIDOS, NOMBRES, AREA)
+
 
 inner_join(empleados,areas) 
 empleados %>% inner_join(areas)

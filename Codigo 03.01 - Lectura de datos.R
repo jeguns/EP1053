@@ -88,7 +88,7 @@ identical(datos07A,datos07C)
 identical(datos07B,datos07C)
 str(datos07A)
 str(datos07B)
-str(datos07C) # TIBBLE (ES UN TIPO DE DATA FRAME)
+str(datos07C) # TIBBLE (ES UN TIPO DE DATA FRAME) # tidyverse
 
 datos08A = read.table("Datos 03.01 - 08.csv", header = TRUE, sep = ";") # data frame
 datos08B = read.csv("Datos 03.01 - 08.csv", sep = ";") # data frame
@@ -99,8 +99,7 @@ identical(datos08A,datos08B)
 identical(datos08A,datos08C)
 identical(datos08D,datos08B)
 identical(datos08D,datos08E)
-str(datos08D)
-str(datos08E)
+datos08D == datos08E
 
 datos09 = read_csv2("Datos 03.01 - 09.csv")
 dim(datos09)
