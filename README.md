@@ -1,6 +1,12 @@
 # Introducción a la ciencia de datos
 
-Al finalizar el curso, el estudiante aplica tecnologías de información y comunicación para integrar, almacenar y procesar datos que permitan generar información estratégica para la toma de decisiones.
+## Información general
+
+| **Código del curso** 	| EP1053                             	|
+|----------------------	|------------------------------------	|
+| **Nombre del curso** 	| Introducción a la ciencia de datos 	|
+| **Docente**          	| Jesús Eduardo Gamboa Unsihuay      	|
+| **Correo**           	| jgamboa@lamolina.edu.pe            	|
 
 ## Contenido
 
@@ -14,9 +20,9 @@ Al finalizar el curso, el estudiante aplica tecnologías de información y comun
 
 ## Horario
 
-Teoría: Martes de 2 a 4 p.m. (Aula 54)
-Práctica: Viernes de 2 a 4 p.m. (LES2 - Grupo G), de 4 a 6 p.m. (LES2 - Grupo K)
-Atención en oficina: Miércoles de 11 a.m. a 12 m y de 2 a 3 p.m.
+- Teoría: Martes de 2 a 4 p.m. (Aula 54)
+- Práctica: Viernes de 2 a 4 p.m. (LES2 - Grupo G), de 4 a 6 p.m. (LES2 - Grupo K)
+- Atención en oficina: Miércoles de 11 a.m. a 12 m y de 2 a 3 p.m.
 
 ## Evaluaciones
 
