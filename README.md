@@ -2,6 +2,8 @@
 
 ## Información general
 
+|                      	|                                    	|
+|----------------------	|------------------------------------	|
 | **Código del curso** 	| EP1053                             	|
 | **Nombre del curso** 	| Introducción a la ciencia de datos 	|
 | **Docente**          	| Jesús Eduardo Gamboa Unsihuay      	|
