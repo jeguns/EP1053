@@ -176,8 +176,97 @@ datos1 |> group_by(region) |> summarize(cv = cv(edad)*100)
 
 # Tablas ------------------------------------------------------------------
 
+datos1 |> count(sexo) |> mutate(porc = n/sum(n)*100)
 
+library(tidyr)
+datos1 |> count(sexo,ocupa) |> filter(!is.na(ocupa))
+datos1 |> count(sexo,ocupa) |> filter(!is.na(ocupa)) |> spread(sexo,n, fill=0)
+
+datos1 |> 
+  count(sexo,ocupa)  |> 
+  filter(!is.na(ocupa)) |>
+  group_by(ocupa) |> 
+  mutate(prop = n / sum(n)*100) |> 
+  select(-n) |> 
+  spread(sexo, prop, fill = 0)
+
+datos1 |> 
+  count(sexo,ocupa)  |> 
+  filter(!is.na(ocupa)) |>
+  group_by(sexo) |> 
+  mutate(prop = n / sum(n)*100) |> 
+  select(-n) |> 
+  spread(sexo, prop, fill = 0)
+
+datos1 |> 
+  filter(!is.na(hogar)) |> 
+  count(hogar) |> 
+  mutate(porc = n/sum(n)*100)
+
+library(DescTools)
+datos |> pull(hogar) |> Freq()
+datos |> pull(edad) |> Freq()
+datos |> pull(edad) |> Freq(breaks = seq(10,100,20))
 
 # Gráficos ----------------------------------------------------------------
 
+## Variable cualitativa -------------------------------------------------
 
+datos1 |> 
+  pull(sexo) |> 
+  table() |>
+  barplot(main = "Distribución de encuestados por sexo",
+          xlab = "Sexo",
+          ylab = "Frecuencia",
+          col = "darkblue")
+
+datos1 |> 
+  pull(region) |> 
+  table() |>
+  barplot(main = "Distribución de encuestados por región de residencia",
+          xlab = "Región",
+          ylab = "Frecuencia",
+          col = c("darkblue","forestgreen","gold"))
+
+datos1 |> 
+  pull(region) |> 
+  table() |>
+  pie(main = "Distribución de encuestados por región de residencia",
+      col = c("darkblue","forestgreen","gold"))
+
+datos1 |>
+  count(region) |>
+  mutate(PORC = round(100*n/sum(n))) -> tabla
+tabla |> pull(PORC,region) -> partes
+library(waffle)
+waffle(partes, title = "Distribución de encuestados por región de residencia",
+       rows = 10, colors = c("darkblue","forestgreen","gold"))
+
+## Variable cuantitativa -------------------------------------------------
+
+datos |> 
+  pull(edad) |>
+  hist(main = "Distribución de encuestados por edad",
+       xlab = "Edad", ylab = "Frecuencia (número de encuestados)",
+       col = "gold")
+
+
+datos |> 
+  pull(P15) |>
+  hist(main = "Distribución de encuestados por monto mínimo para vivir en el hogar",
+       xlab = "Monto mínimo mensual que requiere su hogar para vivir",
+       ylab = "Frecuencia (número de encuestados)",
+       col = "gold",
+       breaks = seq(0,40000,2000))
+
+datos |> 
+  pull(edad) |>
+  boxplot(main = "Distribución de encuestados por edad",
+          ylab = "Edad",
+          col = "gold")
+          
+datos |> 
+  pull(P15) |>
+  boxplot(main = "Distribución de encuestados por monto mínimo para vivir en el hogar",
+          ylab = "Monto mínimo",
+          col = "gold")
