@@ -1,5 +1,7 @@
 # Introducción a la ciencia de datos
 
+Curso ofrecido a los estudiantes de primer ciclo de la carrera de Estadística Informática (UNALM)
+
 ## Información general
 
 |                      	|                                    	|
