@@ -22,17 +22,17 @@
 ## Horario
 
 - Teoría: Martes de 2 a 4 p.m. (Aula 54)
-- Práctica: Viernes de 2 a 4 p.m. (LES2 - Grupo G), de 4 a 6 p.m. (LES2 - Grupo K)
-- Atención en oficina: Miércoles de 11 a.m. a 12 m y de 2 a 3 p.m.
+- Práctica: Viernes de 2 a 4 p.m. (LES2 - Grupo G)
+- Atención en oficina: Martes de 10 a.m. a 12 m
 
 ## Evaluaciones
 
-- 3 evaluaciones prácticas (20%) - Individual
-- 2 evaluaciones de conocimiento (50%) - Individual
-- Taller (5%) - Grupal
+- 3 evaluaciones prácticas (5% + 5% + 10%) - Individual
+- 2 evaluaciones de conocimiento (25% + 25%) - Individual
+- Talleres (2.5% + 2.5%) - Grupal
 - Trabajo de fin de curso (15%) - Grupal
 - Asistencia, participación y trabajo en equipo (10%)
 
 ## Cronograma de clases
 
-[Consultar aquí](https://docs.google.com/spreadsheets/d/1vbF67lwjUmPBLysCmGdTfWio53FITWNiWmFqSwQ3RzU/edit?usp=sharing)
+[Consultar aquí]([https://docs.google.com/spreadsheets/d/1vbF67lwjUmPBLysCmGdTfWio53FITWNiWmFqSwQ3RzU/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1vRWe8WFROlKv43M7n7n2dfN-n9NGIqBJBpbHH0VwUlY/edit?usp=sharing))
