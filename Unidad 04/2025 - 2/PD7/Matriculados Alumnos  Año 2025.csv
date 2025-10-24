@@ -1,0 +1,660 @@
+Facultad;Departamento;Periodo;curso;cantidad_matriculados
+Agronomia;Entomologia;2025-I;Apicultura General;28
+Agronomia;Entomologia;2025-I;Control Biologico;4
+Agronomia;Entomologia;2025-I;Crianza y Evaluacion de Insectos;4
+Agronomia;Entomologia;2025-I;Entomologia Agricola;109
+Agronomia;Entomologia;2025-I;Entomologia General;131
+Agronomia;Entomologia;2025-I;Principios de Control de Plagas;100
+Agronomia;Fitopatologia;2025-I;Fitopatologia Agricola;119
+Agronomia;Fitopatologia;2025-I;Fitopatologia General;132
+Agronomia;Fitopatologia;2025-I;Fitovirologia General;9
+Agronomia;Fitotecnia;2025-I;Agroecologia;86
+Agronomia;Fitotecnia;2025-I;Agrotecnia;127
+Agronomia;Fitotecnia;2025-I;Algodonero y Otras Fibras Vegetales;12
+Agronomia;Fitotecnia;2025-I;Arroz;3
+Agronomia;Fitotecnia;2025-I;Biotecnologia - Micropropagacion;55
+Agronomia;Fitotecnia;2025-I;Caña de Azucar;29
+Agronomia;Fitotecnia;2025-I;Cereales Menores y Granos Nativos;4
+Agronomia;Fitotecnia;2025-I;Cultivos Forrajeros;13
+Agronomia;Fitotecnia;2025-I;Cultivos I (Cebada, trigo, arroz, maiz, cereales andinos);52
+Agronomia;Fitotecnia;2025-I;Cultivos II (Papa, camote, leguminosas);60
+Agronomia;Fitotecnia;2025-I;Cultivos III (Algodon, oleaginosas, caña de azucar);67
+Agronomia;Fitotecnia;2025-I;Cultivos IV (Cultivos tropicales, cultivos forrajeros);69
+Agronomia;Fitotecnia;2025-I;Cultivos Tropicales;5
+Agronomia;Fitotecnia;2025-I;Ecofisiologia de Cultivos;29
+Agronomia;Fitotecnia;2025-I;Extension y Promocion Agraria;101
+Agronomia;Fitotecnia;2025-I;Fitogenetica;83
+Agronomia;Fitotecnia;2025-I;Fitomejoramiento General;77
+Agronomia;Fitotecnia;2025-I;Formulacion y Evaluacion de Proyectos Agrarios;16
+Agronomia;Fitotecnia;2025-I;Gestion Agricola I;73
+Agronomia;Fitotecnia;2025-I;Gestion Agricola II;54
+Agronomia;Fitotecnia;2025-I;Gestion Agricola III;53
+Agronomia;Fitotecnia;2025-I;Introduccion a la Agronomia;170
+Agronomia;Fitotecnia;2025-I;Leguminosas de Granos;19
+Agronomia;Fitotecnia;2025-I;Maiz y Sorgo;8
+Agronomia;Fitotecnia;2025-I;Manejo de Malezas;93
+Agronomia;Fitotecnia;2025-I;Manejo de Pasturas;22
+Agronomia;Fitotecnia;2025-I;Manejo y Control de Semillas;113
+Agronomia;Fitotecnia;2025-I;Oleaginosas;30
+Agronomia;Fitotecnia;2025-I;Practicas Agronomicas I;133
+Agronomia;Fitotecnia;2025-I;Practicas Agronomicas II;103
+Agronomia;Fitotecnia;2025-I;Sistemas Agrarios;16
+Agronomia;Fitotecnia;2025-I;Sistematica Agricola;111
+Agronomia;Fitotecnia;2025-I;Tecnologias Agricolas;55
+Agronomia;Fitotecnia;2025-I;Tuberosas y Raices;12
+Agronomia;Horticultura;2025-I;Certificaciones Agricolas;29
+Agronomia;Horticultura;2025-I;Fisiologia y Manejo Post Cosecha;95
+Agronomia;Horticultura;2025-I;Floricultura I;7
+Agronomia;Horticultura;2025-I;Floricultura II;19
+Agronomia;Horticultura;2025-I;Fruticultura Especial I;18
+Agronomia;Horticultura;2025-I;Fruticultura Especial II;13
+Agronomia;Horticultura;2025-I;Fruticultura General;114
+Agronomia;Horticultura;2025-I;Manejo de Viveros;18
+Agronomia;Horticultura;2025-I;Metodologia de la Investigacion;25
+Agronomia;Horticultura;2025-I;Olericultura Especial;7
+Agronomia;Horticultura;2025-I;Olericultura General;94
+Agronomia;Horticultura;2025-I;Principios de Arquitectura Paisajista;17
+Agronomia;Horticultura;2025-I;Principios de Propagacion de Plantas;102
+Agronomia;Horticultura;2025-I;Seminario en Ciencias Agronomia I;82
+Agronomia;Horticultura;2025-I;Seminario en Ciencias Agronomia II;61
+Agronomia;Horticultura;2025-I;Viticultura;8
+Agronomia;Suelos;2025-I;Analisis de Suelos y Plantas;13
+Agronomia;Suelos;2025-I;Cartografia del Suelo;7
+Agronomia;Suelos;2025-I;Contaminacion de Suelos;45
+Agronomia;Suelos;2025-I;Edafologia;281
+Agronomia;Suelos;2025-I;Fertilidad del Suelo;119
+Agronomia;Suelos;2025-I;Fundamentos del Riego;75
+Agronomia;Suelos;2025-I;Geologia;42
+Agronomia;Suelos;2025-I;Manejo y Conservacion del Suelo;91
+Agronomia;Suelos;2025-I;Microbiologia del Suelo;22
+Agronomia;Suelos;2025-I;Suelos Forestales;8
+Ciencias;Biologia;2025-I;Biologia Celular;28
+Ciencias;Biologia;2025-I;Biologia Experimental I;20
+Ciencias;Biologia;2025-I;Biologia Experimental II;9
+Ciencias;Biologia;2025-I;Biologia Experimental III;18
+Ciencias;Biologia;2025-I;Biologia General;440
+Ciencias;Biologia;2025-I;Biotecnologia;27
+Ciencias;Biologia;2025-I;Botanica Economica;20
+Ciencias;Biologia;2025-I;Botanica General;195
+Ciencias;Biologia;2025-I;Cultivo de Celulas y Tejidos Vegetales;22
+Ciencias;Biologia;2025-I;Diversidad de Briofitas, Pteridofitas y Gimnospermas;24
+Ciencias;Biologia;2025-I;Diversidad de Invertebrados;38
+Ciencias;Biologia;2025-I;Ecofisiologia;15
+Ciencias;Biologia;2025-I;Ecologia de Ecosistemas;12
+Ciencias;Biologia;2025-I;Ecologia de Montanas;17
+Ciencias;Biologia;2025-I;Ecologia General;723
+Ciencias;Biologia;2025-I;Fisiologia Animal;40
+Ciencias;Biologia;2025-I;Fisiologia Microbiana;23
+Ciencias;Biologia;2025-I;Fisiologia Vegetal;235
+Ciencias;Biologia;2025-I;Fisiologia Vegetal Avanzada;25
+Ciencias;Biologia;2025-I;Genetica;82
+Ciencias;Biologia;2025-I;Genetica Molecular Microbiana;17
+Ciencias;Biologia;2025-I;Genetica Vegetal;31
+Ciencias;Biologia;2025-I;Investigacion;12
+Ciencias;Biologia;2025-I;Laboratorio de Genetica;23
+Ciencias;Biologia;2025-I;Laboratorio de Microbiologia;96
+Ciencias;Biologia;2025-I;Metabolismo Microbiano;26
+Ciencias;Biologia;2025-I;Microbiologia;93
+Ciencias;Biologia;2025-I;Microbiologia Industrial;16
+Ciencias;Biologia;2025-I;Morfogenesis y Diferenciacion Vegetal;36
+Ciencias;Biologia;2025-I;Principios de Bioinformatica;13
+Ciencias;Biologia;2025-I;Principios de Evolucion;11
+Ciencias;Biologia;2025-I;Zoologia General;54
+Ciencias;Fisica y Meteorologia;2025-I;Agrometeorologia;15
+Ciencias;Fisica y Meteorologia;2025-I;Biofisica;17
+Ciencias;Fisica y Meteorologia;2025-I;Cambio Climatico, Adaptacion y Mitigacion;11
+Ciencias;Fisica y Meteorologia;2025-I;Circuitos Electricos;5
+Ciencias;Fisica y Meteorologia;2025-I;Climatologia;28
+Ciencias;Fisica y Meteorologia;2025-I;Climatologia Aplicada;46
+Ciencias;Fisica y Meteorologia;2025-I;Electronica Experimental;17
+Ciencias;Fisica y Meteorologia;2025-I;Evaluacion Y Vigilancia del Riesgo Climatico;20
+Ciencias;Fisica y Meteorologia;2025-I;Fisica Ambiental;53
+Ciencias;Fisica y Meteorologia;2025-I;Fisica Aplicada;17
+Ciencias;Fisica y Meteorologia;2025-I;Fisica de Calor y Procesos;19
+Ciencias;Fisica y Meteorologia;2025-I;Fisica General;525
+Ciencias;Fisica y Meteorologia;2025-I;Fisica II;89
+Ciencias;Fisica y Meteorologia;2025-I;Fisica III;44
+Ciencias;Fisica y Meteorologia;2025-I;Geologia y Geomorfologia;12
+Ciencias;Fisica y Meteorologia;2025-I;Geomatica Aplicada;6
+Ciencias;Fisica y Meteorologia;2025-I;Gestion de Riesgo Climatico y Desastres Hidrometeorologicos;5
+Ciencias;Fisica y Meteorologia;2025-I;Hidrometeorologia;11
+Ciencias;Fisica y Meteorologia;2025-I;Interaccion Oceano Atmosfera;12
+Ciencias;Fisica y Meteorologia;2025-I;Introduccion a la Gestion del Riesgo Climatico;21
+Ciencias;Fisica y Meteorologia;2025-I;Introduccion a la Meteorologia y Gestion de Riesgos Climaticos;25
+Ciencias;Fisica y Meteorologia;2025-I;Mecanica;17
+Ciencias;Fisica y Meteorologia;2025-I;Meteorologia Aeronautica;29
+Ciencias;Fisica y Meteorologia;2025-I;Meteorologia Dinamica;14
+Ciencias;Fisica y Meteorologia;2025-I;Meteorologia Economica, Mercadotecnia y Gestion;24
+Ciencias;Fisica y Meteorologia;2025-I;Meteorologia Fisica;9
+Ciencias;Fisica y Meteorologia;2025-I;Meteorologia General;267
+Ciencias;Fisica y Meteorologia;2025-I;Meteorologia Sinoptica I;28
+Ciencias;Fisica y Meteorologia;2025-I;Meteorologia Sinoptica II;7
+Ciencias;Fisica y Meteorologia;2025-I;Micrometeorologia;6
+Ciencias;Fisica y Meteorologia;2025-I;Participacion y Comunicacion en Gestion de Riesgos Climaticos;25
+Ciencias;Fisica y Meteorologia;2025-I;Planeamiento Territorial para la Gestion de Riesgos de Desastres;11
+Ciencias;Fisica y Meteorologia;2025-I;Seminario en Ingenieria Meteorologica y Gestion de Riesgos Climaticos I;12
+Ciencias;Fisica y Meteorologia;2025-I;Seminario en Ingenieria Meteorologica y Gestion de Riesgos Climaticos II;5
+Ciencias;Fisica y Meteorologia;2025-I;Seminario I;4
+Ciencias;Fisica y Meteorologia;2025-I;Seminario II;6
+Ciencias;Fisica y Meteorologia;2025-I;Sistema de Informacion Geografica;30
+Ciencias;Fisica y Meteorologia;2025-I;Tecnicas de Programacion I;73
+Ciencias;Fisica y Meteorologia;2025-I;Tecnicas de Programacion II;3
+Ciencias;Fisica y Meteorologia;2025-I;Tecnicas de Pronostico del Tiempon y Clima;11
+Ciencias;Fisica y Meteorologia;2025-I;Tecnicas Estadisticas y Analisis de Datos Climaticos;14
+Ciencias;Fisica y Meteorologia;2025-I;Teoria Instrumental y Metodos de Observacion;30
+Ciencias;Fisica y Meteorologia;2025-I;Termodinamica de la Atmosfera;11
+Ciencias;Fisica y Meteorologia;2025-I;Topicos Especiales en Gestion de Riesgos y Desastres;13
+Ciencias;Ingenieria Ambiental;2025-I;Auditoria de Sistemas Integrados de Gestion;25
+Ciencias;Ingenieria Ambiental;2025-I;Biorremediacion;27
+Ciencias;Ingenieria Ambiental;2025-I;Ciudades Sostenibles;30
+Ciencias;Ingenieria Ambiental;2025-I;Contaminacion Atmosferica;58
+Ciencias;Ingenieria Ambiental;2025-I;Contaminacion de Aguas;44
+Ciencias;Ingenieria Ambiental;2025-I;Educacion Ambiental;37
+Ciencias;Ingenieria Ambiental;2025-I;Evaluacion de Impacto Ambiental;43
+Ciencias;Ingenieria Ambiental;2025-I;Geografia Fisica;73
+Ciencias;Ingenieria Ambiental;2025-I;Geomatica Aplicada I;25
+Ciencias;Ingenieria Ambiental;2025-I;Gestion de Proyectos Ambientales;19
+Ciencias;Ingenieria Ambiental;2025-I;Gestion de Residuos Solidos;33
+Ciencias;Ingenieria Ambiental;2025-I;Gestion de Seguridad y Salud Ocupacional;32
+Ciencias;Ingenieria Ambiental;2025-I;Hidrologia e Hidrogeologia Ambiental;60
+Ciencias;Ingenieria Ambiental;2025-I;Ingenieria de Aguas Residuales;36
+Ciencias;Ingenieria Ambiental;2025-I;Introduccion a la Geomatica;20
+Ciencias;Ingenieria Ambiental;2025-I;Introduccion a la Ingenieria Ambiental;40
+Ciencias;Ingenieria Ambiental;2025-I;Mecanica de Fluidos e Hidraulica;53
+Ciencias;Ingenieria Ambiental;2025-I;Microbiologia Ambiental;35
+Ciencias;Ingenieria Ambiental;2025-I;Monitoreo y Control de la Contaminacion Atmosferica;30
+Ciencias;Ingenieria Ambiental;2025-I;Planificacion Ambiental;52
+Ciencias;Ingenieria Ambiental;2025-I;Prevencion y Control de la Contaminacion Por la Industria Minera;23
+Ciencias;Ingenieria Ambiental;2025-I;Procesos Industriales;62
+Ciencias;Ingenieria Ambiental;2025-I;Seminario en Ingenieria Ambiental I;31
+Ciencias;Ingenieria Ambiental;2025-I;Seminario en Ingenieria Ambiental II;18
+Ciencias;Ingenieria Ambiental;2025-I;Sistemas de Gestion Ambiental;36
+Ciencias;Ingenieria Ambiental;2025-I;Tratamiento y Abastecimiento de Agua;35
+Ciencias;Matematica;2025-I;Algebra Matricial;48
+Ciencias;Matematica;2025-I;Analisis Matematico I;957
+Ciencias;Matematica;2025-I;Analisis Matematico II;653
+Ciencias;Matematica;2025-I;Analisis Matematico III;41
+Ciencias;Matematica;2025-I;Analisis Matematico IV;50
+Ciencias;Matematica;2025-I;Calculo Avanzado I;54
+Ciencias;Matematica;2025-I;Calculo Avanzado II;28
+Ciencias;Matematica;2025-I;Calculo Diferencial;29
+Ciencias;Matematica;2025-I;Calculo Integral;31
+Ciencias;Matematica;2025-I;Calculo para Ciencias;159
+Ciencias;Matematica;2025-I;Ecuaciones Diferenciales;66
+Ciencias;Matematica;2025-I;Geometria Descriptiva;190
+Ciencias;Matematica;2025-I;Matematica Aplicada a la Ingenieria Ambiental I;70
+Ciencias;Matematica;2025-I;Matematica Aplicada a la Ingenieria Ambiental II;10
+Ciencias;Matematica;2025-I;Matematicas Discretas;45
+Ciencias;Matematica;2025-I;Metodos Numericos de Modelizacion Matematica;18
+Ciencias;Quimica;2025-I;Bioquimica;314
+Ciencias;Quimica;2025-I;Bioquimica Pesquera;15
+Ciencias;Quimica;2025-I;Cinetica Quimica y Enzimatica;15
+Ciencias;Quimica;2025-I;Enzimologia;22
+Ciencias;Quimica;2025-I;Fenomenos de Transferencia;9
+Ciencias;Quimica;2025-I;Fisico Quimica I;27
+Ciencias;Quimica;2025-I;Fisico Quimica II;11
+Ciencias;Quimica;2025-I;Fisicoquimica General;46
+Ciencias;Quimica;2025-I;Fitoquimica;24
+Ciencias;Quimica;2025-I;Laboratorio de Bioquimica;109
+Ciencias;Quimica;2025-I;Quimica Ambiental;56
+Ciencias;Quimica;2025-I;Quimica Analitica;113
+Ciencias;Quimica;2025-I;Quimica General;759
+Ciencias;Quimica;2025-I;Quimica Organica;456
+Ciencias;Quimica;2025-I;Topicos de Quimica Organica;14
+Ciencias Forestales;Industrias Forestales;2025-I;Anatomia de la Madera;26
+Ciencias Forestales;Industrias Forestales;2025-I;Aprovechamiento Forestal;50
+Ciencias Forestales;Industrias Forestales;2025-I;Aserrado de la Madera;34
+Ciencias Forestales;Industrias Forestales;2025-I;Construcciones con Madera;32
+Ciencias Forestales;Industrias Forestales;2025-I;Control de Calidad de Productos Maderables;6
+Ciencias Forestales;Industrias Forestales;2025-I;Diseño de Muebles;2
+Ciencias Forestales;Industrias Forestales;2025-I;Economia Forestal;49
+Ciencias Forestales;Industrias Forestales;2025-I;Fabricacion de Pulpa y Papel;3
+Ciencias Forestales;Industrias Forestales;2025-I;Fundamentos de Preservacion de la Madera;32
+Ciencias Forestales;Industrias Forestales;2025-I;Fundamentos en el Secado de la Madera;32
+Ciencias Forestales;Industrias Forestales;2025-I;Impacto Ambiental de la Industria Forestal;16
+Ciencias Forestales;Industrias Forestales;2025-I;Maquinaria y Equipos Forestales;39
+Ciencias Forestales;Industrias Forestales;2025-I;Planeamiento de Empresas Forestales;29
+Ciencias Forestales;Industrias Forestales;2025-I;Productos de Transformacion Mecanica de la Madera;32
+Ciencias Forestales;Industrias Forestales;2025-I;Productos Forestales Actualidad y Perspectiva;11
+Ciencias Forestales;Industrias Forestales;2025-I;Propiedades Fisico - Mecanicas de la Madera;23
+Ciencias Forestales;Industrias Forestales;2025-I;Quimica Forestal;23
+Ciencias Forestales;Industrias Forestales;2025-I;Tecnologia Quimica de Productos Forestales;33
+Ciencias Forestales;Industrias Forestales;2025-I;Uso de la Madera y Derivados en Construccion;5
+Ciencias Forestales;Manejo Forestal;2025-I;Agroforesteria;3
+Ciencias Forestales;Manejo Forestal;2025-I;Arboricultura Urbana y areas Verdes;11
+Ciencias Forestales;Manejo Forestal;2025-I;areas Naturales Protegidas;21
+Ciencias Forestales;Manejo Forestal;2025-I;Cartografia Forestal;10
+Ciencias Forestales;Manejo Forestal;2025-I;Dendrologia Avanzada;9
+Ciencias Forestales;Manejo Forestal;2025-I;Dendrologia I;51
+Ciencias Forestales;Manejo Forestal;2025-I;Dendrologia II;36
+Ciencias Forestales;Manejo Forestal;2025-I;Ecologia Forestal I;28
+Ciencias Forestales;Manejo Forestal;2025-I;Ecologia Forestal II;36
+Ciencias Forestales;Manejo Forestal;2025-I;Ecoturismo y Manejo de areas para Recreacion;27
+Ciencias Forestales;Manejo Forestal;2025-I;Elementos de Silvicultura;23
+Ciencias Forestales;Manejo Forestal;2025-I;Estadistica Forestal;30
+Ciencias Forestales;Manejo Forestal;2025-I;Etnobotanica Forestal;16
+Ciencias Forestales;Manejo Forestal;2025-I;Fauna Silvestre;36
+Ciencias Forestales;Manejo Forestal;2025-I;Fauna Silvestre y Parques Nacionales;24
+Ciencias Forestales;Manejo Forestal;2025-I;Gestion de areas Naturales Protegidas I;17
+Ciencias Forestales;Manejo Forestal;2025-I;Hidrologia Forestal;7
+Ciencias Forestales;Manejo Forestal;2025-I;Introduccion a la Ingenieria Forestal;49
+Ciencias Forestales;Manejo Forestal;2025-I;Introduccion al Manejo de Fauna Silvestre;49
+Ciencias Forestales;Manejo Forestal;2025-I;Manejo Forestal;26
+Ciencias Forestales;Manejo Forestal;2025-I;Medicion Forestal;57
+Ciencias Forestales;Manejo Forestal;2025-I;Ordenacion de Cuencas;24
+Ciencias Forestales;Manejo Forestal;2025-I;Politica y Legislacion Forestal;14
+Ciencias Forestales;Manejo Forestal;2025-I;Produccion Agropecuaria;22
+Ciencias Forestales;Manejo Forestal;2025-I;Proteccion Forestal;12
+Ciencias Forestales;Manejo Forestal;2025-I;Recursos Naturales del Peru;240
+Ciencias Forestales;Manejo Forestal;2025-I;Seminario en Ingenieria Forestal I;34
+Ciencias Forestales;Manejo Forestal;2025-I;Seminario en Ingenieria Forestal II;15
+Ciencias Forestales;Manejo Forestal;2025-I;Sistemas de Informacion Geografica y de Posicionamiento Global;5
+Ciencias Forestales;Manejo Forestal;2025-I;Sistemas Silviculturales Tropicales;36
+Ciencias Forestales;Manejo Forestal;2025-I;Teledeteccion Forestal;39
+Economia y Planificacion;Ciencias Humanas y Educacion;2025-I;etica;26
+Economia y Planificacion;Ciencias Humanas y Educacion;2025-I;etica y Ciudadania;456
+Economia y Planificacion;Ciencias Humanas y Educacion;2025-I;Historia Economica del Peru Contemporaneo;42
+Economia y Planificacion;Ciencias Humanas y Educacion;2025-I;Lenguaje y Comunicacion;481
+Economia y Planificacion;Ciencias Humanas y Educacion;2025-I;Proyecto Universitario Personalizado;23
+Economia y Planificacion;Ciencias Humanas y Educacion;2025-I;Redaccion Tecnica;23
+Economia y Planificacion;Ciencias Humanas y Educacion;2025-I;Redaccion y Argumentacion;575
+Economia y Planificacion;Economia y Planificacion;2025-I;Desarrollo y Politica Agraria;5
+Economia y Planificacion;Economia y Planificacion;2025-I;Econometria Basica;28
+Economia y Planificacion;Economia y Planificacion;2025-I;Econometria Intermedia;46
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia Agraria;37
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia Ambiental;64
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia de la Informacion;29
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia de la Innovacion Agraria;18
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia de la Regulacion;15
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia de los Recursos Naturales;17
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia del Bienestar;33
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia Ecologica;18
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia General;737
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia Internacional;21
+Economia y Planificacion;Economia y Planificacion;2025-I;Economia Regional;17
+Economia y Planificacion;Economia y Planificacion;2025-I;El agro en el Peru y el mundo;54
+Economia y Planificacion;Economia y Planificacion;2025-I;Evaluacion Social de Proyectos;34
+Economia y Planificacion;Economia y Planificacion;2025-I;Finanzas Corporativas;25
+Economia y Planificacion;Economia y Planificacion;2025-I;Finanzas de la Empresa;34
+Economia y Planificacion;Economia y Planificacion;2025-I;Finanzas Publicas;23
+Economia y Planificacion;Economia y Planificacion;2025-I;Formulacion y Evaluacion de Proyectos;19
+Economia y Planificacion;Economia y Planificacion;2025-I;Investigacion de Mercados;31
+Economia y Planificacion;Economia y Planificacion;2025-I;Investigacion de Operaciones;40
+Economia y Planificacion;Economia y Planificacion;2025-I;Macroeconometria;20
+Economia y Planificacion;Economia y Planificacion;2025-I;Macroeconomia Dinamica;33
+Economia y Planificacion;Economia y Planificacion;2025-I;Macroeconomia I;56
+Economia y Planificacion;Economia y Planificacion;2025-I;Macroeconomia II;27
+Economia y Planificacion;Economia y Planificacion;2025-I;Matematica para Economistas I;43
+Economia y Planificacion;Economia y Planificacion;2025-I;Matematica para Economistas II;30
+Economia y Planificacion;Economia y Planificacion;2025-I;Matematicas Financieras;132
+Economia y Planificacion;Economia y Planificacion;2025-I;Mercadeo Agrario;27
+Economia y Planificacion;Economia y Planificacion;2025-I;Mercado de Capitales;9
+Economia y Planificacion;Economia y Planificacion;2025-I;Metodologia de Investigacion en Economia I;34
+Economia y Planificacion;Economia y Planificacion;2025-I;Metodologia de Investigacion en Economia II;18
+Economia y Planificacion;Economia y Planificacion;2025-I;Microeconomia I;39
+Economia y Planificacion;Economia y Planificacion;2025-I;Microeconomia II;43
+Economia y Planificacion;Economia y Planificacion;2025-I;Negociaciones Internacionales;28
+Economia y Planificacion;Economia y Planificacion;2025-I;Organizacion Industrial;26
+Economia y Planificacion;Economia y Planificacion;2025-I;Politica Economica;6
+Economia y Planificacion;Economia y Planificacion;2025-I;Riesgos Financieros;15
+Economia y Planificacion;Economia y Planificacion;2025-I;Seminario d Tesis;15
+Economia y Planificacion;Economia y Planificacion;2025-I;Seminario de Investigacion I;21
+Economia y Planificacion;Economia y Planificacion;2025-I;Seminario de Investigacion II;3
+Economia y Planificacion;Economia y Planificacion;2025-I;Teoria de Juegos;2
+Economia y Planificacion;Economia y Planificacion;2025-I;Teoria del Crecimiento Economico;29
+Economia y Planificacion;Economia y Planificacion;2025-I;Teoria Monetaria;25
+Economia y Planificacion;Economia y Planificacion;2025-I;Teorias del Desarrollo Economico;14
+Economia y Planificacion;Economia y Planificacion;2025-I;Valoracion de la Calidad Ambiental;24
+Economia y Planificacion;Estadistica e Informatica;2025-I;Algoritmia;31
+Economia y Planificacion;Estadistica e Informatica;2025-I;Analisis de Regresion;26
+Economia y Planificacion;Estadistica e Informatica;2025-I;Analisis de Series de Tiempo;21
+Economia y Planificacion;Estadistica e Informatica;2025-I;Analisis Estadistico;41
+Economia y Planificacion;Estadistica e Informatica;2025-I;Bioestadistica;24
+Economia y Planificacion;Estadistica e Informatica;2025-I;Calculo de Probabilidades;43
+Economia y Planificacion;Estadistica e Informatica;2025-I;Ciencias de Datos I;26
+Economia y Planificacion;Estadistica e Informatica;2025-I;Ciencias de Datos II;18
+Economia y Planificacion;Estadistica e Informatica;2025-I;Diseños Experimentales I;42
+Economia y Planificacion;Estadistica e Informatica;2025-I;Diseños Experimentales II;26
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica Actuarial;10
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica Aplicada a la Economia y los Negocios I;87
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica Aplicada a la Economia y los Negocios II;29
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica Bayesiana;13
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica Computacional;29
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica Espacial;20
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica General;400
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estadistica no Parametrica;28
+Economia y Planificacion;Estadistica e Informatica;2025-I;Estrategias de Muestreo;34
+Economia y Planificacion;Estadistica e Informatica;2025-I;Gestion de Proyectos de Informacion;24
+Economia y Planificacion;Estadistica e Informatica;2025-I;Gestion Estrategica de Datos;22
+Economia y Planificacion;Estadistica e Informatica;2025-I;Herramientas de Gestion Empresarial;53
+Economia y Planificacion;Estadistica e Informatica;2025-I;Inferencia Estadistica;26
+Economia y Planificacion;Estadistica e Informatica;2025-I;Inferencia Multivariada;1
+Economia y Planificacion;Estadistica e Informatica;2025-I;Ingenieria de Procesos;28
+Economia y Planificacion;Estadistica e Informatica;2025-I;Introduccion a la Ciencia de Datos;55
+Economia y Planificacion;Estadistica e Informatica;2025-I;Investigacion de Mercados;15
+Economia y Planificacion;Estadistica e Informatica;2025-I;Lenguaje de Programacion I;61
+Economia y Planificacion;Estadistica e Informatica;2025-I;Lenguaje de Programacion II;33
+Economia y Planificacion;Estadistica e Informatica;2025-I;Lenguaje de Programacion III;32
+Economia y Planificacion;Estadistica e Informatica;2025-I;Maquinas de Aprendizaje;36
+Economia y Planificacion;Estadistica e Informatica;2025-I;Marketing;34
+Economia y Planificacion;Estadistica e Informatica;2025-I;Metodos de Optimizacion;32
+Economia y Planificacion;Estadistica e Informatica;2025-I;Metodos de Procesos Estocasticos;7
+Economia y Planificacion;Estadistica e Informatica;2025-I;Metodos Estadisticos para la Investigacion I;162
+Economia y Planificacion;Estadistica e Informatica;2025-I;Modelos Lineales I;25
+Economia y Planificacion;Estadistica e Informatica;2025-I;Modelos Lineales II;8
+Economia y Planificacion;Estadistica e Informatica;2025-I;Seguridad de la Informacion;1
+Economia y Planificacion;Estadistica e Informatica;2025-I;Seminario de Investigacion;1
+Economia y Planificacion;Estadistica e Informatica;2025-I;Seminario en Estadistica Informatica I;24
+Economia y Planificacion;Estadistica e Informatica;2025-I;Seminario en Estadistica Informatica II;21
+Economia y Planificacion;Estadistica e Informatica;2025-I;Seminario en Estadistica Informatica III;15
+Economia y Planificacion;Estadistica e Informatica;2025-I;Sistemas de Gestion de Base de Datos I;23
+Economia y Planificacion;Estadistica e Informatica;2025-I;Sistemas de Gestion de Base de Datos II;30
+Economia y Planificacion;Estadistica e Informatica;2025-I;Sistemas de Informacion Gerencial;18
+Economia y Planificacion;Estadistica e Informatica;2025-I;Tecnicas de Exploracion de Datos;28
+Economia y Planificacion;Estadistica e Informatica;2025-I;Tecnicas Multivariadas;34
+Economia y Planificacion;Estadistica e Informatica;2025-I;Tecnologias Emergentes;18
+Economia y Planificacion;Gestion Empresarial;2025-I;Administracion General;200
+Economia y Planificacion;Gestion Empresarial;2025-I;Administracion por Objetivos;1
+Economia y Planificacion;Gestion Empresarial;2025-I;Auditoria Financiera;2
+Economia y Planificacion;Gestion Empresarial;2025-I;Branding;12
+Economia y Planificacion;Gestion Empresarial;2025-I;Certificacion de Calidad;15
+Economia y Planificacion;Gestion Empresarial;2025-I;Comercio Exterior;36
+Economia y Planificacion;Gestion Empresarial;2025-I;Comportamiento del Consumidor;42
+Economia y Planificacion;Gestion Empresarial;2025-I;Comportamiento y Cultura de las Organizaciones;45
+Economia y Planificacion;Gestion Empresarial;2025-I;Contabilidad General;135
+Economia y Planificacion;Gestion Empresarial;2025-I;Contabilidad Gerencial y de Costos;80
+Economia y Planificacion;Gestion Empresarial;2025-I;Derecho Empresarial;51
+Economia y Planificacion;Gestion Empresarial;2025-I;Desarrollo Empresarial;51
+Economia y Planificacion;Gestion Empresarial;2025-I;Dibujo de Ingenieria;39
+Economia y Planificacion;Gestion Empresarial;2025-I;Emprendedurismo;39
+Economia y Planificacion;Gestion Empresarial;2025-I;Finanzas I;41
+Economia y Planificacion;Gestion Empresarial;2025-I;Finanzas II;14
+Economia y Planificacion;Gestion Empresarial;2025-I;Formulacion y Evaluacion de Proyectos;53
+Economia y Planificacion;Gestion Empresarial;2025-I;Gerencia de Operaciones;28
+Economia y Planificacion;Gestion Empresarial;2025-I;Gerencia de Proyectos;13
+Economia y Planificacion;Gestion Empresarial;2025-I;Gerencia de Ventas;53
+Economia y Planificacion;Gestion Empresarial;2025-I;Gestion de Cadenas Agroalimentarias;28
+Economia y Planificacion;Gestion Empresarial;2025-I;Gestion de la Innovacion;23
+Economia y Planificacion;Gestion Empresarial;2025-I;Gestion de Servicios;31
+Economia y Planificacion;Gestion Empresarial;2025-I;Gestion del Conocimiento;33
+Economia y Planificacion;Gestion Empresarial;2025-I;Gestion del Talento;52
+Economia y Planificacion;Gestion Empresarial;2025-I;Gestion y Aseguramiento de la Calidad;22
+Economia y Planificacion;Gestion Empresarial;2025-I;Habilidades Blandas;42
+Economia y Planificacion;Gestion Empresarial;2025-I;Historia de la Tecnologia;29
+Economia y Planificacion;Gestion Empresarial;2025-I;Ingenieria de Metodos;39
+Economia y Planificacion;Gestion Empresarial;2025-I;Introduccion a la Ingenieria en Gestion Empresarial;78
+Economia y Planificacion;Gestion Empresarial;2025-I;Investigacion Cientifica en Gestion Empresarial;41
+Economia y Planificacion;Gestion Empresarial;2025-I;Investigacion e inteligencia de Mercados;62
+Economia y Planificacion;Gestion Empresarial;2025-I;Liderazgo;33
+Economia y Planificacion;Gestion Empresarial;2025-I;Logistica y Gestion de la Cadena de Suministros;45
+Economia y Planificacion;Gestion Empresarial;2025-I;Marketing;49
+Economia y Planificacion;Gestion Empresarial;2025-I;Marketing Electronico;8
+Economia y Planificacion;Gestion Empresarial;2025-I;Negociaciones Internacionales;20
+Economia y Planificacion;Gestion Empresarial;2025-I;Operaciones Bancarias;24
+Economia y Planificacion;Gestion Empresarial;2025-I;Organizacion y Metodos;45
+Economia y Planificacion;Gestion Empresarial;2025-I;Planeacion Estrategica de Recursos Humanos;1
+Economia y Planificacion;Gestion Empresarial;2025-I;Planeamiento Estrategico;37
+Economia y Planificacion;Gestion Empresarial;2025-I;Planeamiento y Direccion Estrategica;40
+Economia y Planificacion;Gestion Empresarial;2025-I;Seminario de Tesis;16
+Economia y Planificacion;Gestion Empresarial;2025-I;Seminario en Ingenieria en Gestion Empresarial I;30
+Economia y Planificacion;Gestion Empresarial;2025-I;Seminario en Ingenieria en Gestion Empresarial II;22
+Economia y Planificacion;Gestion Empresarial;2025-I;Sistemas de Informacion Gerencial;46
+Economia y Planificacion;Gestion Empresarial;2025-I;Taller de Coaching;25
+Economia y Planificacion;Gestion Empresarial;2025-I;Tecnologia Agropecuaria;42
+Economia y Planificacion;Gestion Empresarial;2025-I;Tecnologia de Agronegocios;31
+Economia y Planificacion;Sociologia Rural ;2025-I;Ambiente y Sociedad;34
+Economia y Planificacion;Sociologia Rural ;2025-I;Antropologia Rural y Amazonica;61
+Economia y Planificacion;Sociologia Rural ;2025-I;Derecho y Legislacion Ambiental;39
+Economia y Planificacion;Sociologia Rural ;2025-I;Metodologia de la Investigacion;349
+Economia y Planificacion;Sociologia Rural ;2025-I;Peru en el Contexto Internacional;461
+Economia y Planificacion;Sociologia Rural ;2025-I;Sociedad y Cultura Peruana;675
+Estudios Generales;Estudios Generales;2025-I;Trabajo de investigacion;390
+Industrias Alimentarias;I.A.P.A.;2025-I;Administracion;49
+Industrias Alimentarias;I.A.P.A.;2025-I;Agronegocios;26
+Industrias Alimentarias;I.A.P.A.;2025-I;Alimentacion y Nutricion Humana;47
+Industrias Alimentarias;I.A.P.A.;2025-I;Alimentos Funcionales y Nutraceuticos;19
+Industrias Alimentarias;I.A.P.A.;2025-I;Analisis de Alimentos;43
+Industrias Alimentarias;I.A.P.A.;2025-I;Contabilidad y Finanzas;49
+Industrias Alimentarias;I.A.P.A.;2025-I;Control de Calidad e Inocuidad de Alimentos;33
+Industrias Alimentarias;I.A.P.A.;2025-I;Diseño en Ingenieria;18
+Industrias Alimentarias;I.A.P.A.;2025-I;Envases y Embalajes de Alimentos;25
+Industrias Alimentarias;I.A.P.A.;2025-I;Evaluacion Sensorial de Alimentos;33
+Industrias Alimentarias;I.A.P.A.;2025-I;Fisicoquimica de Alimentos;44
+Industrias Alimentarias;I.A.P.A.;2025-I;Fundamentos de Control y Automatizacion;39
+Industrias Alimentarias;I.A.P.A.;2025-I;Gestion Ambiental en la Industria Alimentaria;5
+Industrias Alimentarias;I.A.P.A.;2025-I;Ingenieria de Alimentos I;56
+Industrias Alimentarias;I.A.P.A.;2025-I;Ingenieria de Alimentos II;62
+Industrias Alimentarias;I.A.P.A.;2025-I;Ingenieria de la Produccion;32
+Industrias Alimentarias;I.A.P.A.;2025-I;Ingenieria de Proyecto;17
+Industrias Alimentarias;I.A.P.A.;2025-I;Ingenieria del Frio;38
+Industrias Alimentarias;I.A.P.A.;2025-I;Maquinaria para la Industria Alimentaria;30
+Industrias Alimentarias;I.A.P.A.;2025-I;Mecanica de Fluidos;40
+Industrias Alimentarias;I.A.P.A.;2025-I;Metodos Estadisticos en Ingenieria;23
+Industrias Alimentarias;I.A.P.A.;2025-I;Microbiologia de Alimentos;45
+Industrias Alimentarias;I.A.P.A.;2025-I;Quimica de Alimentos;40
+Industrias Alimentarias;I.A.P.A.;2025-I;Reologia;53
+Industrias Alimentarias;I.A.P.A.;2025-I;Sistemas Integrados de Gestion;17
+Industrias Alimentarias;I.A.P.A.;2025-I;Taller de Ingenieria de Proyecto;14
+Industrias Alimentarias;I.A.P.A.;2025-I;Termodinamica General;58
+Industrias Alimentarias;I.A.P.A.;2025-I;Transferencia de Calor y Masa;35
+Industrias Alimentarias;I.A.P.A.;2025-I;Tratamiento de Residuos Solidos y Liquidos;33
+Industrias Alimentarias;T.A.P.A.;2025-I;Enologia;26
+Industrias Alimentarias;T.A.P.A.;2025-I;Fermentaciones Industriales;34
+Industrias Alimentarias;T.A.P.A.;2025-I;Industrias Carnicas;11
+Industrias Alimentarias;T.A.P.A.;2025-I;Industrias Lacteas;12
+Industrias Alimentarias;T.A.P.A.;2025-I;Introduccion a la Industria Alimentaria;65
+Industrias Alimentarias;T.A.P.A.;2025-I;Seminario en Industrias Alimentarias I;23
+Industrias Alimentarias;T.A.P.A.;2025-I;Seminario en Industrias Alimentarias II;33
+Industrias Alimentarias;T.A.P.A.;2025-I;Taller de Emprendimiento;8
+Industrias Alimentarias;T.A.P.A.;2025-I;Tecnologia de Aceites y Grasas;17
+Industrias Alimentarias;T.A.P.A.;2025-I;Tecnologia de Alimentos Pecuarios;29
+Industrias Alimentarias;T.A.P.A.;2025-I;Tecnologia de Azucar y Derivados;32
+Industrias Alimentarias;T.A.P.A.;2025-I;Tecnologia de Leguminosas y Cereales;15
+Industrias Alimentarias;T.A.P.A.;2025-I;Tecnologia Poscosecha;39
+Industrias Alimentarias;T.A.P.A.;2025-I;Tecnologias de Conservacion;42
+Industrias Alimentarias;T.A.P.A.;2025-I;Tecnologias de Extraccion;36
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Administracion de Maquinaria;19
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Analisis de Maquinas y Mecanismos;16
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Circuitos Electricos y Motores;33
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Circuitos y Maquinas Electricas;84
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Elementos de Maquinas;62
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Elementos de Maquinas y Mecanismos;3
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Fisica para la Ingenieria;68
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Ingenieria y Responsabilidad Social;36
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Instrumentacion Electronica;14
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Maquinaria Agricola;47
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Maquinaria para Obras;27
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Maquinaria para Siembra y Mantenimiento de Cultivos;27
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Mecanica Vectorial II;21
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Mecanizacion Agricola I;109
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Motores y Tractores;44
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Seminario de Tesis I;13
+Ingenieria Agricola;Mecanizacion y Energia;2025-I;Termodinamica;73
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Abastecimiento de Agua y Alcantarillado;23
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Analisis Estructural I;24
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Analisis Matematico III;63
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Analisis Matematico IV;18
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Arquitectura del Paisaje I;1
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Concreto Reforzado;39
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Dibujo Avanzado en Ingenieria;25
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Dibujo en Ingenieria;53
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Dibujo General;144
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Diseño Rural;45
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Energia Solar Fotovoltaica y Eolica;19
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Energias Renovables;52
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Evaluacion y Monitoreo Ambiental en Proyectos de Ingenieria;14
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Geologia y Geotecnia;40
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Introduccion a las Soluciones basadas en la Naturaleza;10
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Materiales de Construccion;40
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Mecanica de Suelos;27
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Mecanica Vectorial I;27
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Ordenamiento Territorial;47
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Programacion y Supervision de Obras;19
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Proyectos de Inversion;36
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Resistencia de Materiales;26
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Tecnica de la Construccion;51
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2025-I;Vivienda Rural;12
+Ingenieria Agricola;Ordenamiento Territorial y Desarrollo Sostenible;2025-I;Quimica para la Ingenieria;43
+Ingenieria Agricola;Recursos Hidricos;2025-I;Control de la Erosion;18
+Ingenieria Agricola;Recursos Hidricos;2025-I;Diseño de Presas;12
+Ingenieria Agricola;Recursos Hidricos;2025-I;Edafologia y Agrotecnia;42
+Ingenieria Agricola;Recursos Hidricos;2025-I;Estructuras Hidraulicas I;33
+Ingenieria Agricola;Recursos Hidricos;2025-I;Estructuras Hidraulicas II;21
+Ingenieria Agricola;Recursos Hidricos;2025-I;Fundamentos de la Ingenieria Ambiental;31
+Ingenieria Agricola;Recursos Hidricos;2025-I;Geomatica;45
+Ingenieria Agricola;Recursos Hidricos;2025-I;Gestion Integrada de Recursos Hidricos;31
+Ingenieria Agricola;Recursos Hidricos;2025-I;Hidraulica;52
+Ingenieria Agricola;Recursos Hidricos;2025-I;Hidraulica Computacional;2
+Ingenieria Agricola;Recursos Hidricos;2025-I;Hidrogeologia;43
+Ingenieria Agricola;Recursos Hidricos;2025-I;Hidrologia;57
+Ingenieria Agricola;Recursos Hidricos;2025-I;Hidrologia y Drenaje Urbano y Vial;5
+Ingenieria Agricola;Recursos Hidricos;2025-I;Ingenieria de Drenaje;8
+Ingenieria Agricola;Recursos Hidricos;2025-I;Ingenieria de Riegos I;42
+Ingenieria Agricola;Recursos Hidricos;2025-I;Ingenieria de Riegos II;13
+Ingenieria Agricola;Recursos Hidricos;2025-I;Ingenieria de Sistemas;4
+Ingenieria Agricola;Recursos Hidricos;2025-I;Manejo y Gestion de Cuencas;6
+Ingenieria Agricola;Recursos Hidricos;2025-I;Mecanica de Fluidos;13
+Ingenieria Agricola;Recursos Hidricos;2025-I;Metodos de Analisis en Hidrologia;2
+Ingenieria Agricola;Recursos Hidricos;2025-I;Metodos Numericos en Ingenieria;14
+Ingenieria Agricola;Recursos Hidricos;2025-I;Modelos Hidraulicos;5
+Ingenieria Agricola;Recursos Hidricos;2025-I;Salinidad y Recuperacion de Tierras;1
+Ingenieria Agricola;Recursos Hidricos;2025-I;Seminario de Tesis II;24
+Ingenieria Agricola;Recursos Hidricos;2025-I;Topografia I;119
+Ingenieria Agricola;Recursos Hidricos;2025-I;Topografia y Geodesia I;36
+Ingenieria Agricola;Recursos Hidricos;2025-I;Topografia y Geodesia II;24
+Ingenieria Agricola;Recursos Hidricos;2025-I;Topografia y Geodesia III;16
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Artes Plasticas y Creatividad;41
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Banda Unalm;49
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Capoeira;41
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Danza de Costa;15
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Danzas Folcloricas;81
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Dibujo y Pintura;36
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Fotografia;57
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Guitarra;41
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Marinera Norteña;18
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Musica y Canto Coral;21
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Oratoria;28
+Oficina de Bienestar Estudiantil;Actividades Culturales;2025-I;Teatro;37
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Aerobicos;57
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Aikido;18
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Ajedrez;46
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Basquet;24
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Beisbol;21
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Ciclismo;48
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Futbol;34
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Futsal Femenino;18
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Handball;36
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Judo;14
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Karate;37
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Taekwondo;55
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Tenis de Mesa;27
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Tiro con Arco;26
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2025-I;Voley;25
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Acuicultura I;21
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Acuicultura II;24
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Construcciones Pesqueras;30
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Cultivo de Especies Amazonicas;4
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Cultivo de Especies de Aguas Frias;6
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Cultivo de Peces Ornamentales;11
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Elementos de Maquinarias Pesqueras;14
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Fundamentos de Termodinamica;15
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Genetica Aplicada a la Acuicultura;16
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Ingenieria de Procesos Pesqueros;5
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Microbiologia Pesquera;18
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Nutricion y Alimentacion de Organismos Acuaticos;23
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Operaciones Unitarias Pesqueras I;22
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Operaciones Unitarias Pesqueras II;19
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Procesamiento de Aceite y Harina de Pescado;7
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Procesamiento de Enlatado de Recursos Hidrobiologicos;17
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Procesamiento de Productos Curados;10
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Produccion de Tilapias;10
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Quimica de Recursos Hidrobiologicos;17
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Refrigeracion en la Industria Pesquera;7
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Refrigeracion y Congelacion de Recursos Hidrobiologicos;24
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Reproduccion y Genetica de Organismos Acuaticos;26
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Seminario II;16
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Sistema de Calidad en Pesqueria;9
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Surimi y sus Productos Derivados;11
+Pesqueria;Acuicultura e Industrias Pesqueras;2025-I;Tecnologias para el Procesamiento Recursos Hidrobiologicos;40
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Comercializacion de Productos Hidrobiologicos;26
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Contaminacion de Ambientes Acuaticos;18
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Ecologia Acuatica;9
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Economia Pesquera;18
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Embarcaciones Pesqueras I;16
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Evaluacion de Recursos Hidrobiologicos;34
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Formulacion y Evaluacion de Proyectos Pesqueros con Excel;7
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Instrumentacion Pesquera;25
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Limnologia;15
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Materiales, Metodos y Artes de Pesca;16
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Navegacion y Seguridad a Bordo;14
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Oceanografia General;24
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Parasitologia de Peces y Moluscos;14
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Pesca Maritima y Continental;13
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Planificacion y Gestion Pesquera;8
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Realidad y Perspectivas de la Pesqueria en el Peru;49
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Recursos Hidrobiologicos;52
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Sanidad Acuicola;29
+Pesqueria;Manejo Pesquero y Medio Ambiente;2025-I;Seminario I;25
+Zootecnia;Nutricion;2025-I;Alimentacion de no Rumiantes;29
+Zootecnia;Nutricion;2025-I;Alimentacion de Rumiantes;22
+Zootecnia;Nutricion;2025-I;Alimentos Funcionales en Nutricion Animal y Humana;24
+Zootecnia;Nutricion;2025-I;Anatomia de los Animales de Granja;56
+Zootecnia;Nutricion;2025-I;Bases de Cirugia Experimental;14
+Zootecnia;Nutricion;2025-I;Bioquimica para la Ciencia Animal;30
+Zootecnia;Nutricion;2025-I;Conceptos y Retos Actuales de la Seguridad Alimentaria Mundial;15
+Zootecnia;Nutricion;2025-I;Enfermedades Infecciosas;24
+Zootecnia;Nutricion;2025-I;Enfermedades Parasitarias;25
+Zootecnia;Nutricion;2025-I;Etologia, Bienestar y Bioetica Animal;23
+Zootecnia;Nutricion;2025-I;Farmacologia;20
+Zootecnia;Nutricion;2025-I;Fisiologia de los Animales de Granja;27
+Zootecnia;Nutricion;2025-I;Microbiologia para la Ciencia Animal;25
+Zootecnia;Nutricion;2025-I;Nutricion Animal;26
+Zootecnia;Nutricion;2025-I;Nutricion de Animales de Compañia (perros y gatos);18
+Zootecnia;Nutricion;2025-I;Nutricion II;7
+Zootecnia;Nutricion;2025-I;Nutricion Molecular;22
+Zootecnia;Nutricion;2025-I;Nutricion y Alimentacion de Animales al Pastoreo;35
+Zootecnia;Nutricion;2025-I;Nutricion y Alimentacion de Monogastricos;4
+Zootecnia;Nutricion;2025-I;Nutricion, Ambiente y Manejo de Residuos Pecuarios;16
+Zootecnia;Nutricion;2025-I;Patologia Animal;25
+Zootecnia;Nutricion;2025-I;Tecnologia de Alimentos Balanceados;41
+Zootecnia;Produccion Animal;2025-I;Administracion Ganadera;23
+Zootecnia;Produccion Animal;2025-I;Diseño de Instalaciones Pecuarias;24
+Zootecnia;Produccion Animal;2025-I;Empresariado y Planeamiento en Ganaderia;26
+Zootecnia;Produccion Animal;2025-I;Evaluacion del Impacto Ambiental en Ganaderia;40
+Zootecnia;Produccion Animal;2025-I;Extension Pecuaria y Desarrollo Rural;35
+Zootecnia;Produccion Animal;2025-I;Fisiologia de la Lactancia;6
+Zootecnia;Produccion Animal;2025-I;Formulacion y Evaluacion de Proyectos Agropecuarios;31
+Zootecnia;Produccion Animal;2025-I;Ganaderia de Precision;7
+Zootecnia;Produccion Animal;2025-I;Genetica Animal;10
+Zootecnia;Produccion Animal;2025-I;Genetica Molecular en la Ciencia Animal;11
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Camelidos Sudamericanos;11
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Conejos;7
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Cuyes;31
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Equinos;17
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Ovinos;22
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Pavos, Patos y Codornices;19
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Pollos de Carne y Gallinas Ponedoras;30
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Porcinos;14
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Vacunos de Carne y Doble Proposito;29
+Zootecnia;Produccion Animal;2025-I;Gestion de la Produccion de Vacunos de Leche;21
+Zootecnia;Produccion Animal;2025-I;Ingenieria de Procesos en Sistemas de Produccion Animal;27
+Zootecnia;Produccion Animal;2025-I;Inseminacion Artificial;37
+Zootecnia;Produccion Animal;2025-I;Introduccion a la Ciencia Animal;82
+Zootecnia;Produccion Animal;2025-I;Manejo y Aprovechamiento de Animales Silvestres;14
+Zootecnia;Produccion Animal;2025-I;Mejoramiento Genetico del Ganado I;33
+Zootecnia;Produccion Animal;2025-I;Mejoramiento Genetico del Ganado II;16
+Zootecnia;Produccion Animal;2025-I;Metodos Estadisticos Aplicados a la Ciencia Animal;23
+Zootecnia;Produccion Animal;2025-I;Metodos Matematicos para la Ingenieria en Ciencia Animal;24
+Zootecnia;Produccion Animal;2025-I;Politicas Publicas y Normatividad;31
+Zootecnia;Produccion Animal;2025-I;Practicas de Ganaderia;38
+Zootecnia;Produccion Animal;2025-I;Produccion y Manejo de Pastos y Forrajes;40
+Zootecnia;Produccion Animal;2025-I;Reproduccion Animal;30
+Zootecnia;Produccion Animal;2025-I;Reproduccion Equina y Porcina;7
+Zootecnia;Produccion Animal;2025-I;Seminario en Zootecnia I;37
+Zootecnia;Produccion Animal;2025-I;Seminario en Zootecnia II;43
+Zootecnia;Produccion Animal;2025-I;Sistemas Agrosilvopastoriles;11
+Zootecnia;Produccion Animal;2025-I;Tecnologia e Industrializacion de Fibras y Pieles;14
+Zootecnia;Produccion Animal;2025-I;Tecnologia e Industrializacion de Leche y Carne;32
+Zootecnia;Produccion Animal;2025-I;Ultrasonografia y Laparoscopia Reproductiva;6
+Zootecnia;Produccion Animal;2025-I;Utilizacion de Pastizales en la Produccion Animal;31
+Zootecnia;Produccion Animal;2025-I;Zootecnia General;133
