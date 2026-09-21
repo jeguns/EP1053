@@ -1,0 +1,641 @@
+Listado de Alumnos matriculados del año 2026 - 1er Semestre, por facultad, departamento, periodo, curso y número de matriculados.
+Facultad;Departamento;Periodo;Curso;total_matriculados
+Agronomia;Entomologia;2026-I;Apicultura General;28
+Agronomia;Entomologia;2026-I;Control Biologico;19
+Agronomia;Entomologia;2026-I;Crianza y Evaluacion de Insectos;8
+Agronomia;Entomologia;2026-I;Entomologia Agricola;123
+Agronomia;Entomologia;2026-I;Entomologia General;145
+Agronomia;Entomologia;2026-I;Principios de Control de Plagas;121
+Agronomia;Fitopatologia;2026-I;Fitopatologia Agricola;102
+Agronomia;Fitopatologia;2026-I;Fitopatologia General;142
+Agronomia;Fitopatologia;2026-I;Micologia Agricola;7
+Agronomia;Fitopatologia;2026-I;Nematologia Agricola;8
+Agronomia;Fitotecnia;2026-I;Agroecologia;90
+Agronomia;Fitotecnia;2026-I;Agrotecnia;144
+Agronomia;Fitotecnia;2026-I;Algodonero y Otras Fibras Vegetales;9
+Agronomia;Fitotecnia;2026-I;Arroz;9
+Agronomia;Fitotecnia;2026-I;Biotecnologia - Micropropagacion;76
+Agronomia;Fitotecnia;2026-I;Caña de Azucar;24
+Agronomia;Fitotecnia;2026-I;Cereales Menores y Granos Nativos;5
+Agronomia;Fitotecnia;2026-I;Cultivos Forrajeros;12
+Agronomia;Fitotecnia;2026-I;Cultivos I (Cebada, trigo, arroz, maiz, cereales andinos);77
+Agronomia;Fitotecnia;2026-I;Cultivos II (Papa, camote, leguminosas);84
+Agronomia;Fitotecnia;2026-I;Cultivos III (Algodon, oleaginosas, caña de azucar);71
+Agronomia;Fitotecnia;2026-I;Cultivos IV (Cultivos tropicales, cultivos forrajeros);81
+Agronomia;Fitotecnia;2026-I;Cultivos Tropicales;15
+Agronomia;Fitotecnia;2026-I;Ecofisiologia de Cultivos;42
+Agronomia;Fitotecnia;2026-I;Extension y Promocion Agraria;82
+Agronomia;Fitotecnia;2026-I;Fitogenetica;94
+Agronomia;Fitotecnia;2026-I;Fitomejoramiento General;84
+Agronomia;Fitotecnia;2026-I;Formulacion y Evaluacion de Proyectos Agrarios;18
+Agronomia;Fitotecnia;2026-I;Gestion Agricola I;77
+Agronomia;Fitotecnia;2026-I;Gestion Agricola II;93
+Agronomia;Fitotecnia;2026-I;Gestion Agricola III;69
+Agronomia;Fitotecnia;2026-I;Introduccion a la Agronomia;142
+Agronomia;Fitotecnia;2026-I;Leguminosas de Granos;32
+Agronomia;Fitotecnia;2026-I;Maiz y Sorgo;6
+Agronomia;Fitotecnia;2026-I;Manejo de Malezas;79
+Agronomia;Fitotecnia;2026-I;Manejo de Pasturas;23
+Agronomia;Fitotecnia;2026-I;Manejo y Control de Semillas;115
+Agronomia;Fitotecnia;2026-I;Oleaginosas;28
+Agronomia;Fitotecnia;2026-I;Practicas Agronomicas I;129
+Agronomia;Fitotecnia;2026-I;Practicas Agronomicas II;109
+Agronomia;Fitotecnia;2026-I;Sistemas Agrarios;12
+Agronomia;Fitotecnia;2026-I;Sistematica Agricola;106
+Agronomia;Fitotecnia;2026-I;Tecnologias Agricolas;60
+Agronomia;Fitotecnia;2026-I;Tuberosas y Raices;8
+Agronomia;Horticultura;2026-I;Fisiologia y Manejo Post Cosecha;95
+Agronomia;Horticultura;2026-I;Floricultura II;10
+Agronomia;Horticultura;2026-I;Fruticultura Especial I;20
+Agronomia;Horticultura;2026-I;Fruticultura Especial II;18
+Agronomia;Horticultura;2026-I;Fruticultura General;93
+Agronomia;Horticultura;2026-I;Horticultura Especial;15
+Agronomia;Horticultura;2026-I;Manejo de Viveros;16
+Agronomia;Horticultura;2026-I;Metodologia de la Investigacion;39
+Agronomia;Horticultura;2026-I;Olericultura General;109
+Agronomia;Horticultura;2026-I;Principios de Arquitectura Paisajista;7
+Agronomia;Horticultura;2026-I;Principios de Propagacion de Plantas;89
+Agronomia;Horticultura;2026-I;Seminario en Ciencias Agronomia I;99
+Agronomia;Horticultura;2026-I;Seminario en Ciencias Agronomia II;69
+Agronomia;Horticultura;2026-I;Viticultura;18
+Agronomia;Suelos;2026-I;Analisis de Suelos y Plantas;13
+Agronomia;Suelos;2026-I;Cartografia del Suelo;9
+Agronomia;Suelos;2026-I;Contaminacion de Suelos;61
+Agronomia;Suelos;2026-I;Edafologia;281
+Agronomia;Suelos;2026-I;Fertilidad del Suelo;130
+Agronomia;Suelos;2026-I;Fundamentos del Riego;81
+Agronomia;Suelos;2026-I;Geologia;58
+Agronomia;Suelos;2026-I;Manejo y Conservacion del Suelo;104
+Agronomia;Suelos;2026-I;Microbiologia del Suelo;30
+Ciencias;Biologia;2026-I;Biologia Celular;36
+Ciencias;Biologia;2026-I;Biologia Experimental I;18
+Ciencias;Biologia;2026-I;Biologia Experimental II;17
+Ciencias;Biologia;2026-I;Biologia Experimental III;21
+Ciencias;Biologia;2026-I;Biologia General;465
+Ciencias;Biologia;2026-I;Biotecnologia;27
+Ciencias;Biologia;2026-I;Botanica General;201
+Ciencias;Biologia;2026-I;Comunicacion Cientifica;15
+Ciencias;Biologia;2026-I;Diversidad de Briofitas, Pteridofitas y Gimnospermas;27
+Ciencias;Biologia;2026-I;Diversidad de Invertebrados;40
+Ciencias;Biologia;2026-I;Diversidad y Ecologia Microbiana;23
+Ciencias;Biologia;2026-I;Ecofisiologia;24
+Ciencias;Biologia;2026-I;Ecologia de Ecosistemas;20
+Ciencias;Biologia;2026-I;Ecologia de Montanas;16
+Ciencias;Biologia;2026-I;Ecologia General;644
+Ciencias;Biologia;2026-I;Fisiologia Animal;28
+Ciencias;Biologia;2026-I;Fisiologia Vegetal;219
+Ciencias;Biologia;2026-I;Genetica;50
+Ciencias;Biologia;2026-I;Genetica Molecular Microbiana;20
+Ciencias;Biologia;2026-I;Genetica Vegetal;34
+Ciencias;Biologia;2026-I;Investigacion;23
+Ciencias;Biologia;2026-I;Laboratorio de Genetica;25
+Ciencias;Biologia;2026-I;Laboratorio de Microbiologia;89
+Ciencias;Biologia;2026-I;Metabolismo Microbiano;39
+Ciencias;Biologia;2026-I;Microbiologia;80
+Ciencias;Biologia;2026-I;Microbiologia Industrial;15
+Ciencias;Biologia;2026-I;Principios de Bioinformatica;20
+Ciencias;Biologia;2026-I;Zoologia General;49
+Ciencias;Fisica y Meteorologia;2026-I;Agrometeorologia;16
+Ciencias;Fisica y Meteorologia;2026-I;Biofisica;21
+Ciencias;Fisica y Meteorologia;2026-I;Cambio Climatico, Adaptacion y Mitigacion;18
+Ciencias;Fisica y Meteorologia;2026-I;Climatologia;39
+Ciencias;Fisica y Meteorologia;2026-I;Climatologia Aplicada;14
+Ciencias;Fisica y Meteorologia;2026-I;Electronica Experimental;28
+Ciencias;Fisica y Meteorologia;2026-I;Evaluacion Y Vigilancia del Riesgo Climatico;11
+Ciencias;Fisica y Meteorologia;2026-I;Fisica Ambiental;57
+Ciencias;Fisica y Meteorologia;2026-I;Fisica Aplicada;14
+Ciencias;Fisica y Meteorologia;2026-I;Fisica de Calor y Procesos;18
+Ciencias;Fisica y Meteorologia;2026-I;Fisica General;554
+Ciencias;Fisica y Meteorologia;2026-I;Fisica II;94
+Ciencias;Fisica y Meteorologia;2026-I;Fisica III;62
+Ciencias;Fisica y Meteorologia;2026-I;Geologia y Geomorfologia;26
+Ciencias;Fisica y Meteorologia;2026-I;Geomatica Aplicada;15
+Ciencias;Fisica y Meteorologia;2026-I;Gestion de Riesgo Climatico y Desastres Hidrometeorologicos;3
+Ciencias;Fisica y Meteorologia;2026-I;Hidrometeorologia;12
+Ciencias;Fisica y Meteorologia;2026-I;Interaccion Oceano Atmosfera;10
+Ciencias;Fisica y Meteorologia;2026-I;Introduccion a la Gestion del Riesgo Climatico;21
+Ciencias;Fisica y Meteorologia;2026-I;Introduccion a la Inteligencia Artificial;79
+Ciencias;Fisica y Meteorologia;2026-I;Introduccion a la Meteorologia y Gestion de Riesgos Climaticos;27
+Ciencias;Fisica y Meteorologia;2026-I;Mecanica;14
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia Aeronautica;21
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia Dinamica;14
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia Economica, Mercadotecnia y Gestion;21
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia Fisica;11
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia General;274
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia Sinoptica I;14
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia Sinoptica II;31
+Ciencias;Fisica y Meteorologia;2026-I;Meteorologia Tropical;21
+Ciencias;Fisica y Meteorologia;2026-I;Micrometeorologia;21
+Ciencias;Fisica y Meteorologia;2026-I;Participacion y Comunicacion en Gestion de Riesgos Climaticos;11
+Ciencias;Fisica y Meteorologia;2026-I;Planeamiento Territorial para la Gestion de Riesgos de Desastres;12
+Ciencias;Fisica y Meteorologia;2026-I;Seminario en Ingenieria Meteorologica y Gestion de Riesgos Climaticos I;14
+Ciencias;Fisica y Meteorologia;2026-I;Seminario en Ingenieria Meteorologica y Gestion de Riesgos Climaticos II;14
+Ciencias;Fisica y Meteorologia;2026-I;Seminario I;6
+Ciencias;Fisica y Meteorologia;2026-I;Seminario II;3
+Ciencias;Fisica y Meteorologia;2026-I;Sistema de Informacion Geografica;44
+Ciencias;Fisica y Meteorologia;2026-I;Sistema de Informacion Geografica para la Gestion de Riesgos;12
+Ciencias;Fisica y Meteorologia;2026-I;Tecnicas de Programacion I;80
+Ciencias;Fisica y Meteorologia;2026-I;Tecnicas de Programacion II;16
+Ciencias;Fisica y Meteorologia;2026-I;Tecnicas de Pronostico del Tiempon y Clima;12
+Ciencias;Fisica y Meteorologia;2026-I;Tecnicas Estadisticas y Analisis de Datos Climaticos;12
+Ciencias;Fisica y Meteorologia;2026-I;Teoria Instrumental y Metodos de Observacion;12
+Ciencias;Fisica y Meteorologia;2026-I;Termodinamica de la Atmosfera;10
+Ciencias;Fisica y Meteorologia;2026-I;Topicos Especiales en Gestion de Riesgos y Desastres;16
+Ciencias;Ingenieria Ambiental;2026-I;Auditoria de Sistemas Integrados de Gestion;26
+Ciencias;Ingenieria Ambiental;2026-I;Biorremediacion;32
+Ciencias;Ingenieria Ambiental;2026-I;Ciudades Sostenibles;41
+Ciencias;Ingenieria Ambiental;2026-I;Contaminacion Atmosferica;60
+Ciencias;Ingenieria Ambiental;2026-I;Contaminacion de Aguas;32
+Ciencias;Ingenieria Ambiental;2026-I;Educacion Ambiental;37
+Ciencias;Ingenieria Ambiental;2026-I;Evaluacion de Impacto Ambiental;38
+Ciencias;Ingenieria Ambiental;2026-I;Evaluacion y Manejo de Riesgos Naturales;7
+Ciencias;Ingenieria Ambiental;2026-I;Geografia Fisica;60
+Ciencias;Ingenieria Ambiental;2026-I;Geomatica Aplicada I;31
+Ciencias;Ingenieria Ambiental;2026-I;Gestion de Proyectos Ambientales;45
+Ciencias;Ingenieria Ambiental;2026-I;Gestion de Residuos Solidos;35
+Ciencias;Ingenieria Ambiental;2026-I;Gestion de Seguridad y Salud Ocupacional;18
+Ciencias;Ingenieria Ambiental;2026-I;Hidrologia e Hidrogeologia Ambiental;60
+Ciencias;Ingenieria Ambiental;2026-I;Ingenieria de Aguas Residuales;37
+Ciencias;Ingenieria Ambiental;2026-I;Introduccion a la Geomatica;43
+Ciencias;Ingenieria Ambiental;2026-I;Introduccion a la Ingenieria Ambiental;41
+Ciencias;Ingenieria Ambiental;2026-I;Manejo Ambiental de Cuencas;10
+Ciencias;Ingenieria Ambiental;2026-I;Mecanica de Fluidos e Hidraulica;59
+Ciencias;Ingenieria Ambiental;2026-I;Microbiologia Ambiental;42
+Ciencias;Ingenieria Ambiental;2026-I;Planificacion Ambiental;31
+Ciencias;Ingenieria Ambiental;2026-I;Procesos Industriales;59
+Ciencias;Ingenieria Ambiental;2026-I;Seminario en Ingenieria Ambiental I;43
+Ciencias;Ingenieria Ambiental;2026-I;Seminario en Ingenieria Ambiental II;24
+Ciencias;Ingenieria Ambiental;2026-I;Sistemas de Gestion Ambiental;30
+Ciencias;Ingenieria Ambiental;2026-I;Tratamiento y Abastecimiento de Agua;15
+Ciencias;Matematica;2026-I;Algebra Matricial;59
+Ciencias;Matematica;2026-I;Analisis Matematico I;974
+Ciencias;Matematica;2026-I;Analisis Matematico II;658
+Ciencias;Matematica;2026-I;Analisis Matematico III;81
+Ciencias;Matematica;2026-I;Analisis Matematico IV;44
+Ciencias;Matematica;2026-I;Calculo Avanzado I;54
+Ciencias;Matematica;2026-I;Calculo Avanzado II;36
+Ciencias;Matematica;2026-I;Calculo Diferencial;31
+Ciencias;Matematica;2026-I;Calculo Integral;35
+Ciencias;Matematica;2026-I;Calculo para Ciencias;164
+Ciencias;Matematica;2026-I;Ecuaciones Diferenciales;22
+Ciencias;Matematica;2026-I;Ecuaciones Diferenciales;63
+Ciencias;Matematica;2026-I;Geometria Descriptiva;189
+Ciencias;Matematica;2026-I;Matematica Aplicada a la Ingenieria Ambiental I;85
+Ciencias;Matematica;2026-I;Matematica Aplicada a la Ingenieria Ambiental II;17
+Ciencias;Matematica;2026-I;Matematicas Discretas;54
+Ciencias;Matematica;2026-I;Metodos Numericos de Modelizacion Matematica;8
+Ciencias;Quimica;2026-I;Bioquimica;339
+Ciencias;Quimica;2026-I;Bioquimica Pesquera;21
+Ciencias;Quimica;2026-I;Cinetica Quimica y Enzimatica;14
+Ciencias;Quimica;2026-I;Enzimologia;23
+Ciencias;Quimica;2026-I;Fenomenos de Transferencia;21
+Ciencias;Quimica;2026-I;Fisico Quimica I;28
+Ciencias;Quimica;2026-I;Fisico Quimica II;19
+Ciencias;Quimica;2026-I;Fisicoquimica General;53
+Ciencias;Quimica;2026-I;Laboratorio de Bioquimica;112
+Ciencias;Quimica;2026-I;Quimica Ambiental;55
+Ciencias;Quimica;2026-I;Quimica Analitica;114
+Ciencias;Quimica;2026-I;Quimica General;791
+Ciencias;Quimica;2026-I;Quimica Organica;475
+Ciencias;Quimica;2026-I;Topicos de Quimica Organica;22
+Ciencias Forestales;Industrias Forestales;2026-I;Agentes Destructores de la Madera;4
+Ciencias Forestales;Industrias Forestales;2026-I;Anatomia de la Madera;41
+Ciencias Forestales;Industrias Forestales;2026-I;Aprovechamiento Forestal;32
+Ciencias Forestales;Industrias Forestales;2026-I;Aserrado de la Madera;31
+Ciencias Forestales;Industrias Forestales;2026-I;Construcciones con Madera;30
+Ciencias Forestales;Industrias Forestales;2026-I;Control de Calidad de Productos Maderables;12
+Ciencias Forestales;Industrias Forestales;2026-I;Diseño de Muebles;3
+Ciencias Forestales;Industrias Forestales;2026-I;Economia Forestal;36
+Ciencias Forestales;Industrias Forestales;2026-I;Fabricacion de Pulpa y Papel;2
+Ciencias Forestales;Industrias Forestales;2026-I;Formulacion y Evaluacion de Proyectos Forestales;3
+Ciencias Forestales;Industrias Forestales;2026-I;Fundamentos de Preservacion de la Madera;30
+Ciencias Forestales;Industrias Forestales;2026-I;Fundamentos en el Secado de la Madera;31
+Ciencias Forestales;Industrias Forestales;2026-I;Impacto Ambiental de la Industria Forestal;16
+Ciencias Forestales;Industrias Forestales;2026-I;Maquinaria y Equipos Forestales;45
+Ciencias Forestales;Industrias Forestales;2026-I;Planeamiento de Empresas Forestales;32
+Ciencias Forestales;Industrias Forestales;2026-I;Productos de Transformacion Mecanica de la Madera;30
+Ciencias Forestales;Industrias Forestales;2026-I;Productos Forestales Actualidad y Perspectiva;14
+Ciencias Forestales;Industrias Forestales;2026-I;Propiedades Fisico - Mecanicas de la Madera;29
+Ciencias Forestales;Industrias Forestales;2026-I;Quimica Forestal;26
+Ciencias Forestales;Industrias Forestales;2026-I;Tecnologia Quimica de Productos Forestales;32
+Ciencias Forestales;Industrias Forestales;2026-I;Uso de la Madera y Derivados en Construccion;10
+Ciencias Forestales;Manejo Forestal;2026-I;Arboricultura Urbana y areas Verdes;18
+Ciencias Forestales;Manejo Forestal;2026-I;areas Naturales Protegidas;27
+Ciencias Forestales;Manejo Forestal;2026-I;Cartografia Forestal;8
+Ciencias Forestales;Manejo Forestal;2026-I;Dendrologia Avanzada;10
+Ciencias Forestales;Manejo Forestal;2026-I;Dendrologia I;36
+Ciencias Forestales;Manejo Forestal;2026-I;Dendrologia II;19
+Ciencias Forestales;Manejo Forestal;2026-I;Derecho y Gestion Ambiental y Forestal;9
+Ciencias Forestales;Manejo Forestal;2026-I;Ecologia Forestal I;27
+Ciencias Forestales;Manejo Forestal;2026-I;Ecologia Forestal II;19
+Ciencias Forestales;Manejo Forestal;2026-I;Ecoturismo y Manejo de areas para Recreacion;21
+Ciencias Forestales;Manejo Forestal;2026-I;Elementos de Silvicultura;26
+Ciencias Forestales;Manejo Forestal;2026-I;Estadistica Forestal;31
+Ciencias Forestales;Manejo Forestal;2026-I;Etnobotanica Forestal;12
+Ciencias Forestales;Manejo Forestal;2026-I;Fauna Silvestre;19
+Ciencias Forestales;Manejo Forestal;2026-I;Fauna Silvestre y Parques Nacionales;16
+Ciencias Forestales;Manejo Forestal;2026-I;Gestion de areas Naturales Protegidas I;19
+Ciencias Forestales;Manejo Forestal;2026-I;Introduccion a la Ingenieria Forestal;47
+Ciencias Forestales;Manejo Forestal;2026-I;Introduccion al Manejo de Fauna Silvestre;47
+Ciencias Forestales;Manejo Forestal;2026-I;Manejo Forestal;32
+Ciencias Forestales;Manejo Forestal;2026-I;Medicion Forestal;43
+Ciencias Forestales;Manejo Forestal;2026-I;Ordenacion de Cuencas;31
+Ciencias Forestales;Manejo Forestal;2026-I;Plantaciones Forestales y Revegetacion;7
+Ciencias Forestales;Manejo Forestal;2026-I;Politica y Legislacion Forestal;20
+Ciencias Forestales;Manejo Forestal;2026-I;Produccion Agropecuaria;32
+Ciencias Forestales;Manejo Forestal;2026-I;Proteccion Forestal;25
+Ciencias Forestales;Manejo Forestal;2026-I;Recursos Naturales del Peru;259
+Ciencias Forestales;Manejo Forestal;2026-I;Seminario en Ingenieria Forestal I;19
+Ciencias Forestales;Manejo Forestal;2026-I;Seminario en Ingenieria Forestal II;25
+Ciencias Forestales;Manejo Forestal;2026-I;Sistemas Silviculturales Tropicales;36
+Ciencias Forestales;Manejo Forestal;2026-I;Teledeteccion Forestal;20
+Economia y Planificacion;Ciencias Humanas y Educacion;2026-I;etica y Ciudadania;496
+Economia y Planificacion;Ciencias Humanas y Educacion;2026-I;Historia Economica del Peru Contemporaneo;44
+Economia y Planificacion;Ciencias Humanas y Educacion;2026-I;Lenguaje y Comunicacion;572
+Economia y Planificacion;Ciencias Humanas y Educacion;2026-I;Proyecto Universitario Personalizado;26
+Economia y Planificacion;Ciencias Humanas y Educacion;2026-I;Redaccion Tecnica;26
+Economia y Planificacion;Ciencias Humanas y Educacion;2026-I;Redaccion y Argumentacion;606
+Economia y Planificacion;Economia y Planificacion;2026-I;Desarrollo y Politica Agraria;18
+Economia y Planificacion;Economia y Planificacion;2026-I;Econometria Basica;29
+Economia y Planificacion;Economia y Planificacion;2026-I;Econometria Intermedia;41
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia Agraria;35
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia Ambiental;41
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia de la Informacion;33
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia de la Innovacion Agraria;35
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia de la Regulacion;30
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia de los Recursos Naturales;37
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia del Bienestar;36
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia Ecologica;16
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia General;692
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia Internacional;35
+Economia y Planificacion;Economia y Planificacion;2026-I;Economia Regional;25
+Economia y Planificacion;Economia y Planificacion;2026-I;El agro en el Peru y el mundo;52
+Economia y Planificacion;Economia y Planificacion;2026-I;Evaluacion Social de Proyectos;23
+Economia y Planificacion;Economia y Planificacion;2026-I;Finanzas Corporativas;23
+Economia y Planificacion;Economia y Planificacion;2026-I;Finanzas de la Empresa;37
+Economia y Planificacion;Economia y Planificacion;2026-I;Finanzas Publicas;19
+Economia y Planificacion;Economia y Planificacion;2026-I;Formulacion y Evaluacion de Proyectos;25
+Economia y Planificacion;Economia y Planificacion;2026-I;Investigacion de Mercados;20
+Economia y Planificacion;Economia y Planificacion;2026-I;Investigacion de Operaciones;41
+Economia y Planificacion;Economia y Planificacion;2026-I;Macroeconometria;24
+Economia y Planificacion;Economia y Planificacion;2026-I;Macroeconomia Dinamica;30
+Economia y Planificacion;Economia y Planificacion;2026-I;Macroeconomia I;58
+Economia y Planificacion;Economia y Planificacion;2026-I;Macroeconomia II;39
+Economia y Planificacion;Economia y Planificacion;2026-I;Matematica para Economistas I;39
+Economia y Planificacion;Economia y Planificacion;2026-I;Matematica para Economistas II;32
+Economia y Planificacion;Economia y Planificacion;2026-I;Matematicas Financieras;128
+Economia y Planificacion;Economia y Planificacion;2026-I;Mercadeo Agrario;28
+Economia y Planificacion;Economia y Planificacion;2026-I;Metodologia de Investigacion en Economia I;20
+Economia y Planificacion;Economia y Planificacion;2026-I;Metodologia de Investigacion en Economia II;40
+Economia y Planificacion;Economia y Planificacion;2026-I;Microeconomia I;53
+Economia y Planificacion;Economia y Planificacion;2026-I;Microeconomia II;42
+Economia y Planificacion;Economia y Planificacion;2026-I;Negociaciones Internacionales;19
+Economia y Planificacion;Economia y Planificacion;2026-I;Organizacion Industrial;36
+Economia y Planificacion;Economia y Planificacion;2026-I;Politica Economica;7
+Economia y Planificacion;Economia y Planificacion;2026-I;Riesgos Financieros;10
+Economia y Planificacion;Economia y Planificacion;2026-I;Seminario d Tesis;18
+Economia y Planificacion;Economia y Planificacion;2026-I;Seminario de Investigacion I;23
+Economia y Planificacion;Economia y Planificacion;2026-I;Seminario de Investigacion II;24
+Economia y Planificacion;Economia y Planificacion;2026-I;Teoria del Crecimiento Economico;17
+Economia y Planificacion;Economia y Planificacion;2026-I;Teoria Monetaria;28
+Economia y Planificacion;Economia y Planificacion;2026-I;Teorias del Desarrollo Economico;31
+Economia y Planificacion;Economia y Planificacion;2026-I;Valoracion de la Calidad Ambiental;18
+Economia y Planificacion;Estadistica e Informatica;2026-I;Algoritmia;30
+Economia y Planificacion;Estadistica e Informatica;2026-I;Analisis de Series de Tiempo;28
+Economia y Planificacion;Estadistica e Informatica;2026-I;Analisis de Sobrevivencia y Confiabilidad;12
+Economia y Planificacion;Estadistica e Informatica;2026-I;Analisis Estadistico;45
+Economia y Planificacion;Estadistica e Informatica;2026-I;Bioestadistica;25
+Economia y Planificacion;Estadistica e Informatica;2026-I;Calculo de Probabilidades;30
+Economia y Planificacion;Estadistica e Informatica;2026-I;Ciencias de Datos I;15
+Economia y Planificacion;Estadistica e Informatica;2026-I;Ciencias de Datos II;26
+Economia y Planificacion;Estadistica e Informatica;2026-I;Diseños Experimentales I;29
+Economia y Planificacion;Estadistica e Informatica;2026-I;Diseños Experimentales II;24
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica Actuarial;11
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica Aplicada a la Economia y los Negocios I;65
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica Aplicada a la Economia y los Negocios II;39
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica Bayesiana;33
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica Computacional;29
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica Espacial;27
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica General;512
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estadistica no Parametrica;18
+Economia y Planificacion;Estadistica e Informatica;2026-I;Estrategias de Muestreo;42
+Economia y Planificacion;Estadistica e Informatica;2026-I;Gestion de la Calidad;1
+Economia y Planificacion;Estadistica e Informatica;2026-I;Gestion de Proyectos de Informacion;22
+Economia y Planificacion;Estadistica e Informatica;2026-I;Gestion Estrategica de Datos;27
+Economia y Planificacion;Estadistica e Informatica;2026-I;Herramientas de Gestion Empresarial;51
+Economia y Planificacion;Estadistica e Informatica;2026-I;Inferencia Estadistica;29
+Economia y Planificacion;Estadistica e Informatica;2026-I;Inferencia Multivariada;1
+Economia y Planificacion;Estadistica e Informatica;2026-I;Ingenieria de Procesos;30
+Economia y Planificacion;Estadistica e Informatica;2026-I;Introduccion a la Ciencia de Datos;50
+Economia y Planificacion;Estadistica e Informatica;2026-I;Investigacion de Mercados;30
+Economia y Planificacion;Estadistica e Informatica;2026-I;Lenguaje de Programacion I;34
+Economia y Planificacion;Estadistica e Informatica;2026-I;Lenguaje de Programacion II;62
+Economia y Planificacion;Estadistica e Informatica;2026-I;Lenguaje de Programacion III;30
+Economia y Planificacion;Estadistica e Informatica;2026-I;Maquinas de Aprendizaje;29
+Economia y Planificacion;Estadistica e Informatica;2026-I;Marketing;46
+Economia y Planificacion;Estadistica e Informatica;2026-I;Metodos de Optimizacion;31
+Economia y Planificacion;Estadistica e Informatica;2026-I;Metodos de Procesos Estocasticos;7
+Economia y Planificacion;Estadistica e Informatica;2026-I;Metodos Estadisticos para la Investigacion I;167
+Economia y Planificacion;Estadistica e Informatica;2026-I;Modelos Lineales I;36
+Economia y Planificacion;Estadistica e Informatica;2026-I;Modelos Lineales II;17
+Economia y Planificacion;Estadistica e Informatica;2026-I;Seguridad de la Informacion;1
+Economia y Planificacion;Estadistica e Informatica;2026-I;Seminario en Estadistica Informatica I;31
+Economia y Planificacion;Estadistica e Informatica;2026-I;Seminario en Estadistica Informatica II;24
+Economia y Planificacion;Estadistica e Informatica;2026-I;Seminario en Estadistica Informatica III;34
+Economia y Planificacion;Estadistica e Informatica;2026-I;Sistemas de Gestion de Base de Datos I;32
+Economia y Planificacion;Estadistica e Informatica;2026-I;Sistemas de Gestion de Base de Datos II;6
+Economia y Planificacion;Estadistica e Informatica;2026-I;Sistemas de Informacion Gerencial;59
+Economia y Planificacion;Estadistica e Informatica;2026-I;Tecnicas de Exploracion de Datos;28
+Economia y Planificacion;Estadistica e Informatica;2026-I;Tecnicas Multivariadas;32
+Economia y Planificacion;Estadistica e Informatica;2026-I;Tecnologias Emergentes;34
+Economia y Planificacion;Gestion Empresarial;2026-I;Administracion General;164
+Economia y Planificacion;Gestion Empresarial;2026-I;Administracion General;48
+Economia y Planificacion;Gestion Empresarial;2026-I;Branding;18
+Economia y Planificacion;Gestion Empresarial;2026-I;Certificacion de Calidad;12
+Economia y Planificacion;Gestion Empresarial;2026-I;Comercio Exterior;49
+Economia y Planificacion;Gestion Empresarial;2026-I;Comportamiento del Consumidor;38
+Economia y Planificacion;Gestion Empresarial;2026-I;Comportamiento y Cultura de las Organizaciones;100
+Economia y Planificacion;Gestion Empresarial;2026-I;Contabilidad General;95
+Economia y Planificacion;Gestion Empresarial;2026-I;Contabilidad Gerencial y de Costos;77
+Economia y Planificacion;Gestion Empresarial;2026-I;Derecho Empresarial;48
+Economia y Planificacion;Gestion Empresarial;2026-I;Desarrollo Empresarial;53
+Economia y Planificacion;Gestion Empresarial;2026-I;Dibujo de Ingenieria;40
+Economia y Planificacion;Gestion Empresarial;2026-I;Emprendedurismo;25
+Economia y Planificacion;Gestion Empresarial;2026-I;Finanzas I;47
+Economia y Planificacion;Gestion Empresarial;2026-I;Finanzas II;22
+Economia y Planificacion;Gestion Empresarial;2026-I;Formulacion y Evaluacion de Proyectos;50
+Economia y Planificacion;Gestion Empresarial;2026-I;Gerencia de Operaciones;37
+Economia y Planificacion;Gestion Empresarial;2026-I;Gerencia de Proyectos;36
+Economia y Planificacion;Gestion Empresarial;2026-I;Gerencia de Ventas;77
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion de Agronegocios;26
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion de Cadenas Agroalimentarias;19
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion de la Innovacion;22
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion de Proyectos;2
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion de Servicios;42
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion del Conocimiento;41
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion del Talento;54
+Economia y Planificacion;Gestion Empresarial;2026-I;Gestion y Aseguramiento de la Calidad;21
+Economia y Planificacion;Gestion Empresarial;2026-I;Habilidades Blandas;43
+Economia y Planificacion;Gestion Empresarial;2026-I;Historia de la Tecnologia;32
+Economia y Planificacion;Gestion Empresarial;2026-I;Ingenieria de Metodos;46
+Economia y Planificacion;Gestion Empresarial;2026-I;Introduccion a la Ingenieria en Gestion Empresarial;55
+Economia y Planificacion;Gestion Empresarial;2026-I;Investigacion Cientifica en Gestion Empresarial;51
+Economia y Planificacion;Gestion Empresarial;2026-I;Investigacion e inteligencia de Mercados;56
+Economia y Planificacion;Gestion Empresarial;2026-I;Liderazgo;54
+Economia y Planificacion;Gestion Empresarial;2026-I;Logistica y Gestion de la Cadena de Suministros;44
+Economia y Planificacion;Gestion Empresarial;2026-I;Marketing;51
+Economia y Planificacion;Gestion Empresarial;2026-I;Marketing Electronico;38
+Economia y Planificacion;Gestion Empresarial;2026-I;Negociaciones Internacionales;35
+Economia y Planificacion;Gestion Empresarial;2026-I;Operaciones Bancarias;58
+Economia y Planificacion;Gestion Empresarial;2026-I;Organizacion y Metodos;109
+Economia y Planificacion;Gestion Empresarial;2026-I;Planeamiento Estrategico;91
+Economia y Planificacion;Gestion Empresarial;2026-I;Planeamiento y Direccion Estrategica;45
+Economia y Planificacion;Gestion Empresarial;2026-I;Seminario de Tesis;33
+Economia y Planificacion;Gestion Empresarial;2026-I;Seminario en Ingenieria en Gestion Empresarial I;42
+Economia y Planificacion;Gestion Empresarial;2026-I;Seminario en Ingenieria en Gestion Empresarial II;32
+Economia y Planificacion;Gestion Empresarial;2026-I;Sistemas de Informacion Gerencial;60
+Economia y Planificacion;Gestion Empresarial;2026-I;Taller de Coaching;42
+Economia y Planificacion;Gestion Empresarial;2026-I;Tecnologia Agropecuaria;45
+Economia y Planificacion;Gestion Empresarial;2026-I;Tecnologia de Agronegocios;48
+Economia y Planificacion;Sociologia Rural ;2026-I;Ambiente y Sociedad;98
+Economia y Planificacion;Sociologia Rural ;2026-I;Antropologia de la Alimentacion;15
+Economia y Planificacion;Sociologia Rural ;2026-I;Antropologia Rural y Amazonica;65
+Economia y Planificacion;Sociologia Rural ;2026-I;Derecho y Legislacion Ambiental;44
+Economia y Planificacion;Sociologia Rural ;2026-I;Metodologia de la Investigacion;355
+Economia y Planificacion;Sociologia Rural ;2026-I;Metodologia para la Investigacion e Innovacion;6
+Economia y Planificacion;Sociologia Rural ;2026-I;Peru en el Contexto Internacional;463
+Economia y Planificacion;Sociologia Rural ;2026-I;Sociedad y Cultura Peruana;653
+Estudios Generales;Estudios Generales;2026-I;Trabajo de investigacion;413
+Industrias Alimentarias;I.A.P.A.;2026-I;Administracion;58
+Industrias Alimentarias;I.A.P.A.;2026-I;Agronegocios;35
+Industrias Alimentarias;I.A.P.A.;2026-I;Alimentacion y Nutricion Humana;48
+Industrias Alimentarias;I.A.P.A.;2026-I;Alimentos Funcionales y Nutraceuticos;21
+Industrias Alimentarias;I.A.P.A.;2026-I;Analisis de Alimentos;44
+Industrias Alimentarias;I.A.P.A.;2026-I;Contabilidad y Finanzas;48
+Industrias Alimentarias;I.A.P.A.;2026-I;Control de Calidad e Inocuidad de Alimentos;33
+Industrias Alimentarias;I.A.P.A.;2026-I;Diseño en Ingenieria;20
+Industrias Alimentarias;I.A.P.A.;2026-I;Envases y Embalajes de Alimentos;25
+Industrias Alimentarias;I.A.P.A.;2026-I;Evaluacion Sensorial de Alimentos;51
+Industrias Alimentarias;I.A.P.A.;2026-I;Fisicoquimica de Alimentos;43
+Industrias Alimentarias;I.A.P.A.;2026-I;Fundamentos de Control y Automatizacion;33
+Industrias Alimentarias;I.A.P.A.;2026-I;Ingenieria de Alimentos I;26
+Industrias Alimentarias;I.A.P.A.;2026-I;Ingenieria de Alimentos II;39
+Industrias Alimentarias;I.A.P.A.;2026-I;Ingenieria de la Produccion;27
+Industrias Alimentarias;I.A.P.A.;2026-I;Ingenieria de Proyecto;31
+Industrias Alimentarias;I.A.P.A.;2026-I;Ingenieria del Frio;46
+Industrias Alimentarias;I.A.P.A.;2026-I;Maquinaria para la Industria Alimentaria;31
+Industrias Alimentarias;I.A.P.A.;2026-I;Mecanica de Fluidos;51
+Industrias Alimentarias;I.A.P.A.;2026-I;Metodos Estadisticos en Ingenieria;31
+Industrias Alimentarias;I.A.P.A.;2026-I;Microbiologia de Alimentos;48
+Industrias Alimentarias;I.A.P.A.;2026-I;Quimica de Alimentos;58
+Industrias Alimentarias;I.A.P.A.;2026-I;Reologia;45
+Industrias Alimentarias;I.A.P.A.;2026-I;Sistemas Integrados de Gestion;36
+Industrias Alimentarias;I.A.P.A.;2026-I;Taller de Ingenieria de Proyecto;28
+Industrias Alimentarias;I.A.P.A.;2026-I;Termodinamica General;63
+Industrias Alimentarias;I.A.P.A.;2026-I;Transferencia de Calor y Masa;45
+Industrias Alimentarias;I.A.P.A.;2026-I;Tratamiento de Residuos Solidos y Liquidos;33
+Industrias Alimentarias;T.A.P.A.;2026-I;Enologia;9
+Industrias Alimentarias;T.A.P.A.;2026-I;Fermentaciones Industriales;57
+Industrias Alimentarias;T.A.P.A.;2026-I;Industrias Carnicas;13
+Industrias Alimentarias;T.A.P.A.;2026-I;Industrias Lacteas;22
+Industrias Alimentarias;T.A.P.A.;2026-I;Introduccion a la Industria Alimentaria;51
+Industrias Alimentarias;T.A.P.A.;2026-I;Seminario en Industrias Alimentarias I;29
+Industrias Alimentarias;T.A.P.A.;2026-I;Seminario en Industrias Alimentarias II;41
+Industrias Alimentarias;T.A.P.A.;2026-I;Taller de Emprendimiento;26
+Industrias Alimentarias;T.A.P.A.;2026-I;Tecnologia de Aceites y Grasas;10
+Industrias Alimentarias;T.A.P.A.;2026-I;Tecnologia de Alimentos Pecuarios;40
+Industrias Alimentarias;T.A.P.A.;2026-I;Tecnologia de Azucar y Derivados;32
+Industrias Alimentarias;T.A.P.A.;2026-I;Tecnologia de Leguminosas y Cereales;14
+Industrias Alimentarias;T.A.P.A.;2026-I;Tecnologia Poscosecha;40
+Industrias Alimentarias;T.A.P.A.;2026-I;Tecnologias de Conservacion;30
+Industrias Alimentarias;T.A.P.A.;2026-I;Tecnologias de Extraccion;53
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Administracion de Maquinaria;40
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Analisis de Maquinas y Mecanismos;19
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Circuitos Electricos y Motores;56
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Circuitos y Maquinas Electricas;48
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Circuitos y Maquinas Electricas;41
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Elementos de Maquinas;62
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Fisica para la Ingenieria;84
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Ingenieria y Responsabilidad Social;30
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Instrumentacion Electronica;11
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Maquinaria Agricola;39
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Maquinaria para Obras;29
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Maquinaria para Siembra y Mantenimiento de Cultivos;18
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Mecanica Vectorial II;20
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Mecanizacion Agricola I;135
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Motores y Tractores;45
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Seminario de Tesis I;27
+Ingenieria Agricola;Mecanizacion y Energia;2026-I;Termodinamica;57
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Abastecimiento de Agua y Alcantarillado;34
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Analisis Estructural I;18
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Analisis Matematico III;52
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Analisis Matematico IV;22
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Arquitectura del Paisaje I;1
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Concreto Reforzado;32
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Dibujo Avanzado en Ingenieria;28
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Dibujo en Ingenieria;18
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Dibujo en Ingenieria;30
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Dibujo General;214
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Diseño Rural;47
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Diseño y Construccion de Invernaderos;11
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Energia Solar Fotovoltaica y Eolica;18
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Energias Renovables;45
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Evaluacion y Monitoreo Ambiental en Proyectos de Ingenieria;13
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Geologia y Geotecnia;28
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Materiales de Construccion;41
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Mecanica de Suelos;25
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Mecanica Vectorial I;68
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Metodologia BIM para Ingenieria Agricola;14
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Ordenamiento Territorial;47
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Programacion y Supervision de Obras;12
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Resistencia de Materiales;30
+Ingenieria Agricola;Ordenamiento Territorial y Construccion;2026-I;Tecnica de la Construccion;66
+Ingenieria Agricola;Ordenamiento Territorial y Desarrollo Sostenible;2026-I;Quimica para la Ingenieria;54
+Ingenieria Agricola;Recursos Hidricos;2026-I;Control de la Erosion;20
+Ingenieria Agricola;Recursos Hidricos;2026-I;Edafologia y Agrotecnia;44
+Ingenieria Agricola;Recursos Hidricos;2026-I;Estructuras Hidraulicas I;38
+Ingenieria Agricola;Recursos Hidricos;2026-I;Estructuras Hidraulicas II;29
+Ingenieria Agricola;Recursos Hidricos;2026-I;Fundamentos de la Ingenieria Ambiental;36
+Ingenieria Agricola;Recursos Hidricos;2026-I;Geomatica;41
+Ingenieria Agricola;Recursos Hidricos;2026-I;Gestion Integrada de Recursos Hidricos;19
+Ingenieria Agricola;Recursos Hidricos;2026-I;Hidraulica;36
+Ingenieria Agricola;Recursos Hidricos;2026-I;Hidraulica Computacional;2
+Ingenieria Agricola;Recursos Hidricos;2026-I;Hidrologia;28
+Ingenieria Agricola;Recursos Hidricos;2026-I;Hidrologia y Drenaje Urbano y Vial;7
+Ingenieria Agricola;Recursos Hidricos;2026-I;Ingenieria de Drenaje;5
+Ingenieria Agricola;Recursos Hidricos;2026-I;Ingenieria de Riegos I;28
+Ingenieria Agricola;Recursos Hidricos;2026-I;Ingenieria de Riegos II;41
+Ingenieria Agricola;Recursos Hidricos;2026-I;Ingenieria de Sistemas;6
+Ingenieria Agricola;Recursos Hidricos;2026-I;Mecanica de Fluidos;26
+Ingenieria Agricola;Recursos Hidricos;2026-I;Metodos Numericos en Ingenieria;43
+Ingenieria Agricola;Recursos Hidricos;2026-I;Modelos Hidraulicos;10
+Ingenieria Agricola;Recursos Hidricos;2026-I;Seminario de Tesis II;23
+Ingenieria Agricola;Recursos Hidricos;2026-I;Topografia I;131
+Ingenieria Agricola;Recursos Hidricos;2026-I;Topografia y Geodesia I;63
+Ingenieria Agricola;Recursos Hidricos;2026-I;Topografia y Geodesia II;28
+Ingenieria Agricola;Recursos Hidricos;2026-I;Topografia y Geodesia III;13
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Artes Plasticas y Creatividad;46
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Banda Unalm;61
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Capoeira;13
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Danza de Costa;18
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Danzas Folcloricas;90
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Dibujo y Pintura;56
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Fotografia;64
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Guitarra;38
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Marinera Norteña;29
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Musica y Canto Coral;18
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Oratoria;30
+Oficina de Bienestar Estudiantil;Actividades Culturales;2026-I;Teatro;25
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Aerobicos;41
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Aikido;6
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Ajedrez;34
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Basquet;29
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Beisbol;23
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Ciclismo;43
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Futbol;37
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Futsal Femenino;21
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Handball;47
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Judo;19
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Karate;35
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Natacion;51
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Taekwondo;50
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Tenis de Mesa;27
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Tiro con Arco;32
+Oficina de Bienestar Estudiantil;Educacion Fisica y Deportes;2026-I;Voley;29
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Acuicultura I;13
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Acuicultura II;21
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Conservacion de Productos Hidrobiologicos;8
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Construcciones Pesqueras;22
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Cultivo de Especies Amazonicas;6
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Cultivo de Especies de Aguas Frias;4
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Elementos de Maquinarias Pesqueras;23
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Fundamentos de Termodinamica;22
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Genetica Aplicada a la Acuicultura;16
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Ingenieria de Procesos Pesqueros;5
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Microbiologia Pesquera;14
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Nutricion y Alimentacion de Organismos Acuaticos;4
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Operaciones Unitarias Pesqueras I;24
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Operaciones Unitarias Pesqueras II;13
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Procesamiento de Aceite y Harina de Pescado;11
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Procesamiento de Enlatado de Recursos Hidrobiologicos;21
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Procesamiento de Productos Curados;16
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Quimica de Recursos Hidrobiologicos;24
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Refrigeracion en la Industria Pesquera;2
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Refrigeracion y Congelacion de Recursos Hidrobiologicos;19
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Reproduccion y Genetica de Organismos Acuaticos;33
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Seminario II;24
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Sistema de Calidad en Pesqueria;19
+Pesqueria;Acuicultura e Industrias Pesqueras;2026-I;Tecnologias para el Procesamiento Recursos Hidrobiologicos;28
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Comercializacion de Productos Hidrobiologicos;17
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Contaminacion de Ambientes Acuaticos;20
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Ecologia Acuatica;10
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Economia Pesquera;28
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Embarcaciones Pesqueras I;8
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Evaluacion de Recursos Hidrobiologicos;25
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Instrumentacion Pesquera;19
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Limnologia;19
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Materiales, Metodos y Artes de Pesca;18
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Navegacion y Seguridad a Bordo;19
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Oceanografia General;31
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Oceanografia Pesquera;3
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Pesca Maritima y Continental;21
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Realidad y Perspectivas de la Pesqueria en el Peru;55
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Recursos Hidrobiologicos;63
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Sanidad Acuicola;28
+Pesqueria;Manejo Pesquero y Medio Ambiente;2026-I;Seminario I;24
+Zootecnia;Nutricion;2026-I;Alimentacion de no Rumiantes;25
+Zootecnia;Nutricion;2026-I;Alimentacion de Rumiantes;28
+Zootecnia;Nutricion;2026-I;Anatomia de los Animales de Granja;47
+Zootecnia;Nutricion;2026-I;Bases de Cirugia Experimental;12
+Zootecnia;Nutricion;2026-I;Bioquimica para la Ciencia Animal;38
+Zootecnia;Nutricion;2026-I;Enfermedades Infecciosas;24
+Zootecnia;Nutricion;2026-I;Enfermedades Parasitarias;24
+Zootecnia;Nutricion;2026-I;Etologia, Bienestar y Bioetica Animal;24
+Zootecnia;Nutricion;2026-I;Farmacologia;4
+Zootecnia;Nutricion;2026-I;Fisiologia de los Animales de Granja;34
+Zootecnia;Nutricion;2026-I;Microbiologia para la Ciencia Animal;35
+Zootecnia;Nutricion;2026-I;Nutricion Animal;20
+Zootecnia;Nutricion;2026-I;Nutricion y Alimentacion de Animales al Pastoreo;40
+Zootecnia;Nutricion;2026-I;Nutricion, Ambiente y Manejo de Residuos Pecuarios;17
+Zootecnia;Nutricion;2026-I;Patologia Animal;21
+Zootecnia;Nutricion;2026-I;Tecnologia de Alimentos Balanceados;5
+Zootecnia;Produccion Animal;2026-I;Administracion Ganadera;30
+Zootecnia;Produccion Animal;2026-I;Diseño de Instalaciones Pecuarias;27
+Zootecnia;Produccion Animal;2026-I;Empresariado y Planeamiento en Ganaderia;23
+Zootecnia;Produccion Animal;2026-I;Evaluacion del Impacto Ambiental en Ganaderia;41
+Zootecnia;Produccion Animal;2026-I;Extension Pecuaria y Desarrollo Rural;30
+Zootecnia;Produccion Animal;2026-I;Formulacion y Evaluacion de Proyectos Agropecuarios;29
+Zootecnia;Produccion Animal;2026-I;Ganaderia de Precision;5
+Zootecnia;Produccion Animal;2026-I;Ganaderia Organica;16
+Zootecnia;Produccion Animal;2026-I;Genetica Animal;28
+Zootecnia;Produccion Animal;2026-I;Genetica Molecular en la Ciencia Animal;6
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Camelidos Sudamericanos;19
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Conejos;2
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Cuyes;20
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Equinos;14
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Ovinos;6
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Pavos, Patos y Codornices;19
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Pollos de Carne y Gallinas Ponedoras;17
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Porcinos;16
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Vacunos de Carne y Doble Proposito;25
+Zootecnia;Produccion Animal;2026-I;Gestion de la Produccion de Vacunos de Leche;9
+Zootecnia;Produccion Animal;2026-I;Ingenieria de Procesos en Sistemas de Produccion Animal;25
+Zootecnia;Produccion Animal;2026-I;Inseminacion Artificial;38
+Zootecnia;Produccion Animal;2026-I;Introduccion a la Ciencia Animal;65
+Zootecnia;Produccion Animal;2026-I;Manejo y Aprovechamiento de Animales Silvestres;19
+Zootecnia;Produccion Animal;2026-I;Mejoramiento Genetico del Ganado I;16
+Zootecnia;Produccion Animal;2026-I;Mejoramiento Genetico del Ganado II;20
+Zootecnia;Produccion Animal;2026-I;Metodos Estadisticos Aplicados a la Ciencia Animal;26
+Zootecnia;Produccion Animal;2026-I;Metodos Matematicos para la Ingenieria en Ciencia Animal;47
+Zootecnia;Produccion Animal;2026-I;Politicas Publicas y Normatividad;31
+Zootecnia;Produccion Animal;2026-I;Practicas de Ganaderia;24
+Zootecnia;Produccion Animal;2026-I;Produccion y Manejo de Pastos y Forrajes;39
+Zootecnia;Produccion Animal;2026-I;Reproduccion Animal;18
+Zootecnia;Produccion Animal;2026-I;Seminario en Zootecnia I;36
+Zootecnia;Produccion Animal;2026-I;Seminario en Zootecnia II;29
+Zootecnia;Produccion Animal;2026-I;Sistemas Agrosilvopastoriles;7
+Zootecnia;Produccion Animal;2026-I;Tecnologia e Industrializacion de Fibras y Pieles;8
+Zootecnia;Produccion Animal;2026-I;Tecnologia e Industrializacion de Leche y Carne;25
+Zootecnia;Produccion Animal;2026-I;Topicos Especiales en Produccion Porcina;7
+Zootecnia;Produccion Animal;2026-I;Utilizacion de Pastizales en la Produccion Animal;35
+Zootecnia;Produccion Animal;2026-I;Zootecnia General;155
